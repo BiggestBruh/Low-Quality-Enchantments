@@ -1,0 +1,279 @@
+[
+    {
+        "function": "set_components",
+        "components": {
+            "blocks_attacks": {
+                "block_delay_seconds": 0.25,
+                "disable_cooldown_scale": 1,
+                "damage_reductions": [
+                    {
+                        "type": [
+                            "minecraft:arrow",
+                            "minecraft:mob_attack",
+                            "minecraft:mob_attack_no_aggro",
+                            "minecraft:mob_projectile",
+                            "minecraft:player_attack",
+                            "minecraft:trident"
+                        ],
+                        "base": 0,
+                        "factor": 0.2
+                    }
+                ],
+                "item_damage": {
+                    "base": 0,
+                    "factor": 1,
+                    "threshold": 3
+                },
+                "bypassed_by": "#minecraft:bypasses_shield",
+                "block_sound": "block.anvil.land",
+                "disabled_sound": "minecraft:item.shield.break"
+            },
+            "custom_data": {
+                "parry": true
+            }
+        },
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "items": "#minecraft:enchantable/weapon",
+                            "predicates": {
+                                "minecraft:enchantments": [
+                                    {
+                                        "enchantments": "lqe:parry",
+                                        "levels": 1
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "set_components",
+        "components": {
+            "blocks_attacks": {
+                "block_delay_seconds": 0.25,
+                "disable_cooldown_scale": 1,
+                "damage_reductions": [
+                    {
+                        "type": [
+                            "minecraft:arrow",
+                            "minecraft:mob_attack",
+                            "minecraft:mob_attack_no_aggro",
+                            "minecraft:mob_projectile",
+                            "minecraft:player_attack",
+                            "minecraft:trident"
+                        ],
+                        "base": 0,
+                        "factor": 0.35
+                    }
+                ],
+                "item_damage": {
+                    "base": 0,
+                    "factor": 1,
+                    "threshold": 3
+                },
+                "bypassed_by": "#minecraft:bypasses_shield",
+                "block_sound": "block.anvil.land",
+                "disabled_sound": "minecraft:item.shield.break"
+            },
+            "custom_data": {
+                "parry": true
+            }
+        },
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "items": "#minecraft:enchantable/weapon",
+                            "predicates": {
+                                "minecraft:enchantments": [
+                                    {
+                                        "enchantments": "lqe:parry",
+                                        "levels": 2
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "set_components",
+        "components": {
+            "blocks_attacks": {
+                "block_delay_seconds": 0.25,
+                "disable_cooldown_scale": 1,
+                "damage_reductions": [
+                    {
+                        "type": [
+                            "minecraft:arrow",
+                            "minecraft:mob_attack",
+                            "minecraft:mob_attack_no_aggro",
+                            "minecraft:mob_projectile",
+                            "minecraft:player_attack",
+                            "minecraft:trident"
+                        ],
+                        "base": 0,
+                        "factor": 0.5
+                    }
+                ],
+                "item_damage": {
+                    "base": 0,
+                    "factor": 1,
+                    "threshold": 3
+                },
+                "bypassed_by": "#minecraft:bypasses_shield",
+                "block_sound": "block.anvil.land",
+                "disabled_sound": "minecraft:item.shield.break"
+            },
+            "custom_data": {
+                "parry": true
+            }
+        },
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "items": "#minecraft:enchantable/weapon",
+                            "predicates": {
+                                "minecraft:enchantments": [
+                                    {
+                                        "enchantments": "lqe:parry",
+                                        "levels": 3
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "set_components",
+        "components": {
+            "blocks_attacks": {
+                "block_delay_seconds": 0.25,
+                "disable_cooldown_scale": 1,
+                "damage_reductions": [
+                    {
+                        "type": [
+                            "minecraft:arrow",
+                            "minecraft:mob_attack",
+                            "minecraft:mob_attack_no_aggro",
+                            "minecraft:mob_projectile",
+                            "minecraft:player_attack",
+                            "minecraft:trident"
+                        ],
+                        "base": 0,
+                        "factor": 0.65
+                    }
+                ],
+                "item_damage": {
+                    "base": 0,
+                    "factor": 1,
+                    "threshold": 3
+                },
+                "bypassed_by": "#minecraft:bypasses_shield",
+                "block_sound": "block.anvil.land",
+                "disabled_sound": "minecraft:item.shield.break"
+            },
+            "custom_data": {
+                "parry": true
+            }
+        },
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "items": "#minecraft:enchantable/weapon",
+                            "predicates": {
+                                "minecraft:enchantments": [
+                                    {
+                                        "enchantments": "lqe:parry",
+                                        "levels": 4
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "set_components",
+        "components": {
+            "blocks_attacks": {
+                "block_delay_seconds": 0.25,
+                "disable_cooldown_scale": 1,
+                "damage_reductions": [
+                    {
+                        "type": [
+                            "minecraft:arrow",
+                            "minecraft:mob_attack",
+                            "minecraft:mob_attack_no_aggro",
+                            "minecraft:mob_projectile",
+                            "minecraft:player_attack",
+                            "minecraft:trident"
+                        ],
+                        "base": 0,
+                        "factor": 0.8
+                    }
+                ],
+                "item_damage": {
+                    "base": 0,
+                    "factor": 1,
+                    "threshold": 3
+                },
+                "bypassed_by": "#minecraft:bypasses_shield",
+                "block_sound": "block.anvil.land",
+                "disabled_sound": "minecraft:item.shield.break"
+            },
+            "custom_data": {
+                "parry": true
+            }
+        },
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "items": "#minecraft:enchantable/weapon",
+                            "predicates": {
+                                "minecraft:enchantments": [
+                                    {
+                                        "enchantments": "lqe:parry",
+                                        "levels": {
+                                            "min": 5
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    }
+]

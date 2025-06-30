@@ -1,0 +1,21 @@
+{
+    "description": {
+        "translate": "enchantment.lqe.alchemy",
+        "fallback": "Alchemy"
+    },
+    "supported_items": "#lqe:enchantable/head_wearable",
+    "primary_items": "#minecraft:enchantable/head_armor",
+    "weight": 5,
+    "max_level": 5,
+    "min_cost": {
+        "base": 14,
+        "per_level_above_first": 8
+    },
+    "max_cost": {
+        "base": 25,
+        "per_level_above_first": 8
+    },
+    "anvil_cost": 2,
+    "slots": ["head"],
+    "effects": {}
+}

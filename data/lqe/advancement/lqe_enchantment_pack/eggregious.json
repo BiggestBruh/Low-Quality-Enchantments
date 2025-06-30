@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/java_edition_combat_tests",
+    "display": {
+        "icon": {
+            "id": "minecraft:egg"
+        },
+        "title": {
+            "translate": "advancement.lqe.eggregious.title",
+            "fallback": "Eggregious"
+        },
+        "description": {
+            "translate": "advancement.lqe.eggregious.description",
+            "fallback": "Obtain Clone"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_clone": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:clone",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

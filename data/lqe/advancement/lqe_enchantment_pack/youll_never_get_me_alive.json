@@ -1,0 +1,217 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/root",
+    "display": {
+        "icon": {
+            "id": "minecraft:potion",
+            "components": {
+                "potion_contents": {
+                    "potion": "minecraft:strong_swiftness"
+                }
+            }
+        },
+        "title": {
+            "translate": "advancement.lqe.youll_never_get_me_alive.title",
+            "fallback": "You'll Never Get Me Alive!"
+        },
+        "description": {
+            "translate": "advancement.lqe.youll_never_get_me_alive.description",
+            "fallback": "Achieve ridiculous speeds by wearing max Nocturnal, Agility, Flee, Traveler and Charm of Haste enchantments"
+        },
+        "frame": "challenge"
+    },
+    "criteria": {
+		"maximum_speed": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+                "player": {
+                    "equipment": {
+                        "head": {
+                            "items": "#minecraft:enchantable/head_armor",
+                            "predicates": {
+                                "minecraft:enchantments": [
+                                    {
+                                        "enchantments": "lqe:nocturnal",
+                                        "levels": {
+                                            "min": 7
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "chest": {
+                            "items": "#minecraft:enchantable/chest_armor",
+                            "predicates": {
+                                "minecraft:enchantments": [
+                                    {
+                                        "enchantments": "lqe:nocturnal",
+                                        "levels": {
+                                            "min": 7
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "legs": {
+                            "items": "#minecraft:enchantable/leg_armor",
+                            "predicates": {
+                                "minecraft:enchantments": [
+                                    {
+                                        "enchantments": "lqe:nocturnal",
+                                        "levels": {
+                                            "min": 7
+                                        }
+                                    },
+                                    {
+                                        "enchantments": "lqe:agility",
+                                        "levels": {
+                                            "min": 5
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "feet": {
+                            "items": "#minecraft:enchantable/foot_armor",
+                            "predicates": {
+                                "minecraft:enchantments": [
+                                    {
+                                        "enchantments": "lqe:nocturnal",
+                                        "levels": {
+                                            "min": 7
+                                        }
+                                    },
+                                    {
+                                        "enchantments": "lqe:flee",
+                                        "levels": {
+                                            "min": 5
+                                        }
+                                    },
+                                    {
+                                        "enchantments": "lqe:traveler",
+                                        "levels": {
+                                            "min": 5
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "offhand": {
+                            "items": "#lqe:enchantable/trinkets",
+                            "predicates": {
+                                "minecraft:enchantments": [
+                                    {
+                                        "enchantments": "lqe:haste_charm",
+                                        "levels": {
+                                            "min": 5
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+			}
+		},
+        "maximum_speed_alt": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+                    "equipment": {
+                        "head": {
+                            "items": "#minecraft:enchantable/head_armor",
+                            "predicates": {
+                                "minecraft:enchantments": [
+                                    {
+                                        "enchantments": "lqe:nocturnal_night",
+                                        "levels": {
+                                            "min": 7
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "chest": {
+                            "items": "#minecraft:enchantable/chest_armor",
+                            "predicates": {
+                                "minecraft:enchantments": [
+                                    {
+                                        "enchantments": "lqe:nocturnal_night",
+                                        "levels": {
+                                            "min": 7
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "legs": {
+                            "items": "#minecraft:enchantable/leg_armor",
+                            "predicates": {
+                                "minecraft:enchantments": [
+                                    {
+                                        "enchantments": "lqe:nocturnal_night",
+                                        "levels": {
+                                            "min": 7
+                                        }
+                                    },
+                                    {
+                                        "enchantments": "lqe:agility",
+                                        "levels": {
+                                            "min": 5
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "feet": {
+                            "items": "#minecraft:enchantable/foot_armor",
+                            "predicates": {
+                                "minecraft:enchantments": [
+                                    {
+                                        "enchantments": "lqe:nocturnal_night",
+                                        "levels": {
+                                            "min": 7
+                                        }
+                                    },
+                                    {
+                                        "enchantments": "lqe:flee",
+                                        "levels": {
+                                            "min": 5
+                                        }
+                                    },
+                                    {
+                                        "enchantments": "lqe:traveler",
+                                        "levels": {
+                                            "min": 5
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "offhand": {
+                            "items": "#lqe:enchantable/trinkets",
+                            "predicates": {
+                                "minecraft:enchantments": [
+                                    {
+                                        "enchantments": "lqe:haste_charm",
+                                        "levels": {
+                                            "min": 5
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+			}
+		}
+	},
+    "requirements": [
+        [
+            "maximum_speed",
+            "maximum_speed_alt"
+        ]
+    ],
+    "rewards": {
+        "experience": 100
+    }
+}

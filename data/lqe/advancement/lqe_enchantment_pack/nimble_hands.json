@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/i_prefer_your_location",
+    "display": {
+        "icon": {
+            "id": "minecraft:sugar"
+        },
+        "title": {
+            "translate": "advancement.lqe.nimble_hands.title",
+            "fallback": "Nimble Hands"
+        },
+        "description": {
+            "translate": "advancement.lqe.nimble_hands.description",
+            "fallback": "Obtain Swift Slash"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_swift_slash": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:swift_slash",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

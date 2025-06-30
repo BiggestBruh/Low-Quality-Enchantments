@@ -1,0 +1,26 @@
+{
+    "function": "set_components",
+    "components": {
+        "blocks_attacks": {
+            "block_delay_seconds": 0.25,
+            "disable_cooldown_scale": 1,
+            "bypassed_by": "#minecraft:bypasses_shield",
+            "block_sound": "minecraft:item.shield.block",
+            "disabled_sound": "minecraft:item.shield.break"
+        },
+        "!custom_data": {}
+    },
+    "conditions": [
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "equipment": {
+                    "mainhand": {
+                        "items": "minecraft:shield"
+                    }
+                }
+            }
+        }
+    ]
+}

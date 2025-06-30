@@ -1,0 +1,206 @@
+{
+    "description": {
+        "translate": "enchantment.lqe.stun",
+        "fallback": "Stun"
+    },
+    "supported_items": "#minecraft:enchantable/mace",
+    "primary_items": "#minecraft:enchantable/mace",
+    "weight": 2,
+    "max_level": 5,
+    "min_cost": {
+        "base": 18,
+        "per_level_above_first": 9
+    },
+    "max_cost": {
+        "base": 28,
+        "per_level_above_first": 9
+    },
+    "anvil_cost": 4,
+    "slots": ["mainhand"],
+    "effects": {
+        "minecraft:post_attack": [
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "lqe:stun/lvl_1"
+                },
+                "affected": "victim",
+                "enchanted": "attacker",
+                "requirements": {
+                    "condition": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "condition": "minecraft:value_check",
+                            "value": {
+                                "type": "minecraft:enchantment_level",
+                                "amount": {
+                                    "type": "minecraft:linear",
+                                    "base": 1,
+                                    "per_level_above_first": 1
+                                }
+                            },
+                            "range": 1
+                        },
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": {
+                                "type": "minecraft:enchantment_level",
+                                "amount": {
+                                    "type": "minecraft:linear",
+                                    "base": 0.1,
+                                    "per_level_above_first": 0.02
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "lqe:stun/lvl_2"
+                },
+                "affected": "victim",
+                "enchanted": "attacker",
+                "requirements": {
+                    "condition": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "condition": "minecraft:value_check",
+                            "value": {
+                                "type": "minecraft:enchantment_level",
+                                "amount": {
+                                    "type": "minecraft:linear",
+                                    "base": 1,
+                                    "per_level_above_first": 1
+                                }
+                            },
+                            "range": 2
+                        },
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": {
+                                "type": "minecraft:enchantment_level",
+                                "amount": {
+                                    "type": "minecraft:linear",
+                                    "base": 0.1,
+                                    "per_level_above_first": 0.02
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "lqe:stun/lvl_3"
+                },
+                "affected": "victim",
+                "enchanted": "attacker",
+                "requirements": {
+                    "condition": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "condition": "minecraft:value_check",
+                            "value": {
+                                "type": "minecraft:enchantment_level",
+                                "amount": {
+                                    "type": "minecraft:linear",
+                                    "base": 1,
+                                    "per_level_above_first": 1
+                                }
+                            },
+                            "range": 3
+                        },
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": {
+                                "type": "minecraft:enchantment_level",
+                                "amount": {
+                                    "type": "minecraft:linear",
+                                    "base": 0.1,
+                                    "per_level_above_first": 0.02
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "lqe:stun/lvl_4"
+                },
+                "affected": "victim",
+                "enchanted": "attacker",
+                "requirements": {
+                    "condition": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "condition": "minecraft:value_check",
+                            "value": {
+                                "type": "minecraft:enchantment_level",
+                                "amount": {
+                                    "type": "minecraft:linear",
+                                    "base": 1,
+                                    "per_level_above_first": 1
+                                }
+                            },
+                            "range": 4
+                        },
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": {
+                                "type": "minecraft:enchantment_level",
+                                "amount": {
+                                    "type": "minecraft:linear",
+                                    "base": 0.1,
+                                    "per_level_above_first": 0.02
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "lqe:stun/lvl_5"
+                },
+                "affected": "victim",
+                "enchanted": "attacker",
+                "requirements": {
+                    "condition": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "condition": "minecraft:value_check",
+                            "value": {
+                                "type": "minecraft:enchantment_level",
+                                "amount": {
+                                    "type": "minecraft:linear",
+                                    "base": 1,
+                                    "per_level_above_first": 1
+                                }
+                            },
+                            "range": {
+                                "min": 5
+                            }
+                        },
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": {
+                                "type": "minecraft:enchantment_level",
+                                "amount": {
+                                    "type": "minecraft:linear",
+                                    "base": 0.1,
+                                    "per_level_above_first": 0.02
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

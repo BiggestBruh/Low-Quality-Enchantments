@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/the_long_game",
+    "display": {
+        "icon": {
+            "id": "minecraft:glass"
+        },
+        "title": {
+            "translate": "advancement.lqe.fragile_power.title",
+            "fallback": "Fragile Power"
+        },
+        "description": {
+            "translate": "advancement.lqe.fragile_power.description",
+            "fallback": "Obtain Exhaust"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_exhaust": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:exhaust",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

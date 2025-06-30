@@ -1,0 +1,254 @@
+{
+    "description": {
+        "translate": "enchantment.lqe.smoke",
+        "fallback": "Smoke"
+    },
+    "exclusive_set": "#lqe:exclusive_set/smoke",
+    "supported_items": "#minecraft:enchantable/bow",
+    "primary_items": "#minecraft:enchantable/bow",
+    "weight": 2,
+    "max_level": 5,
+    "min_cost": {
+        "base": 6,
+        "per_level_above_first": 10
+    },
+    "max_cost": {
+        "base": 21,
+        "per_level_above_first": 10
+    },
+    "anvil_cost": 2,
+    "slots": ["mainhand"],
+    "effects": {
+        "minecraft:post_attack": [
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "lqe:smoke/lvl_1"
+                },
+                "affected": "victim",
+                "enchanted": "attacker",
+                "requirements": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "attacker",
+                    "predicate": {
+                        "equipment": {
+                            "mainhand": {
+                                "items": "minecraft:bow",
+                                "predicates": {
+                                    "enchantments": [
+                                        {
+                                            "enchantments": "lqe:smoke",
+                                            "levels": 1
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "lqe:smoke/lvl_2"
+                },
+                "affected": "victim",
+                "enchanted": "attacker",
+                "requirements": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "attacker",
+                    "predicate": {
+                        "equipment": {
+                            "mainhand": {
+                                "items": "minecraft:bow",
+                                "predicates": {
+                                    "enchantments": [
+                                        {
+                                            "enchantments": "lqe:smoke",
+                                            "levels": 2
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "lqe:smoke/lvl_3"
+                },
+                "affected": "victim",
+                "enchanted": "attacker",
+                "requirements": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "attacker",
+                    "predicate": {
+                        "equipment": {
+                            "mainhand": {
+                                "items": "minecraft:bow",
+                                "predicates": {
+                                    "enchantments": [
+                                        {
+                                            "enchantments": "lqe:smoke",
+                                            "levels": 3
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "lqe:smoke/lvl_4"
+                },
+                "affected": "victim",
+                "enchanted": "attacker",
+                "requirements": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "attacker",
+                    "predicate": {
+                        "equipment": {
+                            "mainhand": {
+                                "items": "minecraft:bow",
+                                "predicates": {
+                                    "enchantments": [
+                                        {
+                                            "enchantments": "lqe:smoke",
+                                            "levels": 4
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "lqe:smoke/lvl_5"
+                },
+                "affected": "victim",
+                "enchanted": "attacker",
+                "requirements": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "attacker",
+                    "predicate": {
+                        "equipment": {
+                            "mainhand": {
+                                "items": "minecraft:bow",
+                                "predicates": {
+                                    "enchantments": [
+                                        {
+                                            "enchantments": "lqe:smoke",
+                                            "levels": {
+                                                "min": 5
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        ],
+        "minecraft:hit_block": [
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "lqe:smoke/lvl_1"
+                },
+                "requirements": {
+                    "condition": "minecraft:value_check",
+                    "value": {
+                        "type": "minecraft:enchantment_level",
+                        "amount": {
+                            "type": "minecraft:linear",
+                            "base": 1,
+                            "per_level_above_first": 1
+                        }
+                    },
+                    "range": 1
+                }
+            },
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "lqe:smoke/lvl_2"
+                },
+                "requirements": {
+                    "condition": "minecraft:value_check",
+                    "value": {
+                        "type": "minecraft:enchantment_level",
+                        "amount": {
+                            "type": "minecraft:linear",
+                            "base": 1,
+                            "per_level_above_first": 1
+                        }
+                    },
+                    "range": 2
+                }
+            },
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "lqe:smoke/lvl_3"
+                },
+                "requirements": {
+                    "condition": "minecraft:value_check",
+                    "value": {
+                        "type": "minecraft:enchantment_level",
+                        "amount": {
+                            "type": "minecraft:linear",
+                            "base": 1,
+                            "per_level_above_first": 1
+                        }
+                    },
+                    "range": 3
+                }
+            },
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "lqe:smoke/lvl_4"
+                },
+                "requirements": {
+                    "condition": "minecraft:value_check",
+                    "value": {
+                        "type": "minecraft:enchantment_level",
+                        "amount": {
+                            "type": "minecraft:linear",
+                            "base": 1,
+                            "per_level_above_first": 1
+                        }
+                    },
+                    "range": 4
+                }
+            },
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "lqe:smoke/lvl_5"
+                },
+                "requirements": {
+                    "condition": "minecraft:value_check",
+                    "value": {
+                        "type": "minecraft:enchantment_level",
+                        "amount": {
+                            "type": "minecraft:linear",
+                            "base": 1,
+                            "per_level_above_first": 1
+                        }
+                    },
+                    "range": 5
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,112 @@
+[
+    {
+        "function": "set_components",
+        "components": {
+            "blocks_attacks": {
+                "block_delay_seconds": 0.1,
+                "disable_cooldown_scale": 0.7,
+                "bypassed_by": "#minecraft:bypasses_shield",
+                "block_sound": "minecraft:item.shield.block",
+                "disabled_sound": "minecraft:item.shield.break"
+            },
+            "custom_data": {
+                "sturdy": true
+            }
+        },
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "items": "minecraft:shield",
+                            "predicates": {
+                                "minecraft:enchantments": [
+                                    {
+                                        "enchantments": "lqe:sturdy",
+                                        "levels": 1
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "set_components",
+        "components": {
+            "blocks_attacks": {
+                "block_delay_seconds": 0.05,
+                "disable_cooldown_scale": 0.4,
+                "bypassed_by": "#minecraft:bypasses_shield",
+                "block_sound": "minecraft:item.shield.block",
+                "disabled_sound": "minecraft:item.shield.break"
+            },
+            "custom_data": {
+                "sturdy": true
+            }
+        },
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "items": "minecraft:shield",
+                            "predicates": {
+                                "minecraft:enchantments": [
+                                    {
+                                        "enchantments": "lqe:sturdy",
+                                        "levels": 2
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "set_components",
+        "components": {
+            "blocks_attacks": {
+                "block_delay_seconds": 0,
+                "disable_cooldown_scale": 0.1,
+                "bypassed_by": "#minecraft:bypasses_shield",
+                "block_sound": "minecraft:item.shield.block",
+                "disabled_sound": "minecraft:item.shield.break"
+            },
+            "custom_data": {
+                "sturdy": true
+            }
+        },
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "items": "minecraft:shield",
+                            "predicates": {
+                                "minecraft:enchantments": [
+                                    {
+                                        "enchantments": "lqe:sturdy",
+                                        "levels": {
+                                            "min": 3
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    }
+]

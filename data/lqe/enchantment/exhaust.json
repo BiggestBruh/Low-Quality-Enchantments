@@ -1,0 +1,214 @@
+{
+    "description": {
+        "translate": "enchantment.lqe.exhaust",
+        "fallback": "Exhaust"
+    },
+    "exclusive_set": "minecraft:unbreaking",
+    "supported_items": "#minecraft:enchantable/weapon",
+    "weight": 1,
+    "max_level": 1,
+    "min_cost": {
+        "base": 25,
+        "per_level_above_first": 25
+    },
+    "max_cost": {
+        "base": 75,
+        "per_level_above_first": 25
+    },
+    "anvil_cost": 8,
+    "slots": ["mainhand"],
+    "effects": {
+        "minecraft:post_attack": [
+            {
+                "effect": {
+                    "type": "minecraft:all_of",
+                    "effects": [
+                        {
+                            "type": "minecraft:damage_entity",
+                            "damage_type": "minecraft:player_attack",
+                            "min_damage": 3,
+                            "max_damage": 3
+                        }
+                    ]
+                },
+                "affected": "victim",
+                "enchanted": "attacker",
+                "requirements": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "attacker",
+                    "predicate": {
+                        "equipment": {
+                            "mainhand": {
+                                "items": "#lqe:gold_tools"
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "effect": {
+                    "type": "minecraft:all_of",
+                    "effects": [
+                        {
+                            "type": "minecraft:damage_entity",
+                            "damage_type": "minecraft:player_attack",
+                            "min_damage": 6,
+                            "max_damage": 6
+                        }
+                    ]
+                },
+                "affected": "victim",
+                "enchanted": "attacker",
+                "requirements": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "attacker",
+                    "predicate": {
+                        "equipment": {
+                            "mainhand": {
+                                "items": "#lqe:wood_tools"
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "effect": {
+                    "type": "minecraft:all_of",
+                    "effects": [
+                        {
+                            "type": "minecraft:damage_entity",
+                            "damage_type": "minecraft:player_attack",
+                            "min_damage": 13,
+                            "max_damage": 13
+                        }
+                    ]
+                },
+                "affected": "victim",
+                "enchanted": "attacker",
+                "requirements": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "attacker",
+                    "predicate": {
+                        "equipment": {
+                            "mainhand": {
+                                "items": "#lqe:stone_tools"
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "effect": {
+                    "type": "minecraft:all_of",
+                    "effects": [
+                        {
+                            "type": "minecraft:damage_entity",
+                            "damage_type": "minecraft:player_attack",
+                            "min_damage": 25,
+                            "max_damage": 25
+                        }
+                    ]
+                },
+                "affected": "victim",
+                "enchanted": "attacker",
+                "requirements": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "attacker",
+                    "predicate": {
+                        "equipment": {
+                            "mainhand": {
+                                "items": "#lqe:iron_tools"
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "effect": {
+                    "type": "minecraft:all_of",
+                    "effects": [
+                        {
+                            "type": "minecraft:damage_entity",
+                            "damage_type": "minecraft:player_attack",
+                            "min_damage": 156,
+                            "max_damage": 156
+                        }
+                    ]
+                },
+                "affected": "victim",
+                "enchanted": "attacker",
+                "requirements": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "attacker",
+                    "predicate": {
+                        "equipment": {
+                            "mainhand": {
+                                "items": "#lqe:diamond_tools"
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "effect": {
+                    "type": "minecraft:all_of",
+                    "effects": [
+                        {
+                            "type": "minecraft:damage_entity",
+                            "damage_type": "minecraft:player_attack",
+                            "min_damage": 203,
+                            "max_damage": 203
+                        }
+                    ]
+                },
+                "affected": "victim",
+                "enchanted": "attacker",
+                "requirements": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "attacker",
+                    "predicate": {
+                        "equipment": {
+                            "mainhand": {
+                                "items": "#lqe:netherite_tools"
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "effect": {
+                    "type": "minecraft:all_of",
+                    "effects": [
+                        {
+                            "type": "minecraft:damage_entity",
+                            "damage_type": "minecraft:player_attack",
+                            "min_damage": 50,
+                            "max_damage": 50
+                        }
+                    ]
+                },
+                "affected": "victim",
+                "enchanted": "attacker",
+                "requirements": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "attacker",
+                    "predicate": {
+                        "equipment": {
+                            "mainhand": {
+                                "items": "minecraft:mace"
+                            }
+                        }
+                    }
+                }
+            }
+        ],
+        "minecraft:item_damage": [
+            {
+                "effect": {
+                    "type": "minecraft:set",
+                    "value": 3000
+                }
+            }
+        ]
+    }
+}

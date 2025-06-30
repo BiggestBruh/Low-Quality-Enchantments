@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/the_rot_comes_for_us_all",
+    "display": {
+        "icon": {
+            "id": "minecraft:end_portal_frame"
+        },
+        "title": {
+            "translate": "advancement.lqe.end_them_all.title",
+            "fallback": "End Them All"
+        },
+        "description": {
+            "translate": "advancement.lqe.end_them_all.description",
+            "fallback": "Obtain Enderbane"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_enderbane": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:enderbane",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

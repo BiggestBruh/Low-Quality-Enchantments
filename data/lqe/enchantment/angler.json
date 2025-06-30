@@ -1,0 +1,21 @@
+{
+    "description": {
+        "translate": "enchantment.lqe.angler",
+        "fallback": "Angler"
+    },
+    "supported_items": "#minecraft:enchantable/fishing",
+    "primary_items": "#minecraft:enchantable/fishing",
+    "weight": 5,
+    "max_level": 5,
+    "min_cost": {
+        "base": 15,
+        "per_level_above_first": 9
+    },
+    "max_cost": {
+        "base": 65,
+        "per_level_above_first": 9
+    },
+    "anvil_cost": 2,
+    "slots": ["mainhand"],
+    "effects": {}
+}

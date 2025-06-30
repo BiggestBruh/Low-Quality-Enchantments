@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/like_a_feather",
+    "display": {
+        "icon": {
+            "id": "minecraft:light"
+        },
+        "title": {
+            "translate": "advancement.lqe.bright_mind.title",
+            "fallback": "Bright Mind"
+        },
+        "description": {
+            "translate": "advancement.lqe.bright_mind.description",
+            "fallback": "Obtain Luminance"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_luminance": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:luminance",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

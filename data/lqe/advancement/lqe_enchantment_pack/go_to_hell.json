@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/controlled_implosion",
+    "display": {
+        "icon": {
+            "id": "minecraft:lava_bucket"
+        },
+        "title": {
+            "translate": "advancement.lqe.go_to_hell.title",
+            "fallback": "Go to Hell"
+        },
+        "description": {
+            "translate": "advancement.lqe.go_to_hell.description",
+            "fallback": "Obtain Purify"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_purify": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:purify",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

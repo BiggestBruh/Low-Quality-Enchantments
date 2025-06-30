@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/cold_attitude",
+    "display": {
+        "icon": {
+            "id": "minecraft:heavy_core"
+        },
+        "title": {
+            "translate": "advancement.lqe.heaviest_metal.title",
+            "fallback": "Heaviest Metal"
+        },
+        "description": {
+            "translate": "advancement.lqe.heaviest_metal.description",
+            "fallback": "Obtain Heavy"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_heavy": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:heavy",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

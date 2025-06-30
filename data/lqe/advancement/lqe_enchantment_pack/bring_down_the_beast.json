@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/demoman",
+    "display": {
+        "icon": {
+            "id": "minecraft:dragon_egg"
+        },
+        "title": {
+            "translate": "advancement.lqe.bring_down_the_beast.title",
+            "fallback": "Bring Down the Beast"
+        },
+        "description": {
+            "translate": "advancement.lqe.bring_down_the_beast.description",
+            "fallback": "Obtain Boss Slayer"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_boss_slayer": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:boss_slayer",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

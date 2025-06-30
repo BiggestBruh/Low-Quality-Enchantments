@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/its_a_hook_of_course_it_hurts",
+    "display": {
+        "icon": {
+            "id": "minecraft:iron_block"
+        },
+        "title": {
+            "translate": "advancement.lqe.this_enchantment_sucks.title",
+            "fallback": "This Enchantment Sucks"
+        },
+        "description": {
+            "translate": "advancement.lqe.this_enchantment_sucks.description",
+            "fallback": "Obtain Magnet"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_magnet": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:magnet",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

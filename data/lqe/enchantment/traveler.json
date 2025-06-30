@@ -1,0 +1,74 @@
+{
+    "description": {
+        "translate": "enchantment.lqe.traveler",
+        "fallback": "Traveler"
+    },
+    "supported_items": "#minecraft:enchantable/foot_armor",
+    "primary_items": "#minecraft:enchantable/foot_armor",
+    "weight": 1,
+    "max_level": 5,
+    "min_cost": {
+        "base": 5,
+        "per_level_above_first": 9
+    },
+    "max_cost": {
+        "base": 15,
+        "per_level_above_first": 9
+    },
+    "anvil_cost": 8,
+    "slots": ["feet"],
+    "effects": {
+        "minecraft:location_changed": [
+            {
+                "effect": {
+                    "id": "lqe:enchantment.traveler.sprint_speed",
+                    "type": "minecraft:attribute",
+                    "attribute": "minecraft:movement_speed",
+                    "amount": {
+                        "type": "minecraft:linear",
+                        "base": 0.03,
+                        "per_level_above_first": 0.03
+                    },
+                    "operation": "add_multiplied_base"
+                },
+                "requirements": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "flags": {
+                            "is_flying": false,
+                            "is_sneaking": false,
+                            "is_swimming": false,
+                            "is_sprinting": true
+                        }
+                    }
+                }
+            },
+            {
+                "effect": {
+                    "id": "lqe:enchantment.traveler.step_height",
+                    "type": "minecraft:attribute",
+                    "attribute": "minecraft:step_height",
+                    "amount": {
+                        "type": "minecraft:linear",
+                        "base": 0.2,
+                        "per_level_above_first": 0.2
+                    },
+                    "operation": "add_value"
+                },
+                "requirements": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "flags": {
+                            "is_flying": false,
+                            "is_sneaking": false,
+                            "is_swimming": false,
+                            "is_sprinting": true
+                        }
+                    }
+                }
+            }
+        ]
+    }
+}

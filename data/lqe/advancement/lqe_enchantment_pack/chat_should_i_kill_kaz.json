@@ -1,0 +1,42 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/ores_begone",
+    "display": {
+        "icon": {
+            "id": "minecraft:netherite_hoe"
+        },
+        "title": {
+            "translate": "advancement.lqe.chat_should_i_kill_kaz.title",
+            "fallback": "Chat, Should I Kill Kaz?"
+        },
+        "description": {
+            "translate": "advancement.lqe.chat_should_i_kill_kaz.description",
+            "fallback": "Obtain Bane of Kaz"
+        },
+        "frame": "challenge",
+        "hidden": true
+    },
+    "criteria": {
+        "obtain_bane_of_kaz": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:bane_of_kaz",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "experience": 200
+    }
+}

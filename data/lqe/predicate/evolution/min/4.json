@@ -1,0 +1,21 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+        "equipment": {
+            "mainhand": {
+                "items": "#minecraft:enchantable/weapon",
+                "predicates": {
+                    "minecraft:enchantments": [
+                        {
+                            "enchantments": "lqe:evolution",
+                            "levels": {
+                                "min": 4
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

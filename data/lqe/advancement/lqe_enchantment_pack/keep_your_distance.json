@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/go_to_hell",
+    "display": {
+        "icon": {
+            "id": "minecraft:stick"
+        },
+        "title": {
+            "translate": "advancement.lqe.keep_your_distance.title",
+            "fallback": "Keep Your Distance"
+        },
+        "description": {
+            "translate": "advancement.lqe.keep_your_distance.description",
+            "fallback": "Obtain Reach"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_reach": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:reach",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

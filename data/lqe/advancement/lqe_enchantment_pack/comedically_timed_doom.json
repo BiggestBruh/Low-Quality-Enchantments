@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/free_electrons",
+    "display": {
+        "icon": {
+            "id": "minecraft:skeleton_skull"
+        },
+        "title": {
+            "translate": "advancement.lqe.comedically_timed_doom.title",
+            "fallback": "Comedically Timed Doom"
+        },
+        "description": {
+            "translate": "advancement.lqe.comedically_timed_doom.description",
+            "fallback": "Obtain Curse of Death"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_death_curse": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:death_curse",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,209 @@
+{
+  "criteria": {
+    "cod": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:cod"
+        }
+      },
+      "trigger": "minecraft:fishing_rod_hooked"
+    },
+    "pufferfish": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:pufferfish"
+        }
+      },
+      "trigger": "minecraft:fishing_rod_hooked"
+    },
+    "salmon": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:salmon"
+        }
+      },
+      "trigger": "minecraft:fishing_rod_hooked"
+    },
+    "tropical_fish": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:tropical_fish"
+        }
+      },
+      "trigger": "minecraft:fishing_rod_hooked"
+    },
+    "lily_pad": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:lily_pad"
+        }
+      },
+      "trigger": "minecraft:fishing_rod_hooked"
+    },
+    "leather_boots": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:leather_boots"
+        }
+      },
+      "trigger": "minecraft:fishing_rod_hooked"
+    },
+    "leather": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:leather"
+        }
+      },
+      "trigger": "minecraft:fishing_rod_hooked"
+    },
+    "bone": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:bone"
+        }
+      },
+      "trigger": "minecraft:fishing_rod_hooked"
+    },
+    "potion": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:potion"
+        }
+      },
+      "trigger": "minecraft:fishing_rod_hooked"
+    },
+    "string": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:string"
+        }
+      },
+      "trigger": "minecraft:fishing_rod_hooked"
+    },
+    "fishing_rod": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:fishing_rod"
+        }
+      },
+      "trigger": "minecraft:fishing_rod_hooked"
+    },
+    "bowl": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:bowl"
+        }
+      },
+      "trigger": "minecraft:fishing_rod_hooked"
+    },
+    "stick": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:stick"
+        }
+      },
+      "trigger": "minecraft:fishing_rod_hooked"
+    },
+    "ink_sac": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:ink_sac"
+        }
+      },
+      "trigger": "minecraft:fishing_rod_hooked"
+    },
+    "tripwire_hook": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:tripwire_hook"
+        }
+      },
+      "trigger": "minecraft:fishing_rod_hooked"
+    },
+    "rotten_flesh": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:rotten_flesh"
+        }
+      },
+      "trigger": "minecraft:fishing_rod_hooked"
+    },
+    "bamboo": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:bamboo"
+        }
+      },
+      "trigger": "minecraft:fishing_rod_hooked"
+    },
+    "name_tag": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:name_tag"
+        }
+      },
+      "trigger": "minecraft:fishing_rod_hooked"
+    },
+    "saddle": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:saddle"
+        }
+      },
+      "trigger": "minecraft:fishing_rod_hooked"
+    },
+    "bow": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:bow"
+        }
+      },
+      "trigger": "minecraft:fishing_rod_hooked"
+    },
+    "book": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:book"
+        }
+      },
+      "trigger": "minecraft:fishing_rod_hooked"
+    },
+    "nautilus_shell": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:nautilus_shell"
+        }
+      },
+      "trigger": "minecraft:fishing_rod_hooked"
+    }
+  },
+  "requirements": [
+    [
+      "cod",
+      "tropical_fish",
+      "pufferfish",
+      "salmon",
+      "lily_pad",
+      "leather_boots",
+      "leather",
+      "bone",
+      "potion",
+      "string",
+      "fishing_rod",
+      "bowl",
+      "stick",
+      "ink_sac",
+      "tripwire_hook",
+      "rotten_flesh",
+      "bamboo",
+      "name_tag",
+      "saddle",
+      "bow",
+      "book",
+      "nautilus_shell"
+    ]
+  ],
+  "rewards": {
+    "function": "lqe:extraction/fishing_xp"
+  }
+}

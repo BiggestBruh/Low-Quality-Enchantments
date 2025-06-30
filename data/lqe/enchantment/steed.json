@@ -1,0 +1,33 @@
+{
+    "description": {
+        "translate": "enchantment.lqe.steed",
+        "fallback": "Steed"
+    },
+    "supported_items": "#lqe:horse_armor",
+    "weight": 2,
+    "max_level": 5,
+    "min_cost": {
+        "base": 10,
+        "per_level_above_first": 10
+    },
+    "max_cost": {
+        "base": 20,
+        "per_level_above_first": 10
+    },
+    "anvil_cost": 4,
+    "slots": ["body"],
+    "effects": {
+        "minecraft:attributes": [
+            {
+                "id": "lqe:enchantment.steed",
+                "attribute": "minecraft:max_health",
+                "operation": "add_value",
+                "amount": {
+                    "type": "minecraft:linear",
+                    "base": 2,
+                    "per_level_above_first": 2
+                }
+            }
+        ]
+    }
+}

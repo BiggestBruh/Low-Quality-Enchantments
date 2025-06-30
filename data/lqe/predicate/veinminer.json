@@ -1,0 +1,21 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+        "equipment": {
+            "mainhand": {
+                "items": "#minecraft:pickaxes",
+                "predicates": {
+                    "minecraft:enchantments": [
+                        {
+                            "enchantments": "lqe:veinminer",
+                            "levels": {
+                                "min": 1
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

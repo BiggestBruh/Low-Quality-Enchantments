@@ -1,0 +1,21 @@
+{
+    "description": {
+        "translate": "enchantment.lqe.veinminer",
+        "fallback": "Veinminer"
+    },
+    "exclusive_set": "#lqe:exclusive_set/fancy_mining",
+    "supported_items": "#minecraft:pickaxes",
+    "weight": 1,
+    "max_level": 1,
+    "min_cost": {
+        "base": 25,
+        "per_level_above_first": 25
+    },
+    "max_cost": {
+        "base": 75,
+        "per_level_above_first": 25
+    },
+    "anvil_cost": 8,
+    "slots": ["mainhand"],
+    "effects": {}
+}

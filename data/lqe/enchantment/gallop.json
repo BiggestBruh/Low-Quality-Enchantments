@@ -1,0 +1,53 @@
+{
+    "description": {
+        "translate": "enchantment.lqe.gallop",
+        "fallback": "Gallop"
+    },
+    "supported_items": "minecraft:saddle",
+    "weight": 5,
+    "max_level": 5,
+    "min_cost": {
+        "base": 4,
+        "per_level_above_first": 8
+    },
+    "max_cost": {
+        "base": 14,
+        "per_level_above_first": 8
+    },
+    "anvil_cost": 2,
+    "slots": ["saddle"],
+    "effects": {
+        "minecraft:attributes": [
+            {
+                "id": "lqe:enchantment.gallop.speed",
+                "attribute": "minecraft:movement_speed",
+                "operation": "add_value",
+                "amount": {
+                    "type": "minecraft:linear",
+                    "base": 0.04,
+                    "per_level_above_first": 0.04
+                }
+            },
+            {
+                "id": "lqe:enchantment.gallop.jump_strength",
+                "attribute": "minecraft:jump_strength",
+                "operation": "add_value",
+                "amount": {
+                    "type": "minecraft:linear",
+                    "base": 0.04,
+                    "per_level_above_first": 0.03
+                }
+            },
+            {
+                "id": "lqe:enchantment.gallop.safe_fall",
+                "attribute": "minecraft:safe_fall_distance",
+                "operation": "add_value",
+                "amount": {
+                    "type": "minecraft:linear",
+                    "base": 0.25,
+                    "per_level_above_first": 0.25
+                }
+            }
+        ]
+    }
+}

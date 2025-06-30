@@ -1,0 +1,1 @@
+$execute store result storage lqe:rebirth players[{ID:$(UUID)}].duration int 1.0 run scoreboard players get @s lqe.rebirth.duration

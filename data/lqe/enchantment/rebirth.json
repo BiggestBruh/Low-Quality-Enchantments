@@ -1,0 +1,29 @@
+{
+    "description": {
+        "translate": "enchantment.lqe.rebirth",
+        "fallback": "Rebirth"
+    },
+    "supported_items": "#minecraft:enchantable/armor",
+    "primary_items": "#minecraft:enchantable/armor",
+    "weight": 2,
+    "max_level": 3,
+    "min_cost": {
+        "base": 15,
+        "per_level_above_first": 10
+    },
+    "max_cost": {
+        "base": 25,
+        "per_level_above_first": 10
+    },
+    "anvil_cost": 2,
+    "slots": ["armor"],
+    "effects": {
+        "minecraft:tick": [
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "lqe:rebirth/calculate_effects/start"
+                }
+            }
+        ]}
+}

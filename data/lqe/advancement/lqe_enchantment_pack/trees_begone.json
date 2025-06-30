@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/this_enchantment_sucks",
+    "display": {
+        "icon": {
+            "id": "minecraft:oak_log"
+        },
+        "title": {
+            "translate": "advancement.lqe.trees_begone.title",
+            "fallback": "Trees Begone"
+        },
+        "description": {
+            "translate": "advancement.lqe.trees_begone.description",
+            "fallback": "Obtain Timber"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_timber": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:timber",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

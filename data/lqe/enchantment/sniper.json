@@ -1,0 +1,30 @@
+{
+    "description": {
+        "translate": "enchantment.lqe.sniper",
+        "fallback": "Sniper"
+    },
+    "supported_items": "#lqe:enchantable/ranged",
+    "primary_items": "#lqe:enchantable/ranged",
+    "weight": 2,
+    "max_level": 1,
+    "min_cost": {
+        "base": 20,
+        "per_level_above_first": 0
+    },
+    "max_cost": {
+        "base": 50,
+        "per_level_above_first": 0
+    },
+    "anvil_cost": 4,
+    "slots": ["mainhand"],
+    "effects": {
+        "minecraft:projectile_spawned": [
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "lqe:sniper/shoot"
+                }
+            }
+        ]
+    }
+}

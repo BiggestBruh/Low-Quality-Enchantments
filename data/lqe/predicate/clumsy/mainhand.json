@@ -1,0 +1,21 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+        "equipment": {
+            "mainhand": {
+                "items": "#lqe:enchantable/clumsy",
+                "predicates": {
+                    "minecraft:enchantments": [
+                        {
+                            "enchantments": "lqe:clumsiness_curse",
+                            "levels": {
+                                "min": 1
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

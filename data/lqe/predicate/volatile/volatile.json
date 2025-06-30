@@ -1,0 +1,21 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+        "equipment": {
+            "chest": {
+                "items": "#minecraft:enchantable/chest_armor",
+                "predicates": {
+                    "minecraft:enchantments": [
+                        {
+                            "enchantments": "lqe:volatile_curse",
+                            "levels": {
+                                "min": 1
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

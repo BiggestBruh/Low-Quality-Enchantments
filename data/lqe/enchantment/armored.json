@@ -1,0 +1,33 @@
+{
+    "description": {
+        "translate": "enchantment.lqe.armored",
+        "fallback": "Armored"
+    },
+    "supported_items": "#minecraft:harnesses",
+    "weight": 2,
+    "max_level": 5,
+    "min_cost": {
+        "base": 1,
+        "per_level_above_first": 8
+    },
+    "max_cost": {
+        "base": 12,
+        "per_level_above_first": 8
+    },
+    "anvil_cost": 4,
+    "slots": ["body"],
+    "effects": {
+        "minecraft:damage_protection": [
+            {
+                "effect": {
+                    "type": "minecraft:add",
+                    "value": {
+                        "type": "minecraft:linear",
+                        "base": 3,
+                        "per_level_above_first": 3
+                    }
+                }
+            }
+        ]
+    }
+}

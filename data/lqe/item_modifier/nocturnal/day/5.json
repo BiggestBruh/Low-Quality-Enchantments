@@ -1,0 +1,7 @@
+{
+    "function": "minecraft:set_enchantments",
+    "enchantments": {
+        "lqe:nocturnal_night": 0,
+        "lqe:nocturnal": 5
+    }
+}

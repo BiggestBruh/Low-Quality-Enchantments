@@ -1,0 +1,38 @@
+{
+    "description": {
+        "translate": "enchantment.lqe.nocturnal",
+        "fallback": "Nocturnal"
+    },
+    "supported_items": "#minecraft:enchantable/armor",
+    "primary_items": "#minecraft:enchantable/armor",
+    "weight": 2,
+    "max_level": 7,
+    "min_cost": {
+        "base": 1,
+        "per_level_above_first": 8
+    },
+    "max_cost": {
+        "base": 12,
+        "per_level_above_first": 8
+    },
+    "anvil_cost": 1,
+    "slots": ["armor"],
+    "effects": {
+        "minecraft:tick": [
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "lqe:nocturnal/night"
+                },
+                "requirements": {
+                    "condition": "minecraft:time_check",
+                    "value": {
+                        "min": 13000,
+                        "max": 23999
+                    },
+                    "period": 24000
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/gotta_suffer_them_all",
+    "display": {
+        "icon": {
+            "id": "minecraft:zombie_spawn_egg"
+        },
+        "title": {
+            "translate": "advancement.lqe.illegal_tech.title",
+            "fallback": "Illegal Tech"
+        },
+        "description": {
+            "translate": "advancement.lqe.illegal_tech.description",
+            "fallback": "Spawn eggs are not supposed to be available in survival you know?"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_spawn_egg": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "#lqe:spawn_eggs"
+                    }
+                ]
+            }
+        }
+    }
+}

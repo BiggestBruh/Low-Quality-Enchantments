@@ -1,0 +1,53 @@
+{
+    "description": {
+        "translate": "enchantment.lqe.evolution",
+        "fallback": "Evolution"
+    },
+    "exclusive_set": "#minecraft:exclusive_set/damage",
+    "supported_items": "#minecraft:enchantable/weapon",
+    "primary_items": "#minecraft:enchantable/sword",
+    "weight": 1,
+    "max_level": 1,
+    "min_cost": {
+        "base": 20,
+        "per_level_above_first": 0
+    },
+    "max_cost": {
+        "base": 50,
+        "per_level_above_first": 0
+    },
+    "anvil_cost": 4,
+    "slots": ["mainhand"],
+    "effects": {
+        "minecraft:damage": [
+            {
+                "effect": {
+                    "type": "minecraft:add",
+                    "value": {
+                        "type": "minecraft:linear",
+                        "base": 2,
+                        "per_level_above_first": 2
+                    }
+                }
+            }
+        ],
+        "minecraft:post_attack": [
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "lqe:evolution/evolve"
+                },
+                "affected": "attacker",
+                "enchanted": "attacker"
+            }
+        ],
+        "minecraft:location_changed": [
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "lqe:evolution/fix"
+                }
+            }
+        ]
+    }
+}

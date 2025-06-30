@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/big_boy_pants",
+    "display": {
+        "icon": {
+            "id": "minecraft:dolphin_spawn_egg"
+        },
+        "title": {
+            "translate": "advancement.lqe.one_with_the_dolphins.title",
+            "fallback": "One With the Dolphins"
+        },
+        "description": {
+            "translate": "advancement.lqe.one_with_the_dolphins.description",
+            "fallback": "Obtain Grace"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_grace": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:grace",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

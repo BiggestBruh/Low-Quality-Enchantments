@@ -1,0 +1,34 @@
+{
+    "description": {
+        "translate": "enchantment.lqe.feral",
+        "fallback": "Feral"
+    },
+    "exclusive_set": "lqe:spirit",
+    "supported_items": "minecraft:wolf_armor",
+    "weight": 5,
+    "max_level": 7,
+    "min_cost": {
+        "base": 10,
+        "per_level_above_first": 8
+    },
+    "max_cost": {
+        "base": 25,
+        "per_level_above_first": 8
+    },
+    "anvil_cost": 4,
+    "slots": ["body"],
+    "effects": {
+        "minecraft:attributes": [
+            {
+                "id": "lqe:enchantment.spirit",
+                "attribute": "minecraft:attack_damage",
+                "amount": {
+                    "type": "minecraft:linear",
+                    "base": 2,
+                    "per_level_above_first": 2
+                },
+                "operation": "add_value"
+            }
+        ]
+    }
+}

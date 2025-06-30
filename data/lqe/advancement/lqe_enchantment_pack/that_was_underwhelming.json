@@ -1,0 +1,44 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/illegal_tech",
+    "display": {
+        "icon": {
+            "id": "minecraft:golden_sword"
+        },
+        "title": {
+            "translate": "advancement.lqe.that_was_underwhelming.title",
+            "fallback": "That Was Underwhelming"
+        },
+        "description": {
+            "translate": "advancement.lqe.that_was_underwhelming.description",
+            "fallback": "Use up a golden weapon with the Exhaust enchantment and realize that it amounted to just 3 extra damage"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "exhaust_golden_weapon": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "player": {
+                    "equipment": {
+                        "mainhand": {
+                            "items": [
+                                "minecraft:golden_sword",
+                                "minecraft:golden_axe"
+                            ],
+                            "predicates": {
+                                "minecraft:enchantments": [
+                                    {
+                                        "enchantments": "lqe:exhaust",
+                                        "levels": {
+                                            "min": 1
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

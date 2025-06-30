@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/immovable_object",
+    "display": {
+        "icon": {
+            "id": "minecraft:netherite_chestplate"
+        },
+        "title": {
+            "translate": "advancement.lqe.unyielding.title",
+            "fallback": "Unyielding"
+        },
+        "description": {
+            "translate": "advancement.lqe.unyielding.description",
+            "fallback": "Obtain Stoic"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_stoic": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:stoic",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

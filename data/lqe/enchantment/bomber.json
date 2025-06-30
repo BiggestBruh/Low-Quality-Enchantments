@@ -1,0 +1,106 @@
+{
+    "description": {
+        "translate": "enchantment.lqe.bomber",
+        "fallback": "Bomber"
+    },
+    "exclusive_set": "#lqe:exclusive_set/bomber",
+    "supported_items": "#minecraft:enchantable/crossbow",
+    "primary_items": "#minecraft:enchantable/crossbow",
+    "weight": 1,
+    "max_level": 5,
+    "min_cost": {
+        "base": 12,
+        "per_level_above_first": 8
+    },
+    "max_cost": {
+        "base": 24,
+        "per_level_above_first": 8
+    },
+    "anvil_cost": 8,
+    "slots": ["mainhand"],
+    "effects": {
+        "minecraft:post_attack": [
+            {
+                "effect": {
+                    "type": "minecraft:explode",
+                    "attribute_to_user": true,
+                    "damage_type": "minecraft:explosion",
+                    "knockback_multiplier": {
+                        "type": "minecraft:linear",
+                        "base": 1,
+                        "per_level_above_first": 0.5
+                    },
+                    "radius": {
+                        "type": "minecraft:linear",
+                        "base": 1,
+                        "per_level_above_first": 0.5
+                    },
+                    "create_fire": false,
+                    "block_interaction": "none",
+                    "large_particle": {
+                        "type": "minecraft:explosion_emitter"
+                    },
+                    "small_particle": {
+                        "type": "minecraft:explosion_emitter"
+                    },
+                    "sound": "minecraft:entity.generic.explode"
+                },
+                "affected": "victim",
+                "enchanted": "attacker"
+            }
+        ],
+        "minecraft:hit_block": [
+            {
+                "effect": {
+                    "type": "minecraft:replace_block",
+                    "block_state": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                            "Name": "minecraft:air"
+                        }
+                    }
+                }
+            },
+            {
+                "effect": {
+                    "type": "minecraft:explode",
+                    "attribute_to_user": true,
+                    "damage_type": "minecraft:explosion",
+                    "knockback_multiplier": {
+                        "type": "minecraft:linear",
+                        "base": 1,
+                        "per_level_above_first": 0.5
+                    },
+                    "radius": {
+                        "type": "minecraft:linear",
+                        "base": 1,
+                        "per_level_above_first": 0.5
+                    },
+                    "create_fire": false,
+                    "block_interaction": "none",
+                    "large_particle": {
+                        "type": "minecraft:explosion_emitter"
+                    },
+                    "small_particle": {
+                        "type": "minecraft:explosion_emitter"
+                    },
+                    "sound": "minecraft:entity.generic.explode"
+                }
+            },
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "lqe:bomber_kill_arrow"
+                }
+            }
+        ],
+        "minecraft:crossbow_charge_time": {
+            "type": "minecraft:add",
+            "value": {
+                "type": "minecraft:linear",
+                "base": 1,
+                "per_level_above_first": 1
+            }
+        }
+    }
+}

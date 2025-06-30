@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/never_skip_leg_day",
+    "display": {
+        "icon": {
+            "id": "minecraft:cobblestone"
+        },
+        "title": {
+            "translate": "advancement.lqe.flesh_hardening.title",
+            "fallback": "Flesh Hardening"
+        },
+        "description": {
+            "translate": "advancement.lqe.flesh_hardening.description",
+            "fallback": "Obtain Life"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_life": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:life",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

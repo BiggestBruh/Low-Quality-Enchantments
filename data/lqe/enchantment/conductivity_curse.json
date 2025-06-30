@@ -1,0 +1,59 @@
+{
+    "description": {
+        "translate": "enchantment.lqe.conductivity_curse",
+        "fallback": "Curse of Conductivity"
+    },
+    "supported_items": "#minecraft:enchantable/equippable",
+    "weight": 1,
+    "max_level": 5,
+    "min_cost": {
+        "base": 25,
+        "per_level_above_first": 15
+    },
+    "max_cost": {
+        "base": 50,
+        "per_level_above_first": 15
+    },
+    "anvil_cost": 8,
+    "slots": ["armor"],
+    "effects": {
+        "minecraft:tick": [
+            {
+                "effect": {
+                    "type": "minecraft:summon_entity",
+                    "entity": "minecraft:lightning_bolt"
+                },
+                "requirements": {
+                    "condition": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "condition": "minecraft:weather_check",
+                            "thundering": true
+                        },
+                        {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "location": {
+                                    "can_see_sky": true
+                                },
+                                "periodic_tick": 20
+                            }
+                        },
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": {
+                                "type": "minecraft:enchantment_level",
+                                "amount": {
+                                    "type": "minecraft:linear",
+                                    "base": 0.01,
+                                    "per_level_above_first": 0.01
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/portable_xp_farm",
+    "display": {
+        "icon": {
+            "id": "minecraft:bone"
+        },
+        "title": {
+            "translate": "advancement.lqe.dont_worry_he_doesnt_bite.title",
+            "fallback": "Don't Worry, He Doesn't Bite"
+        },
+        "description": {
+            "translate": "advancement.lqe.dont_worry_he_doesnt_bite.description",
+            "fallback": "Obtain Feral"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_feral": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:feral",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

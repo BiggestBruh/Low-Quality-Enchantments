@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/enchanting_isnt_real_dumbass",
+    "display": {
+        "icon": {
+            "id": "minecraft:tnt"
+        },
+        "title": {
+            "translate": "advancement.lqe.mutually_assured_destruction.title",
+            "fallback": "Mutually Assured Destruction"
+        },
+        "description": {
+            "translate": "advancement.lqe.mutually_assured_destruction.description",
+            "fallback": "Obtain Curse of Volatility"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_volatilityy_curse": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:volatile_curse",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

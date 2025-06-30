@@ -1,0 +1,20 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": "minecraft:potion",
+                    "components": {
+                        "minecraft:potion_contents": {
+                            "potion": "minecraft:strong_poison"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "lqe:alchemy/strong_poison"
+    }
+}

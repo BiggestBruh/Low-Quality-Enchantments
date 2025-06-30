@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/get_gored",
+    "display": {
+        "icon": {
+            "id": "minecraft:tnt"
+        },
+        "title": {
+            "translate": "advancement.lqe.demoman.title",
+            "fallback": "Demoman"
+        },
+        "description": {
+            "translate": "advancement.lqe.demoman.description",
+            "fallback": "Obtain Bomber"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_bomber": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:bomber",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

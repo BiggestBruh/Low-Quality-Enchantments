@@ -1,0 +1,20 @@
+{
+    "description": {
+        "translate": "enchantment.lqe.cavalry",
+        "fallback": "Cavalry"
+    },
+    "supported_items": "#lqe:horse_armor",
+    "weight": 1,
+    "max_level": 7,
+    "min_cost": {
+        "base": 10,
+        "per_level_above_first": 8
+    },
+    "max_cost": {
+        "base": 20,
+        "per_level_above_first": 8
+    },
+    "anvil_cost": 4,
+    "slots": ["body"],
+    "effects": {}
+}

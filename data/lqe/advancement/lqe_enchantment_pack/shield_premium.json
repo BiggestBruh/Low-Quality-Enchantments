@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/unyielding",
+    "display": {
+        "icon": {
+            "id": "minecraft:shield"
+        },
+        "title": {
+            "translate": "advancement.lqe.shield_premium.title",
+            "fallback": "Shield Premium"
+        },
+        "description": {
+            "translate": "advancement.lqe.shield_premium.description",
+            "fallback": "Obtain Sturdy"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_sturdy": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:sturdy",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

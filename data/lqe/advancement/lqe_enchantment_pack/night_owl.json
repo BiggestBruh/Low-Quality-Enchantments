@@ -1,0 +1,63 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/defrost_walker",
+    "display": {
+        "icon": {
+            "id": "minecraft:black_concrete"
+        },
+        "title": {
+            "translate": "advancement.lqe.night_owl.title",
+            "fallback": "Night Owl"
+        },
+        "description": {
+            "translate": "advancement.lqe.night_owl.description",
+            "fallback": "Obtain Nocturnal"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_nocturnal": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:nocturnal",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        "obtain_nocturnal_night": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:nocturnal_night",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "obtain_nocturnal",
+            "obtain_nocturnal_night"
+        ]
+    ]
+}

@@ -1,0 +1,116 @@
+{
+    "description": {
+        "translate": "enchantment.lqe.hook",
+        "fallback": "Hook"
+    },
+    "supported_items": "#minecraft:enchantable/fishing",
+    "primary_items": "#minecraft:enchantable/fishing",
+    "weight": 1,
+    "max_level": 5,
+    "min_cost": {
+        "base": 1,
+        "per_level_above_first": 11
+    },
+    "max_cost": {
+        "base": 12,
+        "per_level_above_first": 11
+    },
+    "anvil_cost": 4,
+    "slots": ["mainhand"],
+    "effects": {
+        "minecraft:projectile_spawned": [
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "lqe:hook/spawned/lvl_1"
+                },
+                "requirements": {
+                    "condition": "minecraft:value_check",
+                    "value": {
+                        "type": "minecraft:enchantment_level",
+                        "amount": {
+                            "type": "minecraft:linear",
+                            "base": 1,
+                            "per_level_above_first": 1
+                        }
+                    },
+                    "range": 1
+                }
+            },
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "lqe:hook/spawned/lvl_2"
+                },
+                "requirements": {
+                    "condition": "minecraft:value_check",
+                    "value": {
+                        "type": "minecraft:enchantment_level",
+                        "amount": {
+                            "type": "minecraft:linear",
+                            "base": 1,
+                            "per_level_above_first": 1
+                        }
+                    },
+                    "range": 2
+                }
+            },
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "lqe:hook/spawned/lvl_3"
+                },
+                "requirements": {
+                    "condition": "minecraft:value_check",
+                    "value": {
+                        "type": "minecraft:enchantment_level",
+                        "amount": {
+                            "type": "minecraft:linear",
+                            "base": 1,
+                            "per_level_above_first": 1
+                        }
+                    },
+                    "range": 3
+                }
+            },
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "lqe:hook/spawned/lvl_4"
+                },
+                "requirements": {
+                    "condition": "minecraft:value_check",
+                    "value": {
+                        "type": "minecraft:enchantment_level",
+                        "amount": {
+                            "type": "minecraft:linear",
+                            "base": 1,
+                            "per_level_above_first": 1
+                        }
+                    },
+                    "range": 4
+                }
+            },
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "lqe:hook/spawned/lvl_5"
+                },
+                "requirements": {
+                    "condition": "minecraft:value_check",
+                    "value": {
+                        "type": "minecraft:enchantment_level",
+                        "amount": {
+                            "type": "minecraft:linear",
+                            "base": 1,
+                            "per_level_above_first": 1
+                        }
+                    },
+                    "range": {
+                        "min": 5
+                    }
+                }
+            }
+        ]
+    }
+}

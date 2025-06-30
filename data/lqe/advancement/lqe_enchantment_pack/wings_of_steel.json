@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/nutrient_flow",
+    "display": {
+        "icon": {
+            "id": "minecraft:iron_ingot"
+        },
+        "title": {
+            "translate": "advancement.lqe.wings_of_steel.title",
+            "fallback": "Wings of Steel"
+        },
+        "description": {
+            "translate": "advancement.lqe.wings_of_steel.description",
+            "fallback": "Obtain Plated"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_plated": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:plated",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

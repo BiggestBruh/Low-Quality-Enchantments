@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/butterfingers",
+    "display": {
+        "icon": {
+            "id": "minecraft:lightning_rod"
+        },
+        "title": {
+            "translate": "advancement.lqe.free_electrons.title",
+            "fallback": "Free Electrons"
+        },
+        "description": {
+            "translate": "advancement.lqe.free_electrons.description",
+            "fallback": "Obtain Curse of Conductivity"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_conductivity_curse": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:conductivity_curse",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,60 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/arrow_storm",
+    "display": {
+        "icon": {
+            "id": "minecraft:shield"
+        },
+        "title": {
+            "translate": "advancement.lqe.opposite_day.title",
+            "fallback": "Opposite Day"
+        },
+        "description": {
+            "translate": "advancement.lqe.opposite_day.description",
+            "fallback": "Hold a Bash enchanted shield in your mainhand and a Parry enchanted weapon in your offhand"
+        },
+        "frame": "goal"
+    },
+    "criteria": {
+		"swap_shield_and_weapon": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"equipment": {
+								"offhand": {
+									"items": "#minecraft:enchantable/weapon",
+									"predicates": {
+										"enchantments": [
+											{
+												"enchantments": "lqe:parry",
+                                                "levels": {
+                                                    "min": 1
+                                                }
+											}	
+										]
+									}
+								},
+                                "mainhand": {
+									"items": "minecraft:shield",
+									"predicates": {
+										"enchantments": [
+											{
+												"enchantments": "lqe:bash",
+                                                "levels": {
+                                                    "min": 1
+                                                }
+											}	
+										]
+									}
+								}
+							}	
+						}
+					}
+				]
+			}
+		}
+	}
+}

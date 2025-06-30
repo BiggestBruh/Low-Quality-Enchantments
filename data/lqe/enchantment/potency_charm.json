@@ -1,0 +1,74 @@
+{
+    "description": {
+        "translate": "enchantment.lqe.potency_charm",
+        "fallback": "Charm of Potency"
+    },
+    "exclusive_set": "#lqe:exclusive_set/charms",
+    "supported_items": "#lqe:enchantable/trinkets",
+    "weight": 1,
+    "max_level": 5,
+    "min_cost": {
+        "base": 1,
+        "per_level_above_first": 10
+    },
+    "max_cost": {
+        "base": 20,
+        "per_level_above_first": 10
+    },
+    "anvil_cost": 8,
+    "slots": ["offhand"],
+    "effects": {
+        "minecraft:attributes": [
+            {
+                "id": "lqe:enchantment.charm.potency.armor",
+                "attribute": "minecraft:armor",
+                "amount": {
+                    "type": "linear",
+                    "base": 0.016,
+                    "per_level_above_first": 0.012
+                },
+                "operation": "add_multiplied_base"
+            },
+            {
+                "id": "lqe:enchantment.charm.potency.attack_damage",
+                "attribute": "minecraft:attack_damage",
+                "amount": {
+                    "type": "linear",
+                    "base": 0.016,
+                    "per_level_above_first": 0.012
+                },
+                "operation": "add_multiplied_base"
+            },
+            {
+                "id": "lqe:enchantment.charm.potency.attack_speed",
+                "attribute": "minecraft:attack_speed",
+                "amount": {
+                    "type": "linear",
+                    "base": 0.016,
+                    "per_level_above_first": 0.012
+                },
+                "operation": "add_multiplied_base"
+            },
+            {
+                "id": "lqe:enchantment.charm.potency.health",
+                "attribute": "minecraft:max_health",
+                "amount": {
+                    "type": "linear",
+                    "base": 0.016,
+                    "per_level_above_first": 0.012
+                },
+                "operation": "add_multiplied_base"
+            },
+            {
+                "id": "lqe:enchantment.charm.potency.speed",
+                "attribute": "minecraft:movement_speed",
+                "amount": {
+                    "type": "linear",
+                    "base": 0.016,
+                    "per_level_above_first": 0.012
+                },
+                "operation": "add_multiplied_base"
+            }
+        ]
+    }
+}

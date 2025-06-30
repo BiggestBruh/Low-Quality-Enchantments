@@ -1,0 +1,10 @@
+{
+    "values": [
+        "lqe:resilience_charm",
+        "lqe:valor_charm",
+        "lqe:dexterity_charm",
+        "lqe:vitality_charm",
+        "lqe:haste_charm",
+        "lqe:potency_charm"
+    ]
+}

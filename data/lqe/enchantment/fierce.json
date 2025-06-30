@@ -1,0 +1,44 @@
+{
+    "description": {
+        "translate": "enchantment.lqe.fierce",
+        "fallback": "Fierce"
+    },
+    "supported_items": "#minecraft:axes",
+    "primary_items": "#minecraft:axes",
+    "weight": 5,
+    "max_level": 6,
+    "min_cost": {
+        "base": 6,
+        "per_level_above_first": 9
+    },
+    "max_cost": {
+        "base": 21,
+        "per_level_above_first": 9
+    },
+    "anvil_cost": 2,
+    "slots": ["mainhand"],
+    "effects": {
+        "minecraft:armor_effectiveness": [
+            {
+                "effect": {
+                    "type": "minecraft:add",
+                    "value": {
+                        "type": "minecraft:linear",
+                        "base": -0.25,
+                        "per_level_above_first": -0.15
+                    }
+                }
+            }
+        ],
+        "minecraft:post_attack": [
+            {
+                "effect": {
+                    "type": "minecraft:change_item_damage",
+                    "amount": 1
+                },
+                "affected": "attacker",
+                "enchanted": "attacker"
+            }
+        ]
+    }
+}

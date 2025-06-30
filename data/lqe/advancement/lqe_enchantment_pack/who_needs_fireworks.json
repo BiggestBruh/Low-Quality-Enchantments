@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/shield_premium",
+    "display": {
+        "icon": {
+            "id": "minecraft:firework_rocket"
+        },
+        "title": {
+            "translate": "advancement.lqe.who_needs_fireworks.title",
+            "fallback": "Who Needs Fireworks"
+        },
+        "description": {
+            "translate": "advancement.lqe.who_needs_fireworks.description",
+            "fallback": "Obtain Takeoff"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_takeoff": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:takeoff",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

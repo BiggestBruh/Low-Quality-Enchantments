@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/i_dont_believe_in_armor",
+    "display": {
+        "icon": {
+            "id": "minecraft:ice"
+        },
+        "title": {
+            "translate": "advancement.lqe.cold_attitude.title",
+            "fallback": "Cold Attitude"
+        },
+        "description": {
+            "translate": "advancement.lqe.cold_attitude.description",
+            "fallback": "Obtain Frost"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_frost": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:frost",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

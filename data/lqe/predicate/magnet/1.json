@@ -1,0 +1,19 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+        "equipment": {
+            "mainhand": {
+                "items": "#lqe:enchantable/magnet",
+                "predicates": {
+                    "minecraft:enchantments": [
+                        {
+                            "enchantments": "lqe:magnet",
+                            "levels": 1
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

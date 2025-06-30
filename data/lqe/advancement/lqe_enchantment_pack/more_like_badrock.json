@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/portable_furnace",
+    "display": {
+        "icon": {
+            "id": "minecraft:bedrock"
+        },
+        "title": {
+            "translate": "advancement.lqe.more_like_badrock.title",
+            "fallback": "More Like Badrock"
+        },
+        "description": {
+            "translate": "advancement.lqe.more_like_badrock.description",
+            "fallback": "Obtain Bedrocker"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_bedrocker": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:bedrocker",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

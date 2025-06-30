@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/fragile_power",
+    "display": {
+        "icon": {
+            "id": "minecraft:netherite_axe"
+        },
+        "title": {
+            "translate": "advancement.lqe.i_dont_believe_in_armor.title",
+            "fallback": "I Don't Believe in Armor"
+        },
+        "description": {
+            "translate": "advancement.lqe.i_dont_believe_in_armor.description",
+            "fallback": "Obtain Fierce"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_fierce": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:fierce",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

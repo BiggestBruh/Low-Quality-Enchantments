@@ -1,0 +1,216 @@
+{
+    "description": {
+        "translate": "enchantment.lqe.bleeding",
+        "fallback": "Bleeding"
+    },
+    "exclusive_set": "lqe:bomber",
+    "supported_items": "#minecraft:enchantable/crossbow",
+    "primary_items": "#minecraft:enchantable/crossbow",
+    "weight": 5,
+    "max_level": 7,
+    "min_cost": {
+        "base": 18,
+        "per_level_above_first": 8
+    },
+    "max_cost": {
+        "base": 28,
+        "per_level_above_first": 8
+    },
+    "anvil_cost": 8,
+    "slots": ["mainhand"],
+    "effects": {
+        "minecraft:post_attack": [
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "lqe:bleeding/lvl_1"
+                },
+                "affected": "victim",
+                "enchanted": "attacker",
+                "requirements": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "attacker",
+                    "predicate": {
+                        "equipment": {
+                            "mainhand": {
+                                "items": "minecraft:crossbow",
+                                "predicates": {
+                                    "enchantments": [
+                                        {
+                                            "enchantments": "lqe:bleeding",
+                                            "levels": 1
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "lqe:bleeding/lvl_2"
+                },
+                "affected": "victim",
+                "enchanted": "attacker",
+                "requirements": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "attacker",
+                    "predicate": {
+                        "equipment": {
+                            "mainhand": {
+                                "items": "minecraft:crossbow",
+                                "predicates": {
+                                    "enchantments": [
+                                        {
+                                            "enchantments": "lqe:bleeding",
+                                            "levels": 2
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "lqe:bleeding/lvl_3"
+                },
+                "affected": "victim",
+                "enchanted": "attacker",
+                "requirements": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "attacker",
+                    "predicate": {
+                        "equipment": {
+                            "mainhand": {
+                                "items": "minecraft:crossbow",
+                                "predicates": {
+                                    "enchantments": [
+                                        {
+                                            "enchantments": "lqe:bleeding",
+                                            "levels": 3
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "lqe:bleeding/lvl_4"
+                },
+                "affected": "victim",
+                "enchanted": "attacker",
+                "requirements": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "attacker",
+                    "predicate": {
+                        "equipment": {
+                            "mainhand": {
+                                "items": "minecraft:crossbow",
+                                "predicates": {
+                                    "enchantments": [
+                                        {
+                                            "enchantments": "lqe:bleeding",
+                                            "levels": 4
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "lqe:bleeding/lvl_5"
+                },
+                "affected": "victim",
+                "enchanted": "attacker",
+                "requirements": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "attacker",
+                    "predicate": {
+                        "equipment": {
+                            "mainhand": {
+                                "items": "minecraft:crossbow",
+                                "predicates": {
+                                    "enchantments": [
+                                        {
+                                            "enchantments": "lqe:bleeding",
+                                            "levels": 5
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "lqe:bleeding/lvl_6"
+                },
+                "affected": "victim",
+                "enchanted": "attacker",
+                "requirements": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "attacker",
+                    "predicate": {
+                        "equipment": {
+                            "mainhand": {
+                                "items": "minecraft:crossbow",
+                                "predicates": {
+                                    "enchantments": [
+                                        {
+                                            "enchantments": "lqe:bleeding",
+                                            "levels": 6
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "lqe:bleeding/lvl_7"
+                },
+                "affected": "victim",
+                "enchanted": "attacker",
+                "requirements": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "attacker",
+                    "predicate": {
+                        "equipment": {
+                            "mainhand": {
+                                "items": "minecraft:crossbow",
+                                "predicates": {
+                                    "enchantments": [
+                                        {
+                                            "enchantments": "lqe:bleeding",
+                                            "levels": {
+                                                "min": 7
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    }
+}

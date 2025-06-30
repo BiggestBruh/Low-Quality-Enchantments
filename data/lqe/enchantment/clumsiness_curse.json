@@ -1,0 +1,40 @@
+{
+    "description": {
+        "translate": "enchantment.lqe.clumsiness_curse",
+        "fallback": "Curse of Clumsiness"
+    },
+    "supported_items": "#lqe:enchantable/clumsy",
+    "weight": 1,
+    "max_level": 5,
+    "min_cost": {
+        "base": 1,
+        "per_level_above_first": 10
+    },
+    "max_cost": {
+        "base": 20,
+        "per_level_above_first": 10
+    },
+    "anvil_cost": 8,
+    "slots": ["mainhand","offhand"],
+    "effects": {
+        "location_changed": [
+            {
+                "effect": {
+                    "type": "run_function",
+                    "function": "lqe:clumsy/start"
+                },
+                "requirements": {
+                    "condition": "minecraft:random_chance",
+                    "chance": {
+                        "type": "minecraft:enchantment_level",
+                        "amount": {
+                            "type": "minecraft:linear",
+                            "base": 0.0005,
+                            "per_level_above_first": 0.0005
+                        }
+                    }
+                }
+            }
+        ]
+    }
+}

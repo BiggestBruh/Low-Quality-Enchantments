@@ -1,0 +1,43 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/throwback_to_1_8",
+    "display": {
+        "icon": {
+            "id": "minecraft:potion",
+            "components": {
+                "minecraft:potion_contents": {
+                    "potion": "minecraft:poison"
+                }
+            }
+        },
+        "title": {
+            "translate": "advancement.lqe.biohazard.title",
+            "fallback": "Biohazard"
+        },
+        "description": {
+            "translate": "advancement.lqe.biohazard.description",
+            "fallback": "Obtain Poison Aspect"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_poison_aspect": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:poison_aspect",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

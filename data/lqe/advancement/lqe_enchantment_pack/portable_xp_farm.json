@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/cavalry_isnt_dead",
+    "display": {
+        "icon": {
+            "id": "minecraft:experience_bottle"
+        },
+        "title": {
+            "translate": "advancement.lqe.portable_xp_farm.title",
+            "fallback": "Portable XP Farm"
+        },
+        "description": {
+            "translate": "advancement.lqe.portable_xp_farm.description",
+            "fallback": "Obtain Extraction"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_extraction": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:extraction",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

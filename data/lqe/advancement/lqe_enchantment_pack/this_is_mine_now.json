@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/for_your_next_life",
+    "display": {
+        "icon": {
+            "id": "minecraft:spectral_arrow"
+        },
+        "title": {
+            "translate": "advancement.lqe.this_is_mine_now.title",
+            "fallback": "This is Mine Now"
+        },
+        "description": {
+            "translate": "advancement.lqe.this_is_mine_now.description",
+            "fallback": "Obtain Recycle"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_recycle": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:recycle",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

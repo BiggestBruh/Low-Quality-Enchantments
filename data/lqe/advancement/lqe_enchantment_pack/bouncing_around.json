@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/keep_your_distance",
+    "display": {
+        "icon": {
+            "id": "minecraft:slime_ball"
+        },
+        "title": {
+            "translate": "advancement.lqe.bouncing_around.title",
+            "fallback": "Bouncing Around"
+        },
+        "description": {
+            "translate": "advancement.lqe.bouncing_around.description",
+            "fallback": "Obtain Ricochet"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_ricochet": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:ricochet",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

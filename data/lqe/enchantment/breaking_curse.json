@@ -1,0 +1,44 @@
+{
+    "description": {
+        "translate": "enchantment.lqe.breaking_curse",
+        "fallback": "Curse of Breaking"
+    },
+    "supported_items": "#lqe:enchantable/durability",
+    "weight": 1,
+    "max_level": 10,
+    "min_cost": {
+      "base": 5,
+      "per_level_above_first": 8
+    },
+    "max_cost": {
+      "base": 55,
+      "per_level_above_first": 8
+    },
+    "anvil_cost": 8,
+    "slots": ["any"],
+    "effects": {
+        "minecraft:item_damage": [
+            {
+                "effect": {
+                    "type": "minecraft:add",
+                    "value": {
+                        "type": "minecraft:linear",
+                        "base": 1,
+                        "per_level_above_first": 1
+                    }
+                },
+                "requirements": {
+                    "condition": "minecraft:random_chance",
+                    "chance": {
+                        "type": "minecraft:enchantment_level",
+                        "amount": {
+                            "type": "minecraft:linear",
+                            "base": 0.1,
+                            "per_level_above_first": 0.1
+                        }
+                    }
+                }
+            }
+        ]
+    }
+}

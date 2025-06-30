@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/unstoppable_force",
+    "display": {
+        "icon": {
+            "id": "minecraft:potion"
+        },
+        "title": {
+            "translate": "advancement.lqe.potion_refiner.title",
+            "fallback": "Potion Refiner"
+        },
+        "description": {
+            "translate": "advancement.lqe.potion_refiner.description",
+            "fallback": "Obtain Alchemy"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_alchemy": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:alchemy",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

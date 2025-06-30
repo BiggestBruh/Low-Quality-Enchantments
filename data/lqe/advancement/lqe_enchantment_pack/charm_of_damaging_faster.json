@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/charming",
+    "display": {
+        "icon": {
+            "id": "minecraft:compass"
+        },
+        "title": {
+            "translate": "advancement.lqe.charm_of_damaging_faster.title",
+            "fallback": "Charm of Damaging Faster"
+        },
+        "description": {
+            "translate": "advancement.lqe.charm_of_damaging_faster.description",
+            "fallback": "Obtain Charm of Dexterity"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_dexterity_charm": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:dexterity_charm",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

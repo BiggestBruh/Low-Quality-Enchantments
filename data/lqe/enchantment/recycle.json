@@ -1,0 +1,86 @@
+{
+    "description": {
+        "translate": "enchantment.lqe.recycle",
+        "fallback": "Recycle"
+    },
+    "supported_items": "#minecraft:enchantable/chest_armor",
+    "primary_items": "#minecraft:enchantable/chest_armor",
+    "weight": 2,
+    "max_level": 5,
+    "min_cost": {
+        "base": 6,
+        "per_level_above_first": 10
+    },
+    "max_cost": {
+        "base": 21,
+        "per_level_above_first": 10
+    },
+    "anvil_cost": 4,
+    "slots": ["chest"],
+    "effects": {
+        "minecraft:post_attack": [
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "lqe:recycle/arrow"
+                },
+                "affected": "damaging_entity",
+                "enchanted": "victim",
+                "requirements": {
+                    "condition": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": {
+                                "type": "minecraft:enchantment_level",
+                                "amount": {
+                                    "type": "minecraft:linear",
+                                    "base": 0.2,
+                                    "per_level_above_first": 0.2
+                                }
+                            }
+                        },
+                        {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "direct_attacker",
+                            "predicate": {
+                                "type": "minecraft:arrow"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "lqe:recycle/spectral_arrow"
+                },
+                "affected": "damaging_entity",
+                "enchanted": "victim",
+                "requirements": {
+                    "condition": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": {
+                            "type": "minecraft:enchantment_level",
+                                "amount": {
+                                    "type": "minecraft:linear",
+                                    "base": 0.2,
+                                    "per_level_above_first": 0.2
+                                }
+                            }
+                        },
+                        {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "direct_attacker",
+                            "predicate": {
+                                "type": "minecraft:spectral_arrow"
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

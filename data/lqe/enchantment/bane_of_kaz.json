@@ -1,0 +1,41 @@
+{
+    "description": {
+        "translate": "enchantment.lqe.bane_of_kaz",
+        "fallback": "Bane of Kaz"
+    },
+    "supported_items": "#minecraft:hoes",
+    "weight": 1,
+    "max_level": 10,
+    "min_cost": {
+        "base": 33,
+        "per_level_above_first": 1
+    },
+    "max_cost": {
+        "base": 77,
+        "per_level_above_first": 1
+    },
+    "anvil_cost": 8,
+    "slots": ["mainhand"],
+    "effects": {
+        "minecraft:damage": [
+            {
+                "effect": {
+                    "type": "minecraft:add",
+                    "value": {
+                        "type": "minecraft:linear",
+                        "base": 3,
+                        "per_level_above_first": 3
+                    }
+                },
+                "requirements": {
+                    "condition": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "type": "minecraft:player",
+                        "nbt": "{UUID:[I;1471896308,-1783608807,-1685937524,-962511080]}"
+                    }
+                }
+            }
+        ]
+    }
+}

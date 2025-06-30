@@ -1,0 +1,40 @@
+{
+    "description": {
+        "translate": "enchantment.lqe.volatility_curse",
+        "fallback": "Curse of Volatility"
+    },
+    "supported_items": "#minecraft:enchantable/chest_armor",
+    "primary_items": "#minecraft:enchantable/chest_armor",
+    "weight": 1,
+    "max_level": 3,
+    "min_cost": {
+        "base": 25,
+        "per_level_above_first": 0
+    },
+    "max_cost": {
+        "base": 50,
+        "per_level_above_first": 0
+    },
+    "anvil_cost": 8,
+    "slots": ["chest"],
+    "effects": {
+        "minecraft:tick": [
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "lqe:volatile/store"
+                }
+            }
+        ],
+        "minecraft:post_attack": [
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "lqe:volatile/aesthetics"
+                },
+                "affected": "victim",
+                "enchanted": "victim"
+            }
+        ]
+    }
+}

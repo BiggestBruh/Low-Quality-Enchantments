@@ -1,0 +1,70 @@
+{
+    "description": {
+        "translate": "enchantment.lqe.nocturnal",
+        "fallback": "Nocturnal"
+    },
+    "supported_items": "#minecraft:enchantable/armor",
+    "primary_items": "#minecraft:enchantable/armor",
+    "weight": 2,
+    "max_level": 7,
+    "min_cost": {
+        "base": 1,
+        "per_level_above_first": 8
+    },
+    "max_cost": {
+        "base": 12,
+        "per_level_above_first": 8
+    },
+    "anvil_cost": 1,
+    "slots": ["armor"],
+    "effects": {
+        "minecraft:attributes": [
+            {
+                "id": "lqe:enchantment.nocturnal.damage",
+                "attribute": "minecraft:attack_damage",
+                "amount": {
+                    "type": "linear",
+                    "base": 0.01,
+                    "per_level_above_first": 0.015
+                },
+                "operation": "add_multiplied_base"
+            },
+            {
+                "id": "lqe:enchantment.nocturnal.armor",
+                "attribute": "minecraft:armor",
+                "amount": {
+                    "type": "linear",
+                    "base": 0.01,
+                    "per_level_above_first": 0.015
+                },
+                "operation": "add_multiplied_base"
+            },
+            {
+                "id": "lqe:enchantment.nocturnal.speed",
+                "attribute": "minecraft:movement_speed",
+                "amount": {
+                    "type": "linear",
+                    "base": 0.01,
+                    "per_level_above_first": 0.015
+                },
+                "operation": "add_multiplied_base"
+            }
+        ],
+        "minecraft:tick": [
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "lqe:nocturnal/day"
+                },
+                "requirements": {
+                    "condition": "minecraft:time_check",
+                    "value": {
+                        "min": 0,
+                        "max": 12999
+                    },
+                    "period": 24000
+                }
+            }
+        ]
+    }
+}

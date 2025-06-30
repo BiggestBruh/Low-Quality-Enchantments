@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/disappearing_act",
+    "display": {
+        "icon": {
+            "id": "minecraft:target"
+        },
+        "title": {
+            "translate": "advancement.lqe.aim_assist.title",
+            "fallback": "Aim Assist"
+        },
+        "description": {
+            "translate": "advancement.lqe.aim_assist.description",
+            "fallback": "Obtain Sniper"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_sniper": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:sniper",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

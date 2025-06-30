@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/cursed_magic",
+    "display": {
+        "icon": {
+            "id": "minecraft:golden_pickaxe"
+        },
+        "title": {
+            "translate": "advancement.lqe.ununbreaking.title",
+            "fallback": "Ununbreaking"
+        },
+        "description": {
+            "translate": "advancement.lqe.ununbreaking.description",
+            "fallback": "Obtain Curse of Breaking"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_breaking_curse": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:breaking_curse",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

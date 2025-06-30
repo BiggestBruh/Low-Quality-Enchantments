@@ -1,0 +1,52 @@
+{
+    "description": {
+        "translate": "enchantment.lqe.spite",
+        "fallback": "Spite"
+    },
+    "exclusive_set": "lqe:leeching",
+    "supported_items": "#minecraft:enchantable/weapon",
+    "primary_items": "#minecraft:enchantable/sword",
+    "weight": 2,
+    "max_level": 7,
+    "min_cost": {
+        "base": 6,
+        "per_level_above_first": 9
+    },
+    "max_cost": {
+        "base": 21,
+        "per_level_above_first": 9
+    },
+    "anvil_cost": 2,
+    "slots": ["mainhand"],
+    "effects": {
+        "minecraft:damage": [
+            {
+                "effect": {
+                    "type": "minecraft:multiply",
+                    "factor": {
+                        "type": "minecraft:linear",
+                        "base": 1.1,
+                        "per_level_above_first": 0.1
+                    }
+                },
+                "requirements": {
+                    "condition": "minecraft:entity_scores",
+                    "entity": "attacker",
+                    "scores": {
+                        "lqe.hp": {
+                            "min": 1,
+                            "max": {
+                                "type": "minecraft:enchantment_level",
+                                "amount": {
+                                    "type": "minecraft:linear",
+                                    "base": 1,
+                                    "per_level_above_first": 1
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    }
+}

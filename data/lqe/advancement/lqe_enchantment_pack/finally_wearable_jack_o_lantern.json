@@ -1,0 +1,49 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/that_was_underwhelming",
+    "display": {
+        "icon": {
+            "id": "minecraft:jack_o_lantern"
+        },
+        "title": {
+            "translate": "advancement.lqe.finally_wearable_jack_o_lantern.title",
+            "fallback": "Finally, Wearable Jack o'Lantern"
+        },
+        "description": {
+            "translate": "advancement.lqe.finally_wearable_jack_o_lantern.description",
+            "fallback": "Wear a carved pumpkin enchanted with Luminance"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "wear_jack_o_lantern": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"equipment": {
+								"head": {
+									"items": [
+										"minecraft:carved_pumpkin"
+									],
+									"predicates": {
+										"enchantments": [
+											{
+												"enchantments": "lqe:luminance",
+                                                "levels": {
+                                                    "min": 1
+                                                }
+											}	
+										]
+									}
+								}
+							}	
+						}
+					}
+				]
+			}
+		}
+    }
+}

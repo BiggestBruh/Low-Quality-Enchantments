@@ -1,0 +1,25 @@
+{
+    "values": [
+        "lqe:stagnancy_curse",
+        "lqe:breaking_curse",
+        "lqe:extraction",
+        "lqe:excavation",
+        "lqe:pain_curse",
+        "lqe:clumsiness_curse",
+        "lqe:gluttony_curse",
+        "lqe:death_curse",
+        "lqe:conductivity_curse",
+        "lqe:hallucination_curse",
+        "lqe:voidless",
+        "lqe:volatile_curse",
+        "lqe:magma_walker",
+        "lqe:boss_slayer",
+        "lqe:exhaust",
+        "lqe:timber",
+        "lqe:bedrocker",
+        "lqe:veinminer",
+        "lqe:swap",
+        "lqe:storm",
+        "lqe:bane_of_kaz"
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/biohazard",
+    "display": {
+        "icon": {
+            "id": "minecraft:wind_charge"
+        },
+        "title": {
+            "translate": "advancement.lqe.controlled_implosion.title",
+            "fallback": "Controlled Implosion"
+        },
+        "description": {
+            "translate": "advancement.lqe.controlled_implosion.description",
+            "fallback": "Obtain Pull"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_pull": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:pull",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

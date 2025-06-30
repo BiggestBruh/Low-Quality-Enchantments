@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/flesh_hardening",
+    "display": {
+        "icon": {
+            "id": "minecraft:feather"
+        },
+        "title": {
+            "translate": "advancement.lqe.like_a_feather.title",
+            "fallback": "Like a Feather"
+        },
+        "description": {
+            "translate": "advancement.lqe.like_a_feather.description",
+            "fallback": "Obtain Lightweight"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_lightweight": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:lightweight",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

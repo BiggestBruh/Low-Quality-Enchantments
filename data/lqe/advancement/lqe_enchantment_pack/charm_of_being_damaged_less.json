@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/charm_of_running_away_from_damage",
+    "display": {
+        "icon": {
+            "id": "minecraft:compass"
+        },
+        "title": {
+            "translate": "advancement.lqe.charm_of_being_damaged_less.title",
+            "fallback": "Charm of Being Damaged Less"
+        },
+        "description": {
+            "translate": "advancement.lqe.charm_of_being_damaged_less.description",
+            "fallback": "Obtain Charm of Resilience"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_resilience_charm": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:resilience_charm",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

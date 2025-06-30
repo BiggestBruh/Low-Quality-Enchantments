@@ -1,0 +1,30 @@
+{
+    "description": {
+        "translate": "enchantment.lqe.magnet",
+        "fallback": "Magnet"
+    },
+    "supported_items": "#lqe:enchantable/magnet",
+    "primary_items": "#minecraft:enchantable/mining_loot",
+    "weight": 2,
+    "max_level": 5,
+    "min_cost": {
+        "base": 6,
+        "per_level_above_first": 10
+    },
+    "max_cost": {
+        "base": 21,
+        "per_level_above_first": 10
+    },
+    "anvil_cost": 1,
+    "slots": ["mainhand"],
+    "effects": {
+      "location_changed": [
+        {
+            "effect": {
+                "type": "minecraft:run_function",
+                "function": "lqe:magnet"
+            }
+        }
+      ]
+    }
+}

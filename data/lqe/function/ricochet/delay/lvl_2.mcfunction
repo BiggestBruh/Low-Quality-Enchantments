@@ -1,0 +1,1 @@
+execute as @e[type=#minecraft:arrows,tag=lqe.ricochet] at @s run function lqe:ricochet/bounce/lvl_2

@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/eggregious",
+    "display": {
+        "icon": {
+            "id": "minecraft:target"
+        },
+        "title": {
+            "translate": "advancement.lqe.lucky_shot.title",
+            "fallback": "Lucky Shot"
+        },
+        "description": {
+            "translate": "advancement.lqe.lucky_shot.description",
+            "fallback": "Obtain Critical"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_critical": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:critical",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

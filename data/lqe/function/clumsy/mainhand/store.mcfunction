@@ -1,0 +1,2 @@
+$execute unless data storage lqe:clumsy players[{ID:$(UUID)}] run data modify storage example:inv players append value {ID:$(UUID)}
+$data modify storage lqe:clumsy players[{ID:$(UUID)}] merge from entity @s SelectedItem

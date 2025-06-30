@@ -1,0 +1,45 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/grasshopper",
+    "display": {
+        "icon": {
+            "id": "minecraft:crossbow"
+        },
+        "title": {
+            "translate": "advancement.lqe.arrow_storm.title",
+            "fallback": "Arrow Storm"
+        },
+        "description": {
+            "translate": "advancement.lqe.arrow_storm.description",
+            "fallback": "Cause chaos with the help of a Multishot + Ricochet crossbow"
+        },
+        "frame": "goal"
+    },
+    "criteria": {
+		"create_arrow_storm": {
+			"trigger": "minecraft:shot_crossbow",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:crossbow"
+					],
+					"predicates": {
+						"enchantments": [
+							{
+								"enchantments": "minecraft:multishot",
+								"levels": {
+									"min": 1
+								}
+							},
+                            {
+                                "enchantments": "lqe:ricochet",
+                                "levels": {
+                                    "min": 1
+                                }
+                            }
+						]
+					}			
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,7 @@
+{
+    "condition": "entity_properties",
+    "entity": "this",
+    "predicate": {
+        "nbt": "{item:{id:\"minecraft:tipped_arrow\",components:{\"minecraft:potion_contents\":{potion:\"minecraft:strong_swiftness\"}}}}"
+    }
+}

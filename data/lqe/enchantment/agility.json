@@ -1,0 +1,34 @@
+{
+    "description": {
+        "translate": "enchantment.lqe.agility",
+        "fallback": "Agility"
+    },
+    "supported_items": "#minecraft:enchantable/leg_armor",
+    "primary_items": "#minecraft:enchantable/leg_armor",
+    "weight": 5,
+    "max_level": 5,
+    "min_cost": {
+        "base": 12,
+        "per_level_above_first": 8
+    },
+    "max_cost": {
+        "base": 24,
+        "per_level_above_first": 8
+    },
+    "anvil_cost": 4,
+    "slots": ["legs"],
+    "effects": {
+        "minecraft:attributes": [
+            {
+                "id": "lqe:enchantment.agility",
+                "attribute": "minecraft:movement_speed",
+                "operation": "add_multiplied_base",
+                "amount": {
+                    "type": "minecraft:linear",
+                    "base": 0.15,
+                    "per_level_above_first": 0.15
+                }
+            }
+        ]
+    }
+}

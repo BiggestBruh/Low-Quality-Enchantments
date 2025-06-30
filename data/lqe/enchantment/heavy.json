@@ -1,0 +1,57 @@
+{
+    "description": {
+        "translate": "enchantment.lqe.heavy",
+        "fallback": "Heavy"
+    },
+    "exclusive_set": "#minecraft:exclusive_set/damage",
+    "supported_items": "#minecraft:enchantable/mace",
+    "primary_items": "#minecraft:enchantable/mace",
+    "weight": 2,
+    "max_level": 10,
+    "min_cost": {
+        "base": 5,
+        "per_level_above_first": 8
+    },
+    "max_cost": {
+        "base": 25,
+        "per_level_above_first": 8
+    },
+    "anvil_cost": 4,
+    "slots": ["mainhand"],
+    "effects": {
+        "minecraft:damage": [
+            {
+                "effect": {
+                    "type": "minecraft:add",
+                    "value": {
+                        "type": "minecraft:linear",
+                        "base": 2.5,
+                        "per_level_above_first": 2.5
+                    }
+                }
+            }
+        ],
+        "minecraft:attributes": [
+            {
+                "id": "lqe:enchantment.heavy.gravity",
+                "attribute": "minecraft:gravity",
+                "amount": {
+                    "type": "minecraft:linear",
+                    "base": 0.03,
+                    "per_level_above_first": 0.03
+                },
+                "operation": "add_multiplied_base"
+            },
+            {
+                "id": "lqe:enchantment.heavy.speed",
+                "attribute": "minecraft:movement_speed",
+                "amount": {
+                    "type": "minecraft:linear",
+                    "base": -0.075,
+                    "per_level_above_first": -0.075
+                },
+                "operation": "add_multiplied_base"
+            }
+        ]
+    }
+}

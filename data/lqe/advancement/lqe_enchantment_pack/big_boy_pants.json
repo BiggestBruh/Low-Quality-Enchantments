@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/pacisifm",
+    "display": {
+        "icon": {
+            "id": "minecraft:netherite_leggings"
+        },
+        "title": {
+            "translate": "advancement.lqe.big_boy_pants.title",
+            "fallback": "Big Boy Pants"
+        },
+        "description": {
+            "translate": "advancement.lqe.big_boy_pants.description",
+            "fallback": "Obtain Giant"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_giant": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:giant",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

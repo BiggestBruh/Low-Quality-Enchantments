@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/bring_down_the_beast",
+    "display": {
+        "icon": {
+            "id": "minecraft:experience_bottle"
+        },
+        "title": {
+            "translate": "advancement.lqe.magical_infusion.title",
+            "fallback": "Magical Infusion"
+        },
+        "description": {
+            "translate": "advancement.lqe.magical_infusion.description",
+            "fallback": "Obtain Charged"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_charged": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:charged",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

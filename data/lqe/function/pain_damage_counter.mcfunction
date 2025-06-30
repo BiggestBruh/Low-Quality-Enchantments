@@ -1,0 +1,1 @@
+scoreboard players add @s lqe.damage.pain 1

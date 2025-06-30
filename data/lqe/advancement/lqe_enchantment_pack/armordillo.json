@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/going_places",
+    "display": {
+        "icon": {
+            "id": "minecraft:wolf_armor"
+        },
+        "title": {
+            "translate": "advancement.lqe.armordillo.title",
+            "fallback": "Armordillo"
+        },
+        "description": {
+            "translate": "advancement.lqe.armordillo.description",
+            "fallback": "Obtain Hound"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_hound": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:hound",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

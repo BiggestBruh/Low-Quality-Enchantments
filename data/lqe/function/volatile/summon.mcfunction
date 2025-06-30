@@ -1,0 +1,3 @@
+$execute if score @s lqe.volatile.level matches 1 run function lqe:volatile/explode/lvl_1 with storage lqe:volatile players[{ID:$(UUID)}]
+$execute if score @s lqe.volatile.level matches 2 run function lqe:volatile/explode/lvl_2 with storage lqe:volatile players[{ID:$(UUID)}]
+$execute if score @s lqe.volatile.level matches 3 run function lqe:volatile/explode/lvl_3 with storage lqe:volatile players[{ID:$(UUID)}]

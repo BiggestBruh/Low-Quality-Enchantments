@@ -1,0 +1,33 @@
+{
+    "description": {
+        "translate": "enchantment.lqe.soar",
+        "fallback": "Soar"
+    },
+    "supported_items": "#minecraft:harnesses",
+    "weight": 2,
+    "max_level": 5,
+    "min_cost": {
+        "base": 10,
+        "per_level_above_first": 10
+    },
+    "max_cost": {
+        "base": 20,
+        "per_level_above_first": 10
+    },
+    "anvil_cost": 4,
+    "slots": ["body"],
+    "effects": {
+        "minecraft:attributes": [
+            {
+                "id": "lqe:enchantment.soar",
+                "attribute": "minecraft:flying_speed",
+                "amount": {
+                    "type": "minecraft:linear",
+                    "base": 0.1,
+                    "per_level_above_first": 0.1
+                },
+                "operation": "add_multiplied_base"
+            }
+        ]
+    }
+}

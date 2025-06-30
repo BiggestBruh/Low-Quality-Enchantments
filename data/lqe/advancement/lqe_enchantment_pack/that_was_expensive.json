@@ -1,0 +1,47 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/through_thick_and_thin",
+    "display": {
+        "icon": {
+            "id": "minecraft:netherite_sword"
+        },
+        "title": {
+            "translate": "advancement.lqe.that_was_expensive.title",
+            "fallback": "That Was Expensive"
+        },
+        "description": {
+            "translate": "advancement.lqe.that_was_expensive.description",
+            "fallback": "Use up a netherite weapon with the Exhaust enchantment in the single most expensive attack you've ever dealt"
+        },
+        "frame": "challenge"
+    },
+    "criteria": {
+        "exhaust_netherite_weapon": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "player": {
+                    "equipment": {
+                        "mainhand": {
+                            "items": [
+                                "minecraft:netherite_sword",
+                                "minecraft:netherite_axe"
+                            ],
+                            "predicates": {
+                                "minecraft:enchantments": [
+                                    {
+                                        "enchantments": "lqe:exhaust",
+                                        "levels": {
+                                            "min": 1
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "experience": 100
+    }
+}

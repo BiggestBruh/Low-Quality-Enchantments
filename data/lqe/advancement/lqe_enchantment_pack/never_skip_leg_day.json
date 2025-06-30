@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/reckless_flying",
+    "display": {
+        "icon": {
+            "id": "minecraft:rabbit_foot"
+        },
+        "title": {
+            "translate": "advancement.lqe.never_skip_leg_day.title",
+            "fallback": "Never Skip Leg Day"
+        },
+        "description": {
+            "translate": "advancement.lqe.never_skip_leg_day.description",
+            "fallback": "Obtain Leaping"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_leaping": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:leaping",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/no_loot_sorry_i_eated_it_all",
+    "display": {
+        "icon": {
+            "id": "minecraft:creeper_head"
+        },
+        "title": {
+            "translate": "advancement.lqe.the_voices.title",
+            "fallback": "The Voices"
+        },
+        "description": {
+            "translate": "advancement.lqe.the_voices.description",
+            "fallback": "Obtain Curse of Hallucination"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_hallucination_curse": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:hallucination_curse",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

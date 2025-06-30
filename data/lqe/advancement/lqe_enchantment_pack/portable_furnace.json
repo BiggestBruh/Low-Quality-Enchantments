@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/putting_the_fish_in_fishing",
+    "display": {
+        "icon": {
+            "id": "minecraft:furnace"
+        },
+        "title": {
+            "translate": "advancement.lqe.portable_furnace.title",
+            "fallback": "Portable Furnace"
+        },
+        "description": {
+            "translate": "advancement.lqe.portable_furnace.description",
+            "fallback": "Obtain Auto Smelt"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_auto_smelt": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:auto_smelt",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

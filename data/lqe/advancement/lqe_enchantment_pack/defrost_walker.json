@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/bright_mind",
+    "display": {
+        "icon": {
+            "id": "minecraft:magma_block"
+        },
+        "title": {
+            "translate": "advancement.lqe.defrost_walker.title",
+            "fallback": "Defrost Walker"
+        },
+        "description": {
+            "translate": "advancement.lqe.defrost_walker.description",
+            "fallback": "Obtain Magma Walker"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_magma_walker": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:magma_walker",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

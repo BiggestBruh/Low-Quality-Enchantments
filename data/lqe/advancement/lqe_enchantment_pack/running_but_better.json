@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/who_needs_fireworks",
+    "display": {
+        "icon": {
+            "id": "minecraft:golden_boots"
+        },
+        "title": {
+            "translate": "advancement.lqe.running_but_better.title",
+            "fallback": "Runnings But Better"
+        },
+        "description": {
+            "translate": "advancement.lqe.running_but_better.description",
+            "fallback": "Obtain Traveler"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_traveler": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:traveler",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/jet_blimp",
+    "display": {
+        "icon": {
+            "id": "minecraft:wolf_armor"
+        },
+        "title": {
+            "translate": "advancement.lqe.forever_companion.title",
+            "fallback": "Forever Companion"
+        },
+        "description": {
+            "translate": "advancement.lqe.forever_companion.description",
+            "fallback": "Obtain Spirit"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_spirit": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:spirit",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

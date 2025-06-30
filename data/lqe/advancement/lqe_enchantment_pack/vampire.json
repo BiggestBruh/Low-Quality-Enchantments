@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/drenched_arrows",
+    "display": {
+        "icon": {
+            "id": "minecraft:bat_spawn_egg"
+        },
+        "title": {
+            "translate": "advancement.lqe.vampire.title",
+            "fallback": "Vampire"
+        },
+        "description": {
+            "translate": "advancement.lqe.vampire.description",
+            "fallback": "Obtain Leeching"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_leeching": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:leeching",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

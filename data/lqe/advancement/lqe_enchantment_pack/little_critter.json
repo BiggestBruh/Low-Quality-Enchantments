@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/justice_for_crab",
+    "display": {
+        "icon": {
+            "id": "minecraft:leather_leggings"
+        },
+        "title": {
+            "translate": "advancement.lqe.little_critter.title",
+            "fallback": "Little Critter"
+        },
+        "description": {
+            "translate": "advancement.lqe.little_critter.description",
+            "fallback": "Obtain Dwarf"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_dwarf": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:dwarf",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

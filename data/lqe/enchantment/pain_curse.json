@@ -1,0 +1,61 @@
+{
+    "description": {
+        "translate": "enchantment.lqe.pain_curse",
+        "fallback": "Curse of Pain"
+    },
+    "supported_items": "#lqe:enchantable/attack",
+    "weight": 1,
+    "max_level": 5,
+    "min_cost": {
+        "base": 25,
+        "per_level_above_first": 15
+    },
+    "max_cost": {
+        "base": 50,
+        "per_level_above_first": 15
+    },
+    "anvil_cost": 8,
+    "slots": ["mainhand"],
+    "effects": {
+        "minecraft:post_attack": [
+            {
+                "affected": "attacker",
+                "effect": {
+                    "type": "minecraft:all_of",
+                    "effects": [
+                        {
+                            "type": "minecraft:damage_entity",
+                            "damage_type": "lqe:pain",
+                            "max_damage": {
+                                "type": "minecraft:linear",
+                                "base": 1,
+                                "per_level_above_first": 1
+                            },
+                            "min_damage": {
+                                "type": "minecraft:linear",
+                                "base": 1,
+                                "per_level_above_first": 1
+                            }
+                        },
+                        {
+                            "type": "minecraft:run_function",
+                            "function": "lqe:pain_damage_counter"
+                        }
+                    ]
+                },
+                "enchanted": "attacker",
+                "requirements": {
+                    "condition": "minecraft:random_chance",
+                    "chance": {
+                        "type": "minecraft:enchantment_level",
+                        "amount": {
+                            "type": "minecraft:linear",
+                            "base": 0.1,
+                            "per_level_above_first": 0.025
+                        }
+                    }
+                }
+            }
+        ]
+    }
+}

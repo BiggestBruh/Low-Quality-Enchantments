@@ -1,0 +1,117 @@
+{
+    "description": {
+        "translate": "enchantment.lqe.ricochet",
+        "fallback": "Ricochet"
+    },
+    "exclusive_set": "#lqe:exclusive_set/ricochet",
+    "supported_items": "#lqe:enchantable/ranged",
+    "primary_items": "#lqe:enchantable/ranged",
+    "weight": 1,
+    "max_level": 5,
+    "min_cost": {
+        "base": 10,
+        "per_level_above_first": 10
+    },
+    "max_cost": {
+        "base": 20,
+        "per_level_above_first": 10
+    },
+    "anvil_cost": 8,
+    "slots": ["mainhand"],
+    "effects": {
+        "minecraft:hit_block": [
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "lqe:ricochet/hit/lvl_1"
+                },
+                "requirements": {
+                    "condition": "minecraft:value_check",
+                    "value": {
+                        "type": "minecraft:enchantment_level",
+                        "amount": {
+                            "type": "minecraft:linear",
+                            "base": 1,
+                            "per_level_above_first": 1
+                        }
+                    },
+                    "range": 1
+                }
+            },
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "lqe:ricochet/hit/lvl_2"
+                },
+                "requirements": {
+                    "condition": "minecraft:value_check",
+                    "value": {
+                        "type": "minecraft:enchantment_level",
+                        "amount": {
+                            "type": "minecraft:linear",
+                            "base": 1,
+                            "per_level_above_first": 1
+                        }
+                    },
+                    "range": 2
+                }
+            },
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "lqe:ricochet/hit/lvl_3"
+                },
+                "requirements": {
+                    "condition": "minecraft:value_check",
+                    "value": {
+                        "type": "minecraft:enchantment_level",
+                        "amount": {
+                            "type": "minecraft:linear",
+                            "base": 1,
+                            "per_level_above_first": 1
+                        }
+                    },
+                    "range": 3
+                }
+            },
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "lqe:ricochet/hit/lvl_4"
+                },
+                "requirements": {
+                    "condition": "minecraft:value_check",
+                    "value": {
+                        "type": "minecraft:enchantment_level",
+                        "amount": {
+                            "type": "minecraft:linear",
+                            "base": 1,
+                            "per_level_above_first": 1
+                        }
+                    },
+                    "range": 4
+                }
+            },
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "lqe:ricochet/hit/lvl_5"
+                },
+                "requirements": {
+                    "condition": "minecraft:value_check",
+                    "value": {
+                        "type": "minecraft:enchantment_level",
+                        "amount": {
+                            "type": "minecraft:linear",
+                            "base": 1,
+                            "per_level_above_first": 1
+                        }
+                    },
+                    "range": {
+                        "min": 5
+                    }
+                }
+            }
+        ]
+    }
+}

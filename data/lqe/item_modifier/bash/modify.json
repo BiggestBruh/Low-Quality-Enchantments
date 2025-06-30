@@ -1,0 +1,340 @@
+[
+    {
+        "function": "set_components",
+        "components": {
+            "attribute_modifiers": [
+                {
+                    "id": "lqe:enchantment.bash.damage",
+                    "type": "minecraft:attack_damage",
+                    "amount": 2,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                },
+                {
+                    "id": "lqe:enchantment.bash.attack_speed",
+                    "type": "minecraft:attack_speed",
+                    "amount": -2.8,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                }
+            ],
+            "weapon": {
+                "item_damage_per_attack": 2
+            },
+            "custom_data": {
+                "bash": true
+            }
+        },
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "items": "minecraft:shield",
+                            "predicates": {
+                                "minecraft:enchantments": [
+                                    {
+                                        "enchantments": "lqe:bash",
+                                        "levels": 1
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "set_components",
+        "components": {
+            "attribute_modifiers": [
+                {
+                    "id": "lqe:enchantment.bash.damage",
+                    "type": "minecraft:attack_damage",
+                    "amount": 3,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                },
+                {
+                    "id": "lqe:enchantment.bash.attack_speed",
+                    "type": "minecraft:attack_speed",
+                    "amount": -2.8,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                }
+            ],
+            "weapon": {
+                "item_damage_per_attack": 2
+            },
+            "custom_data": {
+                "bash": true
+            }
+        },
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "items": "minecraft:shield",
+                            "predicates": {
+                                "minecraft:enchantments": [
+                                    {
+                                        "enchantments": "lqe:bash",
+                                        "levels": 2
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "set_components",
+        "components": {
+            "attribute_modifiers": [
+                {
+                    "id": "lqe:enchantment.bash.damage",
+                    "type": "minecraft:attack_damage",
+                    "amount": 4,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                },
+                {
+                    "id": "lqe:enchantment.bash.attack_speed",
+                    "type": "minecraft:attack_speed",
+                    "amount": -2.8,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                }
+            ],
+            "weapon": {
+                "item_damage_per_attack": 2
+            },
+            "custom_data": {
+                "bash": true
+            }
+        },
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "items": "minecraft:shield",
+                            "predicates": {
+                                "minecraft:enchantments": [
+                                    {
+                                        "enchantments": "lqe:bash",
+                                        "levels": 3
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "set_components",
+        "components": {
+            "attribute_modifiers": [
+                {
+                    "id": "lqe:enchantment.bash.damage",
+                    "type": "minecraft:attack_damage",
+                    "amount": 5,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                },
+                {
+                    "id": "lqe:enchantment.bash.attack_speed",
+                    "type": "minecraft:attack_speed",
+                    "amount": -2.8,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                }
+            ],
+            "weapon": {
+                "item_damage_per_attack": 2
+            },
+            "custom_data": {
+                "bash": true
+            }
+        },
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "items": "minecraft:shield",
+                            "predicates": {
+                                "minecraft:enchantments": [
+                                    {
+                                        "enchantments": "lqe:bash",
+                                        "levels": 4
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "set_components",
+        "components": {
+            "attribute_modifiers": [
+                {
+                    "id": "lqe:enchantment.bash.damage",
+                    "type": "minecraft:attack_damage",
+                    "amount": 6,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                },
+                {
+                    "id": "lqe:enchantment.bash.attack_speed",
+                    "type": "minecraft:attack_speed",
+                    "amount": -2.8,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                }
+            ],
+            "weapon": {
+                "item_damage_per_attack": 2
+            },
+            "custom_data": {
+                "bash": true
+            }
+        },
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "items": "minecraft:shield",
+                            "predicates": {
+                                "minecraft:enchantments": [
+                                    {
+                                        "enchantments": "lqe:bash",
+                                        "levels": 5
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "set_components",
+        "components": {
+            "attribute_modifiers": [
+                {
+                    "id": "lqe:enchantment.bash.damage",
+                    "type": "minecraft:attack_damage",
+                    "amount": 7,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                },
+                {
+                    "id": "lqe:enchantment.bash.attack_speed",
+                    "type": "minecraft:attack_speed",
+                    "amount": -2.8,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                }
+            ],
+            "weapon": {
+                "item_damage_per_attack": 2
+            },
+            "custom_data": {
+                "bash": true
+            }
+        },
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "items": "minecraft:shield",
+                            "predicates": {
+                                "minecraft:enchantments": [
+                                    {
+                                        "enchantments": "lqe:bash",
+                                        "levels": 6
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "set_components",
+        "components": {
+            "attribute_modifiers": [
+                {
+                    "id": "lqe:enchantment.bash.damage",
+                    "type": "minecraft:attack_damage",
+                    "amount": 8,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                },
+                {
+                    "id": "lqe:enchantment.bash.attack_speed",
+                    "type": "minecraft:attack_speed",
+                    "amount": -2.8,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                }
+            ],
+            "weapon": {
+                "item_damage_per_attack": 2
+            },
+            "custom_data": {
+                "bash": true
+            }
+        },
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "items": "minecraft:shield",
+                            "predicates": {
+                                "minecraft:enchantments": [
+                                    {
+                                        "enchantments": "lqe:bash",
+                                        "levels": {
+                                            "min": 7
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    }
+]

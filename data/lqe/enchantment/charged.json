@@ -1,0 +1,75 @@
+{
+    "description": {
+        "translate": "enchantment.lqe.charged",
+        "fallback": "Charged"
+    },
+    "exclusive_set": "#minecraft:exclusive_set/damage",
+    "supported_items": "#minecraft:enchantable/weapon",
+    "primary_items": "#minecraft:enchantable/sword",
+    "weight": 1,
+    "max_level": 7,
+    "min_cost": {
+        "base": 15,
+        "per_level_above_first": 9
+    },
+    "max_cost": {
+        "base": 65,
+        "per_level_above_first": 9
+    },
+    "anvil_cost": 4,
+    "slots": ["mainhand"],
+    "effects": {
+        "minecraft:post_attack": [
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "lqe:charged"
+                },
+                "affected": "attacker",
+                "enchanted": "attacker",
+                "requirements": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "attacker",
+                    "predicate": {
+                        "type_specific": {
+                            "type": "minecraft:player",
+                            "level": {
+                                "min": 1
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "effect": {
+                    "type": "minecraft:damage_entity",
+                    "damage_type": "minecraft:player_attack",
+                    "min_damage": {
+                        "type": "minecraft:linear",
+                        "base": 3,
+                        "per_level_above_first": 3
+                    },
+                    "max_damage": {
+                        "type": "minecraft:linear",
+                        "base": 3,
+                        "per_level_above_first": 3
+                    }
+                },
+                "affected": "victim",
+                "enchanted": "attacker",
+                "requirements": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "attacker",
+                    "predicate": {
+                        "type_specific": {
+                            "type": "minecraft:player",
+                            "level": {
+                                "min": 1
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    }
+}

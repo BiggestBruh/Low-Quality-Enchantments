@@ -1,0 +1,15 @@
+{
+    "values": [
+        "#minecraft:enchantable/mining",
+        "#minecraft:enchantable/fishing",
+        "#minecraft:enchantable/weapon",
+        "#lqe:enchantable/ranged",
+        "#lqe:enchantable/compasses",
+        "minecraft:trident",
+        "minecraft:carrot_on_a_stick",
+        "minecraft:warped_fungus_on_a_stick",
+        "minecraft:brush",
+        "minecraft:flint_and_steel",
+        "minecraft:shield"
+    ]
+}

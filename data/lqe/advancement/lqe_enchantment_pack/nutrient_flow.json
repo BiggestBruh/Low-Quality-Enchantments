@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/night_owl",
+    "display": {
+        "icon": {
+            "id": "minecraft:cooked_beef"
+        },
+        "title": {
+            "translate": "advancement.lqe.nutrient_flow.title",
+            "fallback": "Nutrient Flow"
+        },
+        "description": {
+            "translate": "advancement.lqe.nutrient_flow.description",
+            "fallback": "Obtain Nourishment"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_nourishment": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:nourishment",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

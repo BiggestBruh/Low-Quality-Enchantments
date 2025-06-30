@@ -1,0 +1,8 @@
+{
+    "values": [
+        "#minecraft:enchantable/mining_loot",
+        "#minecraft:enchantable/weapon",
+        "#minecraft:enchantable/fishing",
+        "#lqe:enchantable/ranged"
+    ]
+}

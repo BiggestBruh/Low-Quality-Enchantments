@@ -1,0 +1,43 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/little_critter",
+    "display": {
+        "icon": {
+            "id": "minecraft:potion",
+            "components": {
+                "minecraft:potion_contents": {
+                    "potion": "minecraft:swiftness"
+                }
+            }
+        },
+        "title": {
+            "translate": "advancement.lqe.pacifism.title",
+            "fallback": "Pacifism"
+        },
+        "description": {
+            "translate": "advancement.lqe.pacifism.description",
+            "fallback": "Obtain Flee"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_flee": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:flee",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

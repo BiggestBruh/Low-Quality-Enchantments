@@ -1,0 +1,10 @@
+{
+    "values": [
+        "#minecraft:enchantable/mining",
+        "minecraft:carrot_on_a_stick",
+        "minecraft:warped_fungus_on_a_stick",
+        "minecraft:brush",
+        "minecraft:flint_and_steel",
+        "#lqe:enchantable/compasses"
+    ]
+}

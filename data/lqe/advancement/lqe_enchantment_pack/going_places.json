@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/dont_worry_he_doesnt_bite",
+    "display": {
+        "icon": {
+            "id": "minecraft:saddle"
+        },
+        "title": {
+            "translate": "advancement.lqe.going_places.title",
+            "fallback": "Going Places"
+        },
+        "description": {
+            "translate": "advancement.lqe.going_places.description",
+            "fallback": "Obtain Gallop"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_gallop": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:gallop",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

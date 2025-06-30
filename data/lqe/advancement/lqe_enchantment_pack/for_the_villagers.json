@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/heaviest_metal",
+    "display": {
+        "icon": {
+            "id": "minecraft:emerald"
+        },
+        "title": {
+            "translate": "advancement.lqe.for_the_villagers.title",
+            "fallback": "For the Villagers"
+        },
+        "description": {
+            "translate": "advancement.lqe.for_the_villagers.description",
+            "fallback": "Obtain Illager Bane"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_illager_bane": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:illager_bane",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

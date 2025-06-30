@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/for_the_villagers",
+    "display": {
+        "icon": {
+            "id": "minecraft:tipped_arrow"
+        },
+        "title": {
+            "translate": "advancement.lqe.drenched_arrows.title",
+            "fallback": "Drenched Arrows"
+        },
+        "description": {
+            "translate": "advancement.lqe.drenched_arrows.description",
+            "fallback": "Obtain Infusion"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_infusion": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:infusion",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

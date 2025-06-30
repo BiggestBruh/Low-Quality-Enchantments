@@ -1,0 +1,21 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+        "vehicle": {
+            "equipment": {
+                "body": {
+                    "items": "#lqe:horse_armor",
+                    "predicates": {
+                        "minecraft:enchantments": [
+                            {
+                                "enchantments": "lqe:cavalry",
+                                "levels": 4
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

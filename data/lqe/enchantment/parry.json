@@ -1,0 +1,21 @@
+{
+    "description": {
+        "translate": "enchantment.lqe.parry",
+        "fallback": "Parry"
+    },
+    "supported_items": "#minecraft:enchantable/weapon",
+    "primary_items": "#minecraft:enchantable/sword",
+    "weight": 2,
+    "max_level": 5,
+    "min_cost": {
+        "base": 6,
+        "per_level_above_first": 10
+    },
+    "max_cost": {
+        "base": 21,
+        "per_level_above_first": 10
+    },
+    "anvil_cost": 4,
+    "slots": ["mainhand"],
+    "effects": {}
+}

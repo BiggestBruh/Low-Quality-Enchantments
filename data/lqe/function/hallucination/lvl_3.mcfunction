@@ -1,0 +1,43 @@
+# Roll for one of the possible sounds to play
+execute store result score @s lqe.hallucination.roll run random value 0..39
+
+execute if score @s lqe.hallucination.roll matches 0 run return run playsound entity.blaze.shoot hostile @s ~ ~ ~ 1.0
+execute if score @s lqe.hallucination.roll matches 1 run return run playsound entity.bogged.ambient hostile @s ~ ~ ~ 1.0
+execute if score @s lqe.hallucination.roll matches 2 run return run playsound entity.breeze.charge hostile @s ~ ~ ~ 1.0
+execute if score @s lqe.hallucination.roll matches 3 run return run playsound entity.creaking.attack hostile @s ~ ~ ~ 1.0
+execute if score @s lqe.hallucination.roll matches 4 run return run playsound entity.creeper.primed hostile @s ~ ~ ~ 1.0
+execute if score @s lqe.hallucination.roll matches 5 run return run playsound entity.drowned.shoot hostile @s ~ ~ ~ 1.0
+execute if score @s lqe.hallucination.roll matches 6 run return run playsound entity.elder_guardian.curse hostile @s ~ ~ ~ 1.0
+execute if score @s lqe.hallucination.roll matches 7 run return run playsound entity.ender_dragon.shoot hostile @s ~ ~ ~ 1.0
+execute if score @s lqe.hallucination.roll matches 8 run return run playsound entity.enderman.scream hostile @s ~ ~ ~ 1.0
+execute if score @s lqe.hallucination.roll matches 9 run return run playsound entity.endermite.ambient hostile @s ~ ~ ~ 1.0
+execute if score @s lqe.hallucination.roll matches 10 run return run playsound entity.evoker.cast_spell hostile @s ~ ~ ~ 1.0
+execute if score @s lqe.hallucination.roll matches 11 run return run playsound entity.ghast.warn hostile @s ~ ~ ~ 1.0
+execute if score @s lqe.hallucination.roll matches 12 run return run playsound entity.guardian.attack hostile @s ~ ~ ~ 1.0
+execute if score @s lqe.hallucination.roll matches 13 run return run playsound entity.hoglin.angry hostile @s ~ ~ ~ 1.0
+execute if score @s lqe.hallucination.roll matches 14 run return run playsound entity.husk.ambient hostile @s ~ ~ ~ 1.0
+execute if score @s lqe.hallucination.roll matches 15 run return run playsound entity.iron_golem.attack hostile @s ~ ~ ~ 1.0
+execute if score @s lqe.hallucination.roll matches 16 run return run playsound entity.magma_cube.jump hostile @s ~ ~ ~ 1.0
+execute if score @s lqe.hallucination.roll matches 17 run return run playsound entity.phantom.swoop hostile @s ~ ~ ~ 1.0
+execute if score @s lqe.hallucination.roll matches 18 run return run playsound entity.piglin.angry hostile @s ~ ~ ~ 1.0
+execute if score @s lqe.hallucination.roll matches 19 run return run playsound entity.piglin_brute.angry hostile @s ~ ~ ~ 1.0
+execute if score @s lqe.hallucination.roll matches 20 run return run playsound entity.pillager.ambient hostile @s ~ ~ ~ 1.0
+execute if score @s lqe.hallucination.roll matches 21 run return run playsound entity.polar_bear.warning hostile @s ~ ~ ~ 1.0
+execute if score @s lqe.hallucination.roll matches 22 run return run playsound entity.ravager.roar hostile @s ~ ~ ~ 1.0
+execute if score @s lqe.hallucination.roll matches 23 run return run playsound entity.shulker.shoot hostile @s ~ ~ ~ 1.0
+execute if score @s lqe.hallucination.roll matches 24 run return run playsound entity.silverfish.ambient hostile @s ~ ~ ~ 1.0
+execute if score @s lqe.hallucination.roll matches 25 run return run playsound entity.skeleton.shoot hostile @s ~ ~ ~ 1.0
+execute if score @s lqe.hallucination.roll matches 26 run return run playsound entity.slime.jump hostile @s ~ ~ ~ 1.0
+execute if score @s lqe.hallucination.roll matches 27 run return run playsound entity.spider.ambient hostile @s ~ ~ ~ 1.0
+execute if score @s lqe.hallucination.roll matches 28 run return run playsound entity.stray.ambient hostile @s ~ ~ ~ 1.0
+execute if score @s lqe.hallucination.roll matches 29 run return run playsound entity.tnt.primed block @s ~ ~ ~ 1.0
+execute if score @s lqe.hallucination.roll matches 30 run return run playsound entity.vex.charge hostile @s ~ ~ ~ 1.0
+execute if score @s lqe.hallucination.roll matches 31 run return run playsound entity.vindicator.ambient hostile @s ~ ~ ~ 1.0
+execute if score @s lqe.hallucination.roll matches 32 run return run playsound entity.warden.angry hostile @s ~ ~ ~ 1.0
+execute if score @s lqe.hallucination.roll matches 33 run return run playsound entity.witch.throw hostile @s ~ ~ ~ 1.0
+execute if score @s lqe.hallucination.roll matches 34 run return run playsound entity.wither.shoot hostile @s ~ ~ ~ 1.0
+execute if score @s lqe.hallucination.roll matches 35 run return run playsound entity.wither_skeleton.ambient hostile @s ~ ~ ~ 1.0
+execute if score @s lqe.hallucination.roll matches 36 run return run playsound entity.zoglin.angry hostile @s ~ ~ ~ 1.0
+execute if score @s lqe.hallucination.roll matches 37 run return run playsound entity.zombified_piglin.angry hostile @s ~ ~ ~ 1.0
+execute if score @s lqe.hallucination.roll matches 38 run return run playsound block.stone.break block @s ~ ~ ~ 1.0
+execute if score @s lqe.hallucination.roll matches 39 run return run playsound block.stone.step block @s ~ ~ ~ 1.0

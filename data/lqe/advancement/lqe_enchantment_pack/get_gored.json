@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/combat_magic",
+    "display": {
+        "icon": {
+            "id": "minecraft:netherrack"
+        },
+        "title": {
+            "translate": "advancement.lqe.get_gored.title",
+            "fallback": "Get Gored"
+        },
+        "description": {
+            "translate": "advancement.lqe.get_gored.description",
+            "fallback": "Obtain Bleeding"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_bleedings": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:bleeding",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

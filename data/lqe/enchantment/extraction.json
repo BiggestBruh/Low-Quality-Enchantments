@@ -1,0 +1,45 @@
+{
+    "description": {
+        "translate": "enchantment.lqe.extraction",
+        "fallback": "Extraction"
+    },
+    "supported_items": "#lqe:enchantable/xp",
+    "weight": 1,
+    "max_level": 5,
+    "min_cost": {
+        "base": 25,
+        "per_level_above_first": 15
+    },
+    "max_cost": {
+        "base": 50,
+        "per_level_above_first": 15
+    },
+    "anvil_cost": 8,
+    "slots": ["any"],
+    "effects": {
+        "block_experience": [
+            {
+                "effect": {
+                    "type": "minecraft:multiply",
+                    "factor": {
+                        "type": "minecraft:linear",
+                        "base": 1.25,
+                        "per_level_above_first": 0.25
+                    }
+                }
+            }
+        ],
+        "mob_experience": [
+            {
+                "effect": {
+                    "type": "minecraft:multiply",
+                    "factor": {
+                        "type": "minecraft:linear",
+                        "base": 1.25,
+                        "per_level_above_first": 0.25
+                    }
+                }
+            }
+        ]
+    }
+}

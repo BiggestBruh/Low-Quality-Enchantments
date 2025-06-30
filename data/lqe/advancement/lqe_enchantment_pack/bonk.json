@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/no_rain_dance_needed",
+    "display": {
+        "icon": {
+            "id": "minecraft:mace"
+        },
+        "title": {
+            "translate": "advancement.lqe.bonk.title",
+            "fallback": "BONK!"
+        },
+        "description": {
+            "translate": "advancement.lqe.bonk.description",
+            "fallback": "Obtain Stun"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_stun": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:stun",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

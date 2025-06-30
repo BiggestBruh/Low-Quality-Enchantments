@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/blunt_force",
+    "display": {
+        "icon": {
+            "id": "minecraft:scaffolding"
+        },
+        "title": {
+            "translate": "advancement.lqe.justice_for_crab.title",
+            "fallback": "Justice For Crab"
+        },
+        "description": {
+            "translate": "advancement.lqe.justice_for_crab.description",
+            "fallback": "Obtain Builder"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_builder": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:builder",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

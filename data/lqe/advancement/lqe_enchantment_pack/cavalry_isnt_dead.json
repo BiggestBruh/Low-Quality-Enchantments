@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/lead_zeppelin",
+    "display": {
+        "icon": {
+            "id": "minecraft:diamond_horse_armor"
+        },
+        "title": {
+            "translate": "advancement.lqe.cavalry_isnt_dead.title",
+            "fallback": "Cavalry Isn't Dead"
+        },
+        "description": {
+            "translate": "advancement.lqe.cavalry_isnt_dead.description",
+            "fallback": "Obtain Cavalry"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_cavalry": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:cavalry",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

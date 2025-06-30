@@ -1,0 +1,166 @@
+{
+    "description": {
+        "translate": "enchantment.lqe.infusion",
+        "fallback": "Infusion"
+    },
+    "exclusive_set": "#lqe:exclusive_set/infusion",
+    "supported_items": "#lqe:enchantable/ranged",
+    "primary_items": "#lqe:enchantable/ranged",
+    "weight": 2,
+    "max_level": 3,
+    "min_cost": {
+        "base": 20,
+        "per_level_above_first": 0
+    },
+    "max_cost": {
+        "base": 60,
+        "per_level_above_first": 0
+    },
+    "anvil_cost": 4,
+    "slots": ["mainhand"],
+    "effects": {
+        "minecraft:post_attack": [
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "lqe:infusion/lvl_1"
+                },
+                "affected": "damaging_entity",
+                "enchanted": "attacker",
+                "requirements": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "attacker",
+                    "predicate": {
+                        "equipment": {
+                            "mainhand": {
+                                "items": "#lqe:enchantable/ranged",
+                                "predicates": {
+                                    "enchantments": [
+                                        {
+                                            "enchantments": "lqe:infusion",
+                                            "levels": 1
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "lqe:infusion/lvl_2"
+                },
+                "affected": "damaging_entity",
+                "enchanted": "attacker",
+                "requirements": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "attacker",
+                    "predicate": {
+                        "equipment": {
+                            "mainhand": {
+                                "items": "#lqe:enchantable/ranged",
+                                "predicates": {
+                                    "enchantments": [
+                                        {
+                                            "enchantments": "lqe:infusion",
+                                            "levels": 2
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "lqe:infusion/lvl_3"
+                },
+                "affected": "damaging_entity",
+                "enchanted": "attacker",
+                "requirements": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "attacker",
+                    "predicate": {
+                        "equipment": {
+                            "mainhand": {
+                                "items": "#lqe:enchantable/ranged",
+                                "predicates": {
+                                    "enchantments": [
+                                        {
+                                            "enchantments": "lqe:infusion",
+                                            "levels": {
+                                                "min": 3
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        ],
+        "minecraft:hit_block": [
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "lqe:infusion/lvl_1"
+                },
+                "requirements": {
+                    "condition": "minecraft:value_check",
+                    "value": {
+                        "type": "minecraft:enchantment_level",
+                        "amount": {
+                            "type": "minecraft:linear",
+                            "base": 1,
+                            "per_level_above_first": 1
+                        }
+                    },
+                    "range": 1
+                }
+            },
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "lqe:infusion/lvl_2"
+                },
+                "requirements": {
+                    "condition": "minecraft:value_check",
+                    "value": {
+                        "type": "minecraft:enchantment_level",
+                        "amount": {
+                            "type": "minecraft:linear",
+                            "base": 1,
+                            "per_level_above_first": 1
+                        }
+                    },
+                    "range": 2
+                }
+            },
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "lqe:infusion/lvl_3"
+                },
+                "requirements": {
+                    "condition": "minecraft:value_check",
+                    "value": {
+                        "type": "minecraft:enchantment_level",
+                        "amount": {
+                            "type": "minecraft:linear",
+                            "base": 1,
+                            "per_level_above_first": 1
+                        }
+                    },
+                    "range": {
+                        "min": 3
+                    }
+                }
+            }
+        ]
+    }
+}

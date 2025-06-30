@@ -1,0 +1,21 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+        "equipment": {
+            "feet": {
+                "items": "#minecraft:enchantable/foot_armor",
+                "predicates": {
+                    "minecraft:enchantments": [
+                        {
+                            "enchantments": "lqe:magma_walker",
+                            "levels": {
+                                "min": 5
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

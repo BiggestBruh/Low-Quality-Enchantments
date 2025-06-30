@@ -1,0 +1,44 @@
+{
+    "description": {
+        "translate": "enchantment.lqe.leaping",
+        "fallback": "Leaping"
+    },
+    "supported_items": "#minecraft:enchantable/leg_armor",
+    "primary_items": "#minecraft:enchantable/leg_armor",
+    "weight": 5,
+    "max_level": 5,
+    "min_cost": {
+        "base": 15,
+        "per_level_above_first": 8
+    },
+    "max_cost": {
+        "base": 30,
+        "per_level_above_first": 8
+    },
+    "anvil_cost": 4,
+    "slots": ["legs"],
+    "effects": {
+        "minecraft:attributes": [
+            {
+                "id": "lqe:enchantment.leaping.jump_strength",
+                "attribute": "minecraft:jump_strength",
+                "operation": "add_multiplied_base",
+                "amount": {
+                    "type": "minecraft:linear",
+                    "base": 0.15,
+                    "per_level_above_first": 0.15
+                }
+            },
+            {
+                "id": "lqe:enchantment.leaping.safe_fall",
+                "attribute": "minecraft:safe_fall_distance",
+                "operation": "add_value",
+                "amount": {
+                    "type": "minecraft:linear",
+                    "base": 0.25,
+                    "per_level_above_first": 0.25
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "description": {
+        "translate": "enchantment.lqe.lightweight",
+        "fallback": "Lightweight"
+    },
+    "supported_items": "minecraft:elytra",
+    "weight": 1,
+    "max_level": 3,
+    "min_cost": {
+        "base": 10,
+        "per_level_above_first": 10
+    },
+    "max_cost": {
+        "base": 20,
+        "per_level_above_first": 10
+    },
+    "anvil_cost": 8,
+    "slots": ["chest"],
+    "effects": {
+        "minecraft:attributes": [
+            {
+                "id": "lqe:enchantment.lightweight.gravity",
+                "attribute": "minecraft:gravity",
+                "amount": {
+                    "type": "minecraft:linear",
+                    "base": -0.01,
+                    "per_level_above_first": -0.01
+                },
+                "operation": "add_value"
+            },
+            {
+                "id": "lqe:enchantment.lightweight.safe_fall",
+                "attribute": "minecraft:safe_fall_distance",
+                "operation": "add_multiplied_base",
+                "amount": {
+                    "type": "minecraft:linear",
+                    "base": 0.2,
+                    "per_level_above_first": 0.2
+                }
+            }
+        ]
+    }
+}

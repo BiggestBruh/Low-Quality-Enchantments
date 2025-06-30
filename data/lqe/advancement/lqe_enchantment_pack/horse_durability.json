@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/forever_companion",
+    "display": {
+        "icon": {
+            "id": "minecraft:golden_horse_armor"
+        },
+        "title": {
+            "translate": "advancement.lqe.horse_durability.title",
+            "fallback": "Horse Durability"
+        },
+        "description": {
+            "translate": "advancement.lqe.horse_durability.description",
+            "fallback": "Obtain Steed"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_steed": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:steed",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

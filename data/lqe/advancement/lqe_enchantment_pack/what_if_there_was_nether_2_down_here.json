@@ -1,0 +1,53 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/youre_not_supposed_to_be_here",
+    "display": {
+        "icon": {
+            "id": "minecraft:netherrack"
+        },
+        "title": {
+            "translate": "advancement.lqe.what_if_there_was_nether_2_down_here.title",
+            "fallback": "What If There Was Nether 2 Down Here?"
+        },
+        "description": {
+            "translate": "advancement.lqe.what_if_there_was_nether_2_down_here.description",
+            "fallback": "Take void damage in The Nether"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "nether_void": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"location": {
+								"dimension": "minecraft:the_nether",
+								"position": {
+									"y": {
+										"max": -64
+									}
+								}
+							}
+						}
+					},
+					{
+						"condition": "minecraft:inverted",
+						"term": {
+							"condition": "minecraft:entity_properties",
+							"entity": "this",
+							"predicate": {
+								"type_specific": {
+									"type": "player",
+									"gamemode": ["spectator"]
+								}
+							}
+						}
+					}
+				]
+			}
+		}
+    }
+}

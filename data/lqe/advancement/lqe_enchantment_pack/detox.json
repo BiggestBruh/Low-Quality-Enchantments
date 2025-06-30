@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/potion_refiner",
+    "display": {
+        "icon": {
+            "id": "minecraft:spider_eye"
+        },
+        "title": {
+            "translate": "advancement.lqe.detox.title",
+            "fallback": "Detox"
+        },
+        "description": {
+            "translate": "advancement.lqe.detox.description",
+            "fallback": "Obtain Antidote"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_antidote": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:antidote",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

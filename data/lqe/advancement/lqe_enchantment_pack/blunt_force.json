@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/detox",
+    "display": {
+        "icon": {
+            "id": "minecraft:shield"
+        },
+        "title": {
+            "translate": "advancement.lqe.blunt_force.title",
+            "fallback": "Blunt Force"
+        },
+        "description": {
+            "translate": "advancement.lqe.blunt_force.description",
+            "fallback": "Obtain Bash"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_bash": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:bash",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

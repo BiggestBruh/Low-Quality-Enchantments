@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/end_them_all",
+    "display": {
+        "icon": {
+            "id": "minecraft:clock"
+        },
+        "title": {
+            "translate": "advancement.lqe.the_long_game.title",
+            "fallback": "The Long Game"
+        },
+        "description": {
+            "translate": "advancement.lqe.the_long_game.description",
+            "fallback": "Obtain Evolution"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_evolution": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:evolution",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

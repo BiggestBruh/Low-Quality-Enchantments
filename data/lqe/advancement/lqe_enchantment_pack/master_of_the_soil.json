@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/nonuple_dig",
+    "display": {
+        "icon": {
+            "id": "minecraft:farmland"
+        },
+        "title": {
+            "translate": "advancement.lqe.master_of_the_soil.title",
+            "fallback": "Master of the Soil"
+        },
+        "description": {
+            "translate": "advancement.lqe.master_of_the_soil.description",
+            "fallback": "Obtain Farmer"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_farmer": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:farmer",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

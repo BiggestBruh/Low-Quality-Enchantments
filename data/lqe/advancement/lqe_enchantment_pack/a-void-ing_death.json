@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/running_but_better",
+    "display": {
+        "icon": {
+            "id": "minecraft:end_portal_frame"
+        },
+        "title": {
+            "translate": "advancement.lqe.a-void-ing_death.title",
+            "fallback": "A-void-ing Death"
+        },
+        "description": {
+            "translate": "advancement.lqe.a-void-ing_death.description",
+            "fallback": "Obtain Voidless"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_voidless": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:voidless",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

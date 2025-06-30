@@ -1,0 +1,20 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": "minecraft:potion",
+                    "components": {
+                        "minecraft:potion_contents": {
+                            "potion": "minecraft:long_slow_falling"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "lqe:alchemy/long_slow_falling"
+    }
+}

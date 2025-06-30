@@ -1,0 +1,217 @@
+{
+    "description": {
+        "translate": "enchantment.lqe.pull",
+        "fallback": "Pull"
+    },
+    "exclusive_set": "#lqe:exclusive_set/pull",
+    "supported_items": "#minecraft:enchantable/trident",
+    "primary_items": "#minecraft:enchantable/trident",
+    "weight": 5,
+    "max_level": 5,
+    "min_cost": {
+        "base": 8,
+        "per_level_above_first": 10
+    },
+    "max_cost": {
+        "base": 16,
+        "per_level_above_first": 10
+    },
+    "anvil_cost": 2,
+    "slots": ["mainhand"],
+    "effects": {
+        "minecraft:post_attack": [
+            {
+                "effect": {
+                    "type": "minecraft:explode",
+                    "attribute_to_user": true,
+                    "immune_blocks": "#minecraft:blocks_wind_charge_explosions",
+                    "knockback_multiplier": {
+                        "type": "minecraft:linear",
+                        "base": -0.75,
+                        "per_level_above_first": -0.25
+                    },
+                    "radius": {
+                        "type": "minecraft:linear",
+                        "base": 3,
+                        "per_level_above_first": 1
+                    },
+                    "create_fire": false,
+                    "block_interaction": "none",
+                    "large_particle": {
+                        "type": "minecraft:portal"
+                    },
+                    "small_particle": {
+                        "type": "minecraft:portal"
+                    },
+                    "sound": "minecraft:entity.enderman.teleport"
+                },
+                "affected": "victim",
+                "enchanted": "attacker"
+            }
+        ],
+        "minecraft:hit_block": [
+            {
+                "effect": {
+                    "type": "minecraft:explode",
+                    "attribute_to_user": true,
+                    "immune_blocks": "#minecraft:blocks_wind_charge_explosions",
+                    "knockback_multiplier": {
+                        "type": "minecraft:linear",
+                        "base": -0.75,
+                        "per_level_above_first": -0.25
+                    },
+                    "radius": {
+                        "type": "minecraft:linear",
+                        "base": 3,
+                        "per_level_above_first": 1
+                    },
+                    "create_fire": false,
+                    "block_interaction": "none",
+                    "large_particle": {
+                        "type": "minecraft:portal"
+                    },
+                    "small_particle": {
+                        "type": "minecraft:portal"
+                    },
+                    "sound": "minecraft:entity.enderman.teleport",
+                    "offset": [0,0.25,0]
+                }
+            },
+            {
+                "effect": {
+                    "type": "minecraft:explode",
+                    "attribute_to_user": true,
+                    "immune_blocks": "#minecraft:blocks_wind_charge_explosions",
+                    "knockback_multiplier": {
+                        "type": "minecraft:linear",
+                        "base": -0.75,
+                        "per_level_above_first": -0.25
+                    },
+                    "radius": {
+                        "type": "minecraft:linear",
+                        "base": 3,
+                        "per_level_above_first": 1
+                    },
+                    "create_fire": false,
+                    "block_interaction": "none",
+                    "large_particle": {
+                        "type": "minecraft:portal"
+                    },
+                    "small_particle": {
+                        "type": "minecraft:portal"
+                    },
+                    "sound": "minecraft:entity.enderman.teleport",
+                    "offset": [0,-0.25,0]
+                }
+            },
+            {
+                "effect": {
+                    "type": "minecraft:explode",
+                    "attribute_to_user": true,
+                    "immune_blocks": "#minecraft:blocks_wind_charge_explosions",
+                    "knockback_multiplier": {
+                        "type": "minecraft:linear",
+                        "base": -0.75,
+                        "per_level_above_first": -0.25
+                    },
+                    "radius": {
+                        "type": "minecraft:linear",
+                        "base": 3,
+                        "per_level_above_first": 1
+                    },
+                    "create_fire": false,
+                    "block_interaction": "none",
+                    "large_particle": {
+                        "type": "minecraft:portal"
+                    },
+                    "small_particle": {
+                        "type": "minecraft:portal"
+                    },
+                    "sound": "minecraft:entity.enderman.teleport",
+                    "offset": [0.25,0,0]
+                }
+            },
+            {
+                "effect": {
+                    "type": "minecraft:explode",
+                    "attribute_to_user": true,
+                    "immune_blocks": "#minecraft:blocks_wind_charge_explosions",
+                    "knockback_multiplier": {
+                        "type": "minecraft:linear",
+                        "base": -0.75,
+                        "per_level_above_first": -0.25
+                    },
+                    "radius": {
+                        "type": "minecraft:linear",
+                        "base": 3,
+                        "per_level_above_first": 1
+                    },
+                    "create_fire": false,
+                    "block_interaction": "none",
+                    "large_particle": {
+                        "type": "minecraft:portal"
+                    },
+                    "small_particle": {
+                        "type": "minecraft:portal"
+                    },
+                    "sound": "minecraft:entity.enderman.teleport",
+                    "offset": [-0.25,0,0]
+                }
+            },
+            {
+                "effect": {
+                    "type": "minecraft:explode",
+                    "attribute_to_user": true,
+                    "immune_blocks": "#minecraft:blocks_wind_charge_explosions",
+                    "knockback_multiplier": {
+                        "type": "minecraft:linear",
+                        "base": -0.75,
+                        "per_level_above_first": -0.25
+                    },
+                    "radius": {
+                        "type": "minecraft:linear",
+                        "base": 3,
+                        "per_level_above_first": 1
+                    },
+                    "create_fire": false,
+                    "block_interaction": "none",
+                    "large_particle": {
+                        "type": "minecraft:portal"
+                    },
+                    "small_particle": {
+                        "type": "minecraft:portal"
+                    },
+                    "sound": "minecraft:entity.enderman.teleport",
+                    "offset": [0,0,0.25]
+                }
+            },
+            {
+                "effect": {
+                    "type": "minecraft:explode",
+                    "attribute_to_user": true,
+                    "immune_blocks": "#minecraft:blocks_wind_charge_explosions",
+                    "knockback_multiplier": {
+                        "type": "minecraft:linear",
+                        "base": -0.75,
+                        "per_level_above_first": -0.25
+                    },
+                    "radius": {
+                        "type": "minecraft:linear",
+                        "base": 3,
+                        "per_level_above_first": 1
+                    },
+                    "create_fire": false,
+                    "block_interaction": "none",
+                    "large_particle": {
+                        "type": "minecraft:portal"
+                    },
+                    "small_particle": {
+                        "type": "minecraft:portal"
+                    },
+                    "sound": "minecraft:entity.enderman.teleport",
+                    "offset": [0,0,-0.25]
+                }
+            }
+        ]
+    }
+}

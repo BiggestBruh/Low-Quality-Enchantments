@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/more_like_badrock",
+    "display": {
+        "icon": {
+            "id": "minecraft:diamond_pickaxe"
+        },
+        "title": {
+            "translate": "advancement.lqe.nonuple_dig.title",
+            "fallback": "Nonuple Dig"
+        },
+        "description": {
+            "translate": "advancement.lqe.nonuple_dig.description",
+            "fallback": "Obtain Excavation"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_excavation": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:excavation",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

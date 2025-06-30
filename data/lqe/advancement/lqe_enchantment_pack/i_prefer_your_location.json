@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/bonk",
+    "display": {
+        "icon": {
+            "id": "minecraft:ender_pearl"
+        },
+        "title": {
+            "translate": "advancement.lqe.i_prefer_your_location.title",
+            "fallback": "I Prefer Your Location"
+        },
+        "description": {
+            "translate": "advancement.lqe.i_prefer_your_location.description",
+            "fallback": "Obtain Swap"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_swap": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:swap",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

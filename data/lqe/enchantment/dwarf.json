@@ -1,0 +1,75 @@
+{
+    "description": {
+        "translate": "enchantment.lqe.dwarf",
+        "fallback": "Dwarf"
+    },
+    "exclusive_set": "lqe:giant",
+    "supported_items": "#minecraft:enchantable/leg_armor",
+    "primary_items": "#minecraft:enchantable/leg_armor",
+    "weight": 2,
+    "max_level": 5,
+    "min_cost": {
+        "base": 10,
+        "per_level_above_first": 10
+    },
+    "max_cost": {
+        "base": 20,
+        "per_level_above_first": 10
+    },
+    "anvil_cost": 2,
+    "slots": ["legs"],
+    "effects": {
+        "minecraft:attributes": [
+            {
+                "id": "lqe:enchantment.dwarf.scale",
+                "attribute": "minecraft:scale",
+                "operation": "add_value",
+                "amount": {
+                    "type": "minecraft:linear",
+                    "base": -0.15,
+                    "per_level_above_first": -0.15
+                }
+            },
+            {
+                "id": "lqe:enchantment.dwarf.entity_reach",
+                "attribute": "minecraft:entity_interaction_range",
+                "operation": "add_value",
+                "amount": {
+                    "type": "minecraft:linear",
+                    "base": -0.1,
+                    "per_level_above_first": -0.1
+                }
+            },
+            {
+                "id": "lqe:enchantment.dwarf.block_reach",
+                "attribute": "minecraft:block_interaction_range",
+                "operation": "add_value",
+                "amount": {
+                    "type": "minecraft:linear",
+                    "base": -0.1,
+                    "per_level_above_first": -0.1
+                }
+            },
+            {
+                "id": "lqe:enchantment.dwarf.step_height",
+                "attribute": "minecraft:step_height",
+                "operation": "add_value",
+                "amount": {
+                    "type": "minecraft:lookup",
+                    "values": [
+                        -0.1,
+                        -0.1,
+                        -0.1,
+                        -0.25,
+                        -0.35
+                    ],
+                    "fallback": {
+                        "type": "minecraft:linear",
+                        "base": -0.15,
+                        "per_level_above_first": -0.15
+                    }
+                }
+            }
+        ]
+    }
+}

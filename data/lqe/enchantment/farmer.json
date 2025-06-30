@@ -1,0 +1,78 @@
+{
+    "description": {
+        "translate": "enchantment.lqe.farmer",
+        "fallback": "Farmer"
+    },
+    "supported_items": "#minecraft:hoes",
+    "primary_items": "#minecraft:hoes",
+    "weight": 5,
+    "max_level": 5,
+    "min_cost": {
+        "base": 8,
+        "per_level_above_first": 10
+    },
+    "max_cost": {
+        "base": 16,
+        "per_level_above_first": 10
+    },
+    "anvil_cost": 1,
+    "slots": ["mainhand"],
+    "effects": {
+        "minecraft:hit_block": [
+            {
+                "effect": {
+                    "type": "minecraft:replace_disk",
+                    "block_state": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                            "Name": "minecraft:farmland",
+                            "Properties": {
+                                "moisture": "0"
+                            }
+                        }
+                    },
+                    "height": 1,
+                    "radius": {
+                        "type": "minecraft:clamped",
+                        "max": 16.0,
+                        "min": 0.0,
+                        "value": {
+                            "type": "minecraft:linear",
+                            "base": 2.0,
+                            "per_level_above_first": 1.0
+                        }
+                    },
+                    "predicate": {
+                        "type": "minecraft:all_of",
+                        "predicates": [
+                            {
+                                "type": "minecraft:matching_block_tag",
+                                "offset": [
+                                    0,
+                                    1,
+                                    0
+                                ],
+                                "tag": "minecraft:air"
+                            },
+                            {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": "#lqe:tillable"
+                            }
+                        ]
+                    },
+                    "trigger_game_event": "minecraft:block_place"
+                }
+            },
+            {
+                "effect": {
+                    "type": "minecraft:change_item_damage",
+                    "amount": {
+                        "type": "minecraft:linear",
+                        "base": 2,
+                        "per_level_above_first": 2
+                    }
+                }
+            }
+        ]
+    }
+}

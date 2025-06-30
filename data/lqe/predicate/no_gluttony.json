@@ -1,0 +1,24 @@
+{
+    "condition": "minecraft:inverted",
+    "term": {
+        "condition": "minecraft:entity_properties",
+        "entity": "attacker",
+        "predicate": {
+            "slots": {
+                "weapon.mainhand": {
+                    "items": "#lqe:enchantable/attack",
+                    "predicates": {
+                        "minecraft:enchantments": [
+                            {
+                                "enchantments": "lqe:gluttony_curse",
+                                "levels": {
+                                    "min": 1
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

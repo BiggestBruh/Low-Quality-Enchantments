@@ -1,0 +1,52 @@
+{
+    "description": {
+        "translate": "enchantment.lqe.flee",
+        "fallback": "Flee"
+    },
+    "supported_items": "#minecraft:enchantable/foot_armor",
+    "primary_items": "#minecraft:enchantable/foot_armor",
+    "weight": 2,
+    "max_level": 5,
+    "min_cost": {
+        "base": 6,
+        "per_level_above_first": 10
+    },
+    "max_cost": {
+        "base": 21,
+        "per_level_above_first": 10
+    },
+    "anvil_cost": 2,
+    "slots": ["feet"],
+    "effects": {
+        "minecraft:post_attack": [
+            {
+                "effect": {
+                    "type": "minecraft:play_sound",
+                    "sound": "minecraft:item.armor.equip_netherite",
+                    "pitch": 1.5,
+                    "volume": 1.0
+                },
+                "affected": "victim",
+                "enchanted": "victim"
+            },
+            {
+                "effect": {
+                    "type": "minecraft:play_sound",
+                    "sound": "minecraft:entity.experience_orb.pickup",
+                    "pitch": 0.9,
+                    "volume": 1.0
+                },
+                "affected": "victim",
+                "enchanted": "victim"
+            },
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "lqe:flee/buff"
+                },
+                "affected": "victim",
+                "enchanted": "victim"
+            }
+        ]
+    }
+}

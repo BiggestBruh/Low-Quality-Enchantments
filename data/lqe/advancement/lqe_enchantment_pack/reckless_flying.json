@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/one_with_the_dolphins",
+    "display": {
+        "icon": {
+            "id": "minecraft:elytra"
+        },
+        "title": {
+            "translate": "advancement.lqe.reckless_flying.title",
+            "fallback": "Reckless Flying"
+        },
+        "description": {
+            "translate": "advancement.lqe.reckless_flying.description",
+            "fallback": "Obtain Kinetic Protection"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_kinetic_protection": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:kinetic_protection",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/magical_infusion",
+    "display": {
+        "icon": {
+            "id": "minecraft:diamond_axe"
+        },
+        "title": {
+            "translate": "advancement.lqe.java_edition_combat_test.title",
+            "fallback": "Java Edition Combat Tests"
+        },
+        "description": {
+            "translate": "advancement.lqe.java_edition_combat_test.description",
+            "fallback": "Obtain Cleaving"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_cleaving": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:cleaving",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,146 @@
+{
+    "description": {
+        "translate": "enchantment.lqe.hallucination_curse",
+        "fallback": "Curse of Hallucination"
+    },
+    "supported_items": "#lqe:enchantable/head_wearable",
+    "weight": 1,
+    "max_level": 3,
+    "min_cost": {
+        "base": 25,
+        "per_level_above_first": 0
+    },
+    "max_cost": {
+        "base": 50,
+        "per_level_above_first": 0
+    },
+    "anvil_cost": 4,
+    "slots": ["head"],
+    "effects": {
+        "minecraft:tick": [
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "lqe:hallucination/lvl_1"
+                },
+                "requirements": {
+                    "condition": "minecraft:all_of",
+                    "terms":[
+                        {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "slots": {
+                                    "armor.head": {
+                                        "items": "#lqe:enchantable/head_wearable",
+                                        "predicates": {
+                                            "minecraft:enchantments": [
+                                                {
+                                                    "enchantments": "lqe:hallucination_curse",
+                                                    "levels": 1
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": {
+                                "type": "minecraft:enchantment_level",
+                                "amount": {
+                                    "type": "minecraft:linear",
+                                    "base": 0.0005,
+                                    "per_level_above_first": 0.0005
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "lqe:hallucination/lvl_2"
+                },
+                "requirements": {
+                    "condition": "minecraft:all_of",
+                    "terms":[
+                        {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "slots": {
+                                    "armor.head": {
+                                        "items": "#lqe:enchantable/head_wearable",
+                                        "predicates": {
+                                            "minecraft:enchantments": [
+                                                {
+                                                    "enchantments": "lqe:hallucination_curse",
+                                                    "levels": 2
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": {
+                                "type": "minecraft:enchantment_level",
+                                "amount": {
+                                    "type": "minecraft:linear",
+                                    "base": 0.0005,
+                                    "per_level_above_first": 0.0005
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "lqe:hallucination/lvl_3"
+                },
+                "requirements": {
+                    "condition": "minecraft:all_of",
+                    "terms":[
+                        {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "slots": {
+                                    "armor.head": {
+                                        "items": "#lqe:enchantable/head_wearable",
+                                        "predicates": {
+                                            "minecraft:enchantments": [
+                                                {
+                                                    "enchantments": "lqe:hallucination_curse",
+                                                    "levels": 3
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": {
+                                "type": "minecraft:enchantment_level",
+                                "amount": {
+                                    "type": "minecraft:linear",
+                                    "base": 0.0005,
+                                    "per_level_above_first": 0.0005
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        ] 
+    }
+}

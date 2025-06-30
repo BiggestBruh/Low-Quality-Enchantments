@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/trees_begone",
+    "display": {
+        "icon": {
+            "id": "minecraft:iron_ore"
+        },
+        "title": {
+            "translate": "advancement.lqe.ores_begone.title",
+            "fallback": "Ores Begone"
+        },
+        "description": {
+            "translate": "advancement.lqe.ores_begone.description",
+            "fallback": "Obtain Veinminer"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_veinminer": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:veinminer",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

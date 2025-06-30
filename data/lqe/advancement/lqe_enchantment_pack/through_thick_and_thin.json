@@ -1,0 +1,222 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/reaching_the_upper_shelves",
+    "display": {
+        "icon": {
+            "id": "minecraft:clock"
+        },
+        "title": {
+            "translate": "advancement.lqe.through_thick_and_thin.title",
+            "fallback": "Through Thick and Thin"
+        },
+        "description": {
+            "translate": "advancement.lqe.through_thick_and_thin.description",
+            "fallback": "Evolve a weapon all the way to Evolution X"
+        },
+        "frame": "challenge"
+    },
+    "criteria": {
+        "evolution_1": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+                    {
+                        "items": "#minecraft:enchantable/weapon",
+						"predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:evolution",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+			}
+		},
+        "evolution_2": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+                    {
+                        "items": "#minecraft:enchantable/weapon",
+						"predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:evolution",
+                                    "levels": {
+                                        "min": 2
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+			}
+		},
+        "evolution_3": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+                    {
+                        "items": "#minecraft:enchantable/weapon",
+						"predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:evolution",
+                                    "levels": {
+                                        "min": 3
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+			}
+		},
+        "evolution_4": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+                    {
+                        "items": "#minecraft:enchantable/weapon",
+						"predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:evolution",
+                                    "levels": {
+                                        "min": 4
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+			}
+		},
+        "evolution_5": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+                    {
+                        "items": "#minecraft:enchantable/weapon",
+						"predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:evolution",
+                                    "levels": {
+                                        "min": 5
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+			}
+		},
+        "evolution_6": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+                    {
+                        "items": "#minecraft:enchantable/weapon",
+						"predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:evolution",
+                                    "levels": {
+                                        "min": 6
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+			}
+		},
+        "evolution_7": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+                    {
+                        "items": "#minecraft:enchantable/weapon",
+						"predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:evolution",
+                                    "levels": {
+                                        "min": 7
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+			}
+		},
+        "evolution_8": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+                    {
+                        "items": "#minecraft:enchantable/weapon",
+						"predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:evolution",
+                                    "levels": {
+                                        "min": 8
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+			}
+		},
+        "evolution_9": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+                    {
+                        "items": "#minecraft:enchantable/weapon",
+						"predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:evolution",
+                                    "levels": {
+                                        "min": 9
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+			}
+		},
+        "evolution_10": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+                    {
+                        "items": "#minecraft:enchantable/weapon",
+						"predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:evolution",
+                                    "levels": {
+                                        "min": 10
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+			}
+		}
+	},
+    "rewards": {
+        "experience": 100
+    }
+}

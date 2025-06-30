@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/you_cant_hide",
+    "display": {
+        "icon": {
+            "id": "minecraft:red_harness"
+        },
+        "title": {
+            "translate": "advancement.lqe.jet_blimp.title",
+            "fallback": "Jet Blimp"
+        },
+        "description": {
+            "translate": "advancement.lqe.jet_blimp.description",
+            "fallback": "Obtain Soar"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_soar": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:soar",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

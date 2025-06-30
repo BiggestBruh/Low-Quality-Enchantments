@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/master_of_the_soil",
+    "display": {
+        "icon": {
+            "id": "minecraft:fishing_rod"
+        },
+        "title": {
+            "translate": "advancement.lqe.its_a_hook_of_course_it_hurts.title",
+            "fallback": "It's a Hook, of Course it Hurts"
+        },
+        "description": {
+            "translate": "advancement.lqe.its_a_hook_of_course_it_hurts.description",
+            "fallback": "Obtain Hook"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_hook": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:hook",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

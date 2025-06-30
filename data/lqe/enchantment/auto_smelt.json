@@ -1,0 +1,43 @@
+{
+    "description": {
+        "translate": "enchantment.lqe.auto_smelt",
+        "fallback": "Auto Smelt"
+    },
+    "exclusive_set": "minecraft:silk_touch",
+    "supported_items": "#lqe:enchantable/loot",
+    "primary_items": "#minecraft:enchantable/mining_loot",
+    "weight": 1,
+    "max_level": 1,
+    "min_cost": {
+      "base": 25,
+      "per_level_above_first": 0
+    },
+    "max_cost": {
+      "base": 60,
+      "per_level_above_first": 0
+    },
+    "anvil_cost": 8,
+    "slots": ["mainhand"],
+    "effects": {
+      "minecraft:hit_block": [
+        {
+          "effect": {
+            "type": "minecraft:change_item_damage",
+            "amount": 1
+          },
+          "requirements": {
+            "condition": "minecraft:random_chance",
+            "chance": 0.2
+          }
+        }
+      ],
+      "minecraft:item_damage": [
+        {
+          "effect": {
+            "type": "minecraft:add",
+            "value": 1
+          }
+        }
+      ]
+    }
+}

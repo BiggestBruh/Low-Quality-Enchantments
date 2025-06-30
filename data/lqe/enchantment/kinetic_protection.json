@@ -1,0 +1,49 @@
+{
+    "description": {
+        "translate": "enchantment.lqe.kinetic_protection",
+        "fallback": "Kinetic Protection"
+    },
+    "exclusive_set": "lqe:plated",
+    "supported_items": "minecraft:elytra",
+    "weight": 5,
+    "max_level": 7,
+    "min_cost": {
+        "base": 10,
+        "per_level_above_first": 8
+    },
+    "max_cost": {
+        "base": 20,
+        "per_level_above_first": 8
+    },
+    "anvil_cost": 2,
+    "slots": ["chest"],
+    "effects": {
+        "minecraft:damage_protection": [
+            {
+                "effect": {
+                    "type": "minecraft:add",
+                    "value": {
+                        "type": "minecraft:linear",
+                        "base": 3,
+                        "per_level_above_first": 3
+                    }
+                },
+                "requirements": {
+                    "condition": "minecraft:damage_source_properties",
+                    "predicate": {
+                        "tags": [
+                            {
+                                "expected": false,
+                                "id": "minecraft:bypasses_invulnerability"
+                            },
+                            {
+                                "expected": true,
+                                "id": "lqe:kinetic"
+                            }
+                        ]
+                    }
+                }
+            }
+        ]
+    }
+}

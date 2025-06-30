@@ -1,0 +1,57 @@
+{
+    "description": {
+        "translate": "enchantment.lqe.swap",
+        "fallback": "Swap"
+    },
+    "exclusive_set": "#lqe:exclusive_set/swap",
+    "supported_items": "#minecraft:enchantable/trident",
+    "primary_items": "#minecraft:enchantable/trident",
+    "weight": 1,
+    "max_level": 1,
+    "min_cost": {
+        "base": 25,
+        "per_level_above_first": 25
+    },
+    "max_cost": {
+        "base": 75,
+        "per_level_above_first": 25
+    },
+    "anvil_cost": 8,
+    "slots": ["mainhand"],
+    "effects": {
+        "minecraft:post_attack": [
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "lqe:swap/thrower_pos"
+                },
+                "affected": "attacker",
+                "enchanted": "attacker"
+            },
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "lqe:swap/target_pos"
+                },
+                "affected": "victim",
+                "enchanted": "attacker"
+            },
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "lqe:swap/thrower_tp"
+                },
+                "affected": "attacker",
+                "enchanted": "attacker"
+            },
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "lqe:swap/target_tp"
+                },
+                "affected": "victim",
+                "enchanted": "attacker"
+            }
+        ]
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "values": [
+        "#minecraft:concrete_powder",
+        "minecraft:clay",
+        "minecraft:coarse_dirt",
+        "minecraft:dirt",
+        "minecraft:dirt_path",
+        "minecraft:farmland",
+        "minecraft:grass_block",
+        "minecraft:gravel",
+        "minecraft:mud",
+        "minecraft:muddy_mangrove_roots",
+        "minecraft:mycelium",
+        "minecraft:podzol",
+        "minecraft:red_sand",
+        "minecraft:rooted_dirt",
+        "minecraft:sand",
+        "minecraft:snow",
+        "minecraft:snow_block",
+        "minecraft:soul_sand",
+        "minecraft:soul_soil"
+    ]
+}

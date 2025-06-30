@@ -1,0 +1,35 @@
+{
+    "description": {
+        "translate": "enchantment.lqe.spirit",
+        "fallback": "Spirit"
+    },
+    "exclusive_set": "#lqe:exclusive_set/wolf_armor",
+    "supported_items": "minecraft:wolf_armor",
+    "weight": 1,
+    "max_level": 1,
+    "min_cost": {
+        "base": 20,
+        "per_level_above_first": 0
+    },
+    "max_cost": {
+        "base": 50,
+        "per_level_above_first": 0
+    },
+    "anvil_cost": 8,
+    "slots": ["body"],
+    "effects": {
+        "minecraft:damage_immunity": [
+            {
+                "effect": {}
+            }
+        ],
+        "minecraft:attributes": [
+            {
+                "id": "lqe:enchantment.spirit",
+                "attribute": "minecraft:attack_damage",
+                "amount": -4,
+                "operation": "add_value"
+            }
+        ]
+    }
+}

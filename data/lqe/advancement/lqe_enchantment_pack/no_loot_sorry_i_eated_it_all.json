@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/comedically_timed_doom",
+    "display": {
+        "icon": {
+            "id": "minecraft:cooked_chicken"
+        },
+        "title": {
+            "translate": "advancement.lqe.no_loot_sorry_i_eated_it_all.title",
+            "fallback": "No Loot, Sorry, I Eated It All"
+        },
+        "description": {
+            "translate": "advancement.lqe.no_loot_sorry_i_eated_it_all.description",
+            "fallback": "Obtain Curse of Gluttony"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_gluttony_curse": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:gluttony_curse",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

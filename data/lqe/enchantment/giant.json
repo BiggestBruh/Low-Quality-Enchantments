@@ -1,0 +1,65 @@
+{
+    "description": {
+        "translate": "enchantment.lqe.giant",
+        "fallback": "Giant"
+    },
+    "exclusive_set": "lqe:dwarf",
+    "supported_items": "#minecraft:enchantable/leg_armor",
+    "primary_items": "#minecraft:enchantable/leg_armor",
+    "weight": 2,
+    "max_level": 5,
+    "min_cost": {
+        "base": 10,
+        "per_level_above_first": 10
+    },
+    "max_cost": {
+        "base": 20,
+        "per_level_above_first": 10
+    },
+    "anvil_cost": 2,
+    "slots": ["legs"],
+    "effects": {
+        "minecraft:attributes": [
+            {
+                "id": "lqe:enchantment.giant.scale",
+                "attribute": "minecraft:scale",
+                "operation": "add_value",
+                "amount": {
+                    "type": "minecraft:linear",
+                    "base": 0.5,
+                    "per_level_above_first": 0.5
+                }
+            },
+            {
+                "id": "lqe:enchantment.giant.entity_reach",
+                "attribute": "minecraft:entity_interaction_range",
+                "operation": "add_value",
+                "amount": {
+                    "type": "minecraft:linear",
+                    "base": 0.5,
+                    "per_level_above_first": 0.5
+                }
+            },
+            {
+                "id": "lqe:enchantment.giant.block_reach",
+                "attribute": "minecraft:block_interaction_range",
+                "operation": "add_value",
+                "amount": {
+                    "type": "minecraft:linear",
+                    "base": 0.5,
+                    "per_level_above_first": 0.5
+                }
+            },
+            {
+                "id": "lqe:enchantment.giant.step_height",
+                "attribute": "minecraft:step_height",
+                "operation": "add_value",
+                "amount": {
+                    "type": "minecraft:linear",
+                    "base": 0.2,
+                    "per_level_above_first": 0.2
+                }
+            }
+        ]
+    }
+}

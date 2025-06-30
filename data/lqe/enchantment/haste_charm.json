@@ -1,0 +1,34 @@
+{
+    "description": {
+        "translate": "enchantment.lqe.haste_charm",
+        "fallback": "Charm of Haste"
+    },
+    "exclusive_set": "#lqe:exclusive_set/charms",
+    "supported_items": "#lqe:enchantable/trinkets",
+    "weight": 2,
+    "max_level": 5,
+    "min_cost": {
+        "base": 1,
+        "per_level_above_first": 15
+    },
+    "max_cost": {
+        "base": 30,
+        "per_level_above_first": 15
+    },
+    "anvil_cost": 4,
+    "slots": ["offhand"],
+    "effects": {
+        "minecraft:attributes": [
+            {
+                "id": "lqe:enchantment.charm.haste",
+                "attribute": "minecraft:movement_speed",
+                "amount": {
+                    "type": "linear",
+                    "base": 0.08,
+                    "per_level_above_first": 0.06
+                },
+                "operation": "add_multiplied_base"
+            }
+        ]
+    }
+}

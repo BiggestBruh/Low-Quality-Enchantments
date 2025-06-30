@@ -1,0 +1,45 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/opposite_day",
+    "display": {
+        "icon": {
+            "id": "minecraft:trident"
+        },
+        "title": {
+            "translate": "advancement.lqe.lightning_on_demand.title",
+            "fallback": "Lightning on Demand"
+        },
+        "description": {
+            "translate": "advancement.lqe.lightning_on_demand.description",
+            "fallback": "Obtain a trident enchanted with Channeling and Storm"
+        },
+        "frame": "goal"
+    },
+    "criteria": {
+		"lightning_trident": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+                    {
+                        "items": "minecraft:trident",
+						"predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:storm",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                },
+								{
+                                    "enchantments": "minecraft:channeling",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+			}
+		}
+	}
+}

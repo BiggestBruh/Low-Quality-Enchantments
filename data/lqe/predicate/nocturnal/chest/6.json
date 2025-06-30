@@ -1,0 +1,43 @@
+{
+    "condition": "minecraft:any_of",
+    "terms": [
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "equipment": {
+                    "chest": {
+                        "items": "#minecraft:enchantable/armor",
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:nocturnal",
+                                    "levels": 6
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "equipment": {
+                    "chest": {
+                        "items": "#minecraft:enchantable/armor",
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:nocturnal_night",
+                                    "levels": 6
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/armordillo",
+    "display": {
+        "icon": {
+            "id": "minecraft:wolf_spawn_egg"
+        },
+        "title": {
+            "translate": "advancement.lqe.you_cant_hide.title",
+            "fallback": "You Can't Hide"
+        },
+        "description": {
+            "translate": "advancement.lqe.you_cant_hide.description",
+            "fallback": "Obtain Scent"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_scent": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:scent",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

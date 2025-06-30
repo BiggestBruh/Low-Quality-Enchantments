@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/this_is_mine_now",
+    "display": {
+        "icon": {
+            "id": "minecraft:obsidian"
+        },
+        "title": {
+            "translate": "advancement.lqe.immovable_object.title",
+            "fallback": "Immovable Object"
+        },
+        "description": {
+            "translate": "advancement.lqe.immovable_object.description",
+            "fallback": "Obtain Steady"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_steady": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:steady",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

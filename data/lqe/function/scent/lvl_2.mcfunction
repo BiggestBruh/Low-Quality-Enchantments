@@ -1,0 +1,1 @@
+effect give @e[type=!minecraft:player,type=!minecraft:wolf,distance=..9] minecraft:glowing 5 0 true

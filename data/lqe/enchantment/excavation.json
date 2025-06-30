@@ -1,0 +1,256 @@
+{
+    "description": {
+        "translate": "enchantment.lqe.excavation",
+        "fallback": "Excavation"
+    },
+    "exclusive_set": "#lqe:exclusive_set/fancy_mining",
+    "supported_items": "#minecraft:enchantable/mining",
+    "weight": 1,
+    "max_level": 1,
+    "min_cost": {
+        "base": 25,
+        "per_level_above_first": 25
+    },
+    "max_cost": {
+        "base": 75,
+        "per_level_above_first": 25
+    },
+    "anvil_cost": 8,
+    "slots": [
+        "mainhand"
+    ],
+    "effects": {
+        "minecraft:hit_block": [
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "lqe:excavation/excavate/axe"
+                },
+                "requirements": {
+                    "condition": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "equipment": {
+                                    "mainhand": {
+                                        "items": "#minecraft:axes",
+                                        "predicates": {
+                                            "enchantments": [
+                                                {
+                                                    "enchantments": "lqe:excavation",
+                                                    "levels": {
+                                                        "min": 1
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                "type_specific": {
+                                    "type": "minecraft:player",
+                                    "input": {
+                                        "sneak": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "condition": "minecraft:location_check",
+                            "predicate": {
+                                "block": {
+                                    "blocks": "#lqe:excavation/axe"
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "lqe:excavation/excavate/hoe"
+                },
+                "requirements": {
+                    "condition": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "equipment": {
+                                    "mainhand": {
+                                        "items": "#minecraft:hoes",
+                                        "predicates": {
+                                            "enchantments": [
+                                                {
+                                                    "enchantments": "lqe:excavation",
+                                                    "levels": {
+                                                        "min": 1
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                "type_specific": {
+                                    "type": "minecraft:player",
+                                    "input": {
+                                        "sneak": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "condition": "minecraft:location_check",
+                            "predicate": {
+                                "block": {
+                                    "blocks": "#lqe:excavation/hoe"
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "lqe:excavation/excavate/pickaxe"
+                },
+                "requirements": {
+                    "condition": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "equipment": {
+                                    "mainhand": {
+                                        "items": "#minecraft:pickaxes",
+                                        "predicates": {
+                                            "enchantments": [
+                                                {
+                                                    "enchantments": "lqe:excavation",
+                                                    "levels": {
+                                                        "min": 1
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                "type_specific": {
+                                    "type": "minecraft:player",
+                                    "input": {
+                                        "sneak": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "condition": "minecraft:location_check",
+                            "predicate": {
+                                "block": {
+                                    "blocks": "#lqe:excavation/pickaxe"
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "lqe:excavation/excavate/shears"
+                },
+                "requirements": {
+                    "condition": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "equipment": {
+                                    "mainhand": {
+                                        "items": "minecraft:shears",
+                                        "predicates": {
+                                            "enchantments": [
+                                                {
+                                                    "enchantments": "lqe:excavation",
+                                                    "levels": {
+                                                        "min": 1
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                "type_specific": {
+                                    "type": "minecraft:player",
+                                    "input": {
+                                        "sneak": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "condition": "minecraft:location_check",
+                            "predicate": {
+                                "block": {
+                                    "blocks": "#lqe:excavation/shears"
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "lqe:excavation/excavate/shovel"
+                },
+                "requirements": {
+                    "condition": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "equipment": {
+                                    "mainhand": {
+                                        "items": "#minecraft:shovels",
+                                        "predicates": {
+                                            "enchantments": [
+                                                {
+                                                    "enchantments": "lqe:excavation",
+                                                    "levels": {
+                                                        "min": 1
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                "type_specific": {
+                                    "type": "minecraft:player",
+                                    "input": {
+                                        "sneak": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "condition": "minecraft:location_check",
+                            "predicate": {
+                                "block": {
+                                    "blocks": "#lqe:excavation/shovel"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

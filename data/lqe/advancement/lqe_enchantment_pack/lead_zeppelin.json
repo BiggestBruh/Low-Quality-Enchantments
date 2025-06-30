@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/magic_grab_bag",
+    "display": {
+        "icon": {
+            "id": "minecraft:happy_ghast_spawn_egg"
+        },
+        "title": {
+            "translate": "advancement.lqe.lead_zeppelin.title",
+            "fallback": "Lead Zeppelin"
+        },
+        "description": {
+            "translate": "advancement.lqe.lead_zeppelin.description",
+            "fallback": "Obtain Armored"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_armored": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:armored",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

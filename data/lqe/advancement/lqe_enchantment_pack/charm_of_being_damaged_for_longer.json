@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/charm_of_damaging_harder",
+    "display": {
+        "icon": {
+            "id": "minecraft:compass"
+        },
+        "title": {
+            "translate": "advancement.lqe.charm_of_being_damaged_for_longer.title",
+            "fallback": "Charm of Being Damaged For Longer"
+        },
+        "description": {
+            "translate": "advancement.lqe.charm_of_being_damaged_for_longer.description",
+            "fallback": "Obtain Charm of Vitality"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_vitality_charm": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:vitality_charm",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

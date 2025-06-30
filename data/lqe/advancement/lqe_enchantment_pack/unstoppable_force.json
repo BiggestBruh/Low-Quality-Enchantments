@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/wearable_magic",
+    "display": {
+        "icon": {
+            "id": "minecraft:diamond_boots"
+        },
+        "title": {
+            "translate": "advancement.lqe.unstoppable_force.title",
+            "fallback": "Unstoppable Force"
+        },
+        "description": {
+            "translate": "advancement.lqe.unstoppable_force.description",
+            "fallback": "Obtain Agility"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_agility": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:agility",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

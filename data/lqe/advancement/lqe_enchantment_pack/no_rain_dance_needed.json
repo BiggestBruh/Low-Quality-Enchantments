@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/too_angry_to_die",
+    "display": {
+        "icon": {
+            "id": "minecraft:lightning_rod"
+        },
+        "title": {
+            "translate": "advancement.lqe.no_rain_dance_needed.title",
+            "fallback": "No Rain Dance Needed"
+        },
+        "description": {
+            "translate": "advancement.lqe.no_rain_dance_needed.description",
+            "fallback": "Obtain Storm"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_storm": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:storm",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

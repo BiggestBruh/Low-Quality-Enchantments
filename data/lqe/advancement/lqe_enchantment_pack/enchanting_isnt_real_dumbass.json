@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/stop_hitting_yourself",
+    "display": {
+        "icon": {
+            "id": "minecraft:enchanting_table"
+        },
+        "title": {
+            "translate": "advancement.lqe.enchanting_isnt_real_dumbass.title",
+            "fallback": "Enchanting Isn't Real, Dumbass"
+        },
+        "description": {
+            "translate": "advancement.lqe.enchanting_isnt_real_dumbass.description",
+            "fallback": "Obtain Curse of Stagnancy"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_stagnancy_curse": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:stagnancy_curse",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

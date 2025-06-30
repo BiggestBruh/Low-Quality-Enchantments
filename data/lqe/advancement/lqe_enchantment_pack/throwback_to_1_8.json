@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/vampire",
+    "display": {
+        "icon": {
+            "id": "minecraft:iron_sword"
+        },
+        "title": {
+            "translate": "advancement.lqe.throwback_to_1_8.title",
+            "fallback": "Throwback to 1.8"
+        },
+        "description": {
+            "translate": "advancement.lqe.throwback_to_1_8.description",
+            "fallback": "Obtain Parry"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_parry": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:parry",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

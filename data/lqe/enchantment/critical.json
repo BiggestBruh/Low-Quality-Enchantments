@@ -1,0 +1,45 @@
+{
+    "description": {
+        "translate": "enchantment.lqe.critical",
+        "fallback": "Critical"
+    },
+    "supported_items": "#minecraft:enchantable/crossbow",
+    "primary_items": "#minecraft:enchantable/crossbow",
+    "weight": 2,
+    "max_level": 10,
+    "min_cost": {
+        "base": 6,
+        "per_level_above_first": 9
+    },
+    "max_cost": {
+        "base": 21,
+        "per_level_above_first": 9
+    },
+    "anvil_cost": 4,
+    "slots": ["mainhand"],
+    "effects": {
+        "minecraft:damage": [
+            {
+                "effect": {
+                    "type": "minecraft:multiply",
+                    "factor": {
+                        "type": "minecraft:linear",
+                        "base": 1.6,
+                        "per_level_above_first": 0.1
+                    }
+                },
+                "requirements": {
+                    "condition": "minecraft:random_chance",
+                    "chance": {
+                        "type": "minecraft:enchantment_level",
+                        "amount": {
+                            "type": "minecraft:linear",
+                            "base": 0.11,
+                            "per_level_above_first": 0.01
+                        }
+                    }
+                }
+            }
+        ]
+    }
+}

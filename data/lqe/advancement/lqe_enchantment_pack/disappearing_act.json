@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/bouncing_around",
+    "display": {
+        "icon": {
+            "id": "minecraft:smoker"
+        },
+        "title": {
+            "translate": "advancement.lqe.disappearing_act.title",
+            "fallback": "Disappearing Act"
+        },
+        "description": {
+            "translate": "advancement.lqe.disappearing_act.description",
+            "fallback": "Obtain Smoke"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_smoke": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:smoke",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

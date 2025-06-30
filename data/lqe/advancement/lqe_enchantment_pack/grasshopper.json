@@ -1,0 +1,57 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/root",
+    "display": {
+        "icon": {
+            "id": "minecraft:short_grass"
+        },
+        "title": {
+            "translate": "advancement.lqe.grasshopper.title",
+            "fallback": "Grasshopper"
+        },
+        "description": {
+            "translate": "advancement.lqe.grasshopper.description",
+            "fallback": "Jump off a grass block while wearing max level Dwarf and Leaping enchantments"
+        },
+        "frame": "goal"
+    },
+    "criteria": {
+        "grass_hop": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": {
+                    "equipment": {
+                        "legs": {
+                            "predicates": {
+                                "minecraft:enchantments": [
+                                    {
+                                        "enchantments": "lqe:dwarf",
+                                        "levels": {
+                                            "min": 5
+                                        }
+                                    },
+                                    {
+                                        "enchantments": "lqe:leaping",
+                                        "levels": {
+                                            "min": 5
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "stepping_on": {
+                        "block": {
+                            "blocks": "minecraft:grass_block"
+                        }
+                    },
+                    "type_specific": {
+                        "type": "minecraft:player",
+                        "input": {
+                            "jump": true
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

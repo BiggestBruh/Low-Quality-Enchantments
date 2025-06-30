@@ -1,0 +1,169 @@
+[
+    {
+        "function": "set_components",
+        "components": {
+            "weapon": {
+                "item_damage_per_attack": 2,
+                "disable_blocking_for_seconds": 5.5
+            },
+            "custom_data": {
+                "cleaving": true
+            }
+        },
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "items": "#minecraft:enchantable/weapon",
+                            "predicates": {
+                                "minecraft:enchantments": [
+                                    {
+                                        "enchantments": "lqe:cleaving",
+                                        "levels": 1
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "set_components",
+        "components": {
+            "weapon": {
+                "item_damage_per_attack": 2,
+                "disable_blocking_for_seconds": 6
+            },
+            "custom_data": {
+                "cleaving": true
+            }
+        },
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "items": "#minecraft:enchantable/weapon",
+                            "predicates": {
+                                "minecraft:enchantments": [
+                                    {
+                                        "enchantments": "lqe:cleaving",
+                                        "levels": 2
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "set_components",
+        "components": {
+            "weapon": {
+                "item_damage_per_attack": 2,
+                "disable_blocking_for_seconds": 6.5
+            },
+            "custom_data": {
+                "cleaving": true
+            }
+        },
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "items": "#minecraft:enchantable/weapon",
+                            "predicates": {
+                                "minecraft:enchantments": [
+                                    {
+                                        "enchantments": "lqe:cleaving",
+                                        "levels": 3
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "set_components",
+        "components": {
+            "weapon": {
+                "item_damage_per_attack": 2,
+                "disable_blocking_for_seconds": 7
+            },
+            "custom_data": {
+                "cleaving": true
+            }
+        },
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "items": "#minecraft:enchantable/weapon",
+                            "predicates": {
+                                "minecraft:enchantments": [
+                                    {
+                                        "enchantments": "lqe:cleaving",
+                                        "levels": 4
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "set_components",
+        "components": {
+            "weapon": {
+                "item_damage_per_attack": 2,
+                "disable_blocking_for_seconds": 7.5
+            },
+            "custom_data": {
+                "cleaving": true
+            }
+        },
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "items": "#minecraft:enchantable/weapon",
+                            "predicates": {
+                                "minecraft:enchantments": [
+                                    {
+                                        "enchantments": "lqe:cleaving",
+                                        "levels": {
+                                            "min": 5
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    }
+]

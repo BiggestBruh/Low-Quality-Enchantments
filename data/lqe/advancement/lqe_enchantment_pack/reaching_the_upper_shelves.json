@@ -1,0 +1,70 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/youll_never_get_me_alive",
+    "display": {
+        "icon": {
+            "id": "minecraft:oak_slab"
+        },
+        "title": {
+            "translate": "advancement.lqe.reaching_the_upper_shelf.title",
+            "fallback": "Reaching the Upper Shelves"
+        },
+        "description": {
+            "translate": "advancement.lqe.reaching_the_upper_shelf.description",
+            "fallback": "Maximise your reach with max Giant, Builder and Reach enchantments"
+        },
+        "frame": "challenge"
+    },
+    "criteria": {
+        "maximum_reach": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+                    "equipment": {
+                        "chest": {
+                            "items": "#minecraft:enchantable/chest_armor",
+                            "predicates": {
+                                "minecraft:enchantments": [
+                                    {
+                                        "enchantments": "lqe:builder",
+                                        "levels": {
+                                            "min": 5
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "legs": {
+                            "items": "#minecraft:enchantable/leg_armor",
+                            "predicates": {
+                                "minecraft:enchantments": [
+                                    {
+                                        "enchantments": "lqe:giant",
+                                        "levels": {
+                                            "min": 5
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "mainhand": {
+                            "items": "#minecraft:enchantable/weapon",
+                            "predicates": {
+                                "minecraft:enchantments": [
+                                    {
+                                        "enchantments": "lqe:reach",
+                                        "levels": {
+                                            "min": 5
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+			}
+		}
+	},
+    "rewards": {
+        "experience": 100
+    }
+}

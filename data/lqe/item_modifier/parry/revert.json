@@ -1,0 +1,20 @@
+{
+    "function": "set_components",
+    "components": {
+        "!blocks_attacks": {},
+        "!custom_data": {}
+    },
+    "conditions": [
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "equipment": {
+                    "mainhand": {
+                        "items": "#minecraft:enchantable/weapon"
+                    }
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/ununbreaking",
+    "display": {
+        "icon": {
+            "id": "minecraft:blue_ice"
+        },
+        "title": {
+            "translate": "advancement.lqe.butterfingers.title",
+            "fallback": "Butterfingers"
+        },
+        "description": {
+            "translate": "advancement.lqe.butterfingers.description",
+            "fallback": "Obtain Curse of Clumsiness"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_clumsiness_curse": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:clumsiness_curse",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

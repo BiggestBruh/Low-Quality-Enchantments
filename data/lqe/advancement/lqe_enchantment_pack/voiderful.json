@@ -1,0 +1,124 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/what_if_there_was_nether_2_down_here",
+    "display": {
+        "icon": {
+            "id": "minecraft:black_concrete_powder"
+        },
+        "title": {
+            "translate": "advancement.lqe.voiderful.title",
+            "fallback": "Voiderful"
+        },
+        "description": {
+            "translate": "advancement.lqe.voiderful.description",
+            "fallback": "Take void damage in all 3 dimensions"
+        },
+        "frame": "challenge"
+    },
+    "criteria": {
+        "overworld_void": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"location": {
+								"dimension": "minecraft:overworld",
+								"position": {
+									"y": {
+										"max": -128
+									}
+								}
+							}
+						}
+					},
+					{
+						"condition": "minecraft:inverted",
+						"term": {
+							"condition": "minecraft:entity_properties",
+							"entity": "this",
+							"predicate": {
+								"type_specific": {
+									"type": "player",
+									"gamemode": ["spectator"]
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"nether_void": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"location": {
+								"dimension": "minecraft:the_nether",
+								"position": {
+									"y": {
+										"max": -64
+									}
+								}
+							}
+						}
+					},
+					{
+						"condition": "minecraft:inverted",
+						"term": {
+							"condition": "minecraft:entity_properties",
+							"entity": "this",
+							"predicate": {
+								"type_specific": {
+									"type": "player",
+									"gamemode": ["spectator"]
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"end_void": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"location": {
+								"dimension": "minecraft:the_end",
+								"position": {
+									"y": {
+										"max": -64
+									}
+								}
+							}
+						}
+					},
+					{
+						"condition": "minecraft:inverted",
+						"term": {
+							"condition": "minecraft:entity_properties",
+							"entity": "this",
+							"predicate": {
+								"type_specific": {
+									"type": "player",
+									"gamemode": ["spectator"]
+								}
+							}
+						}
+					}
+				]
+			}
+		}
+    },
+	"rewards": {
+		"experience": 100
+	}
+}

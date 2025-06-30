@@ -1,0 +1,53 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/finally_wearable_jack_o_lantern",
+    "display": {
+        "icon": {
+            "id": "minecraft:grass_block"
+        },
+        "title": {
+            "translate": "advancement.lqe.youre_not_supposed_to_be_here.title",
+            "fallback": "You're Not Supposed to be Here"
+        },
+        "description": {
+            "translate": "advancement.lqe.youre_not_supposed_to_be_here.description",
+            "fallback": "Take void damage in the overworld"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "overworld_void": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"location": {
+								"dimension": "minecraft:overworld",
+								"position": {
+									"y": {
+										"max": -128
+									}
+								}
+							}
+						}
+					},
+					{
+						"condition": "minecraft:inverted",
+						"term": {
+							"condition": "minecraft:entity_properties",
+							"entity": "this",
+							"predicate": {
+								"type_specific": {
+									"type": "player",
+									"gamemode": ["spectator"]
+								}
+							}
+						}
+					}
+				]
+			}
+		}
+    }
+}

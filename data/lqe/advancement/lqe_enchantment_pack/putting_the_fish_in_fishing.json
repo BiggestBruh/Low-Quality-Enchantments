@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/utility_magic",
+    "display": {
+        "icon": {
+            "id": "minecraft:cod"
+        },
+        "title": {
+            "translate": "advancement.lqe.putting_the_fish_in_fishing.title",
+            "fallback": "Putting the \"Fish\" in \"Fishing\""
+        },
+        "description": {
+            "translate": "advancement.lqe.putting_the_fish_in_fishing.description",
+            "fallback": "Obtain Angler"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_angler": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:angler",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

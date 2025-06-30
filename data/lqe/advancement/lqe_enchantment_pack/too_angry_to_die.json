@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/aim_assist",
+    "display": {
+        "icon": {
+            "id": "minecraft:netherite_sword"
+        },
+        "title": {
+            "translate": "advancement.lqe.too_angry_to_die.title",
+            "fallback": "Too Angry to Die"
+        },
+        "description": {
+            "translate": "advancement.lqe.too_angry_to_die.description",
+            "fallback": "Obtain Spite"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_spite": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:spite",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "description": {
+        "translate": "enchantment.lqe.life",
+        "fallback": "Life"
+    },
+    "supported_items": "#minecraft:enchantable/armor",
+    "primary_items": "#minecraft:enchantable/armor",
+    "weight": 5,
+    "max_level": 8,
+    "min_cost": {
+        "base": 1,
+        "per_level_above_first": 11
+    },
+    "max_cost": {
+        "base": 12,
+        "per_level_above_first": 11
+    },
+    "anvil_cost": 2,
+    "slots": ["armor"],
+    "effects": {
+        "minecraft:attributes": [
+            {
+                "attribute": "minecraft:max_health",
+                "amount": {
+                    "type": "minecraft:linear",
+                    "base": 1,
+                    "per_level_above_first": 1
+                },
+                "id": "lqe:enchantment.life",
+                "operation": "add_value"
+            }
+        ]
+    }
+}

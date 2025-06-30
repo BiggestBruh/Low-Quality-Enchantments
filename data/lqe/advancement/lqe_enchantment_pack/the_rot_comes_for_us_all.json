@@ -1,0 +1,38 @@
+{
+    "parent": "lqe:lqe_enchantment_pack/lucky_shot",
+    "display": {
+        "icon": {
+            "id": "minecraft:wither_rose"
+        },
+        "title": {
+            "translate": "advancement.lqe.the_rot_comes_for_us_all.title",
+            "fallback": "The Rot Comes For Us All"
+        },
+        "description": {
+            "translate": "advancement.lqe.the_rot_comes_for_us_all.description",
+            "fallback": "Obtain Decay"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "obtain_decay": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lqe:decay",
+                                    "levels": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}
