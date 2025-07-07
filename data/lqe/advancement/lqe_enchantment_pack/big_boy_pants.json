@@ -1,5 +1,5 @@
 {
-    "parent": "lqe:lqe_enchantment_pack/pacisifm",
+    "parent": "lqe:lqe_enchantment_pack/pacifism",
     "display": {
         "icon": {
             "id": "minecraft:netherite_leggings"
