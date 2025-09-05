@@ -18,7 +18,7 @@
     "anvil_cost": 2,
     "slots": ["armor"],
     "effects": {
-        "minecraft:tick": [
+        "minecraft:location_changed": [
             {
                 "effect": {
                     "type": "minecraft:run_function",

@@ -24,8 +24,8 @@
                 "attribute": "minecraft:armor",
                 "amount": {
                     "type": "linear",
-                    "base": 0.016,
-                    "per_level_above_first": 0.012
+                    "base": 0.01,
+                    "per_level_above_first": 0.01
                 },
                 "operation": "add_multiplied_base"
             },
@@ -34,8 +34,8 @@
                 "attribute": "minecraft:attack_damage",
                 "amount": {
                     "type": "linear",
-                    "base": 0.016,
-                    "per_level_above_first": 0.012
+                    "base": 0.01,
+                    "per_level_above_first": 0.01
                 },
                 "operation": "add_multiplied_base"
             },
@@ -44,8 +44,8 @@
                 "attribute": "minecraft:attack_speed",
                 "amount": {
                     "type": "linear",
-                    "base": 0.016,
-                    "per_level_above_first": 0.012
+                    "base": 0.01,
+                    "per_level_above_first": 0.01
                 },
                 "operation": "add_multiplied_base"
             },
@@ -54,8 +54,8 @@
                 "attribute": "minecraft:max_health",
                 "amount": {
                     "type": "linear",
-                    "base": 0.016,
-                    "per_level_above_first": 0.012
+                    "base": 0.01,
+                    "per_level_above_first": 0.01
                 },
                 "operation": "add_multiplied_base"
             },
@@ -64,8 +64,8 @@
                 "attribute": "minecraft:movement_speed",
                 "amount": {
                     "type": "linear",
-                    "base": 0.016,
-                    "per_level_above_first": 0.012
+                    "base": 0.01,
+                    "per_level_above_first": 0.01
                 },
                 "operation": "add_multiplied_base"
             }

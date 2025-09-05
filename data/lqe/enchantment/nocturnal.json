@@ -18,19 +18,30 @@
     "anvil_cost": 1,
     "slots": ["armor"],
     "effects": {
-        "minecraft:tick": [
+        "minecraft:location_changed": [
             {
                 "effect": {
                     "type": "minecraft:run_function",
                     "function": "lqe:nocturnal/night"
                 },
                 "requirements": {
-                    "condition": "minecraft:time_check",
-                    "value": {
-                        "min": 13000,
-                        "max": 23999
-                    },
-                    "period": 24000
+                    "condition": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "condition": "minecraft:time_check",
+                            "value": {
+                                "min": 13000,
+                                "max": 23999
+                            },
+                            "period": 24000
+                        },
+                        {
+                            "condition": "minecraft:location_check",
+                            "predicate": {
+                                "dimension": "minecraft:overworld"
+                            }
+                        }
+                    ]
                 }
             }
         ]

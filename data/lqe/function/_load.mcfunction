@@ -29,6 +29,7 @@ scoreboard objectives add lqe.excavation.durability dummy
 scoreboard objectives add lqe.excavation.unbreaking_roll dummy
 scoreboard objectives add lqe.excavation.iterator dummy
 scoreboard objectives add lqe.excavation.axis dummy
+scoreboard objectives add lqe.excavation.xp_roll dummy
 # Curse of Clumsiness
 data modify storage lqe:clumsy players set value []
 scoreboard objectives add lqe.clumsiness.roll dummy
@@ -109,5 +110,6 @@ scoreboard objectives add lqe.veinminer.debris minecraft.mined:minecraft.ancient
 scoreboard objectives add lqe.veinminer.wait dummy
 scoreboard objectives add lqe.veinminer.blocks dummy
 scoreboard objectives add lqe.veinminer.unbreaking_roll dummy
+scoreboard objectives add lqe.veinminer.xp_roll dummy
 
 say LQE Enchantment Pack reloaded!

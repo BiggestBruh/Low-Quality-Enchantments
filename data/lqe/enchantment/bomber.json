@@ -58,6 +58,10 @@
                         "state": {
                             "Name": "minecraft:air"
                         }
+                    },
+                    "predicate": {
+                        "type": "minecraft:matching_block_tag",
+                        "tag": "lqe:explodable"
                     }
                 }
             },

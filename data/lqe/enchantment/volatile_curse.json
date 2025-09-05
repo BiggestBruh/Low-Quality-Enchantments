@@ -18,7 +18,7 @@
     "anvil_cost": 8,
     "slots": ["chest"],
     "effects": {
-        "minecraft:tick": [
+        "minecraft:location_changed": [
             {
                 "effect": {
                     "type": "minecraft:run_function",

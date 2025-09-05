@@ -1,16 +1,3 @@
-# Rebirth
-# Upon respawn, give effects to players who had the Rebirth enchantment on death
-execute as @e[type=player,advancements={lqe:technical/die=true},scores={lqe.rebirth.duration=1..}] run function lqe:rebirth/give_effects/start with entity @s
-# Clear player's stored Rebirth score if they do not have the enchantment
-execute as @e[type=player,predicate=!lqe:rebirth/rebirth,scores={lqe.rebirth.duration=1..}] run scoreboard players set @s lqe.rebirth.duration 0
-
-# Curse of Volatility
-# Clear player's stored Volatile level if they do not have the enchantment
-execute as @e[type=player,predicate=!lqe:volatile/volatile] run scoreboard players set @s lqe.volatile.level 0
-
-# Revoke death advancement so it can be re-triggered later
-execute as @e[type=player,advancements={lqe:technical/die=true}] run advancement revoke @s only lqe:technical/die
-
 # Luminance
 # Kill expired markers, then mark all new markers as expired for killing in the next tick
 execute as @e[type=marker,tag=lqe.luminance.expired] at @s run function lqe:luminance/kill
@@ -23,38 +10,13 @@ execute as @e[type=marker,tag=lqe.luminance.marker.3] run tag @s add lqe.luminan
 execute as @a[tag=lqe.flee,scores={lqe.flee.timer=1..}] run scoreboard players remove @s lqe.flee.timer 1
 execute as @a[tag=lqe.flee,scores={lqe.flee.timer=0}] at @s run function lqe:flee/debuff
 
-# Sturdy
-# If player is holding an unmodified Shield with the Sturdy enchantment in their mainhand, modify it
-execute as @a[predicate=lqe:sturdy/mainhand/unmodified] run item modify entity @s weapon.mainhand lqe:sturdy/modify_mainhand
-# If player is holding a modified Shield but it has no Sturdy enchantment (it's been disenchanted), revert it
-execute as @a[predicate=lqe:sturdy/mainhand/demodify] run item modify entity @s weapon.mainhand lqe:sturdy/revert
-# Same shit, different hand
-execute as @a[predicate=lqe:sturdy/offhand/unmodified] run item modify entity @s weapon.offhand lqe:sturdy/modify_offhand
-execute as @a[predicate=lqe:sturdy/offhand/demodify] run item modify entity @s weapon.offhand lqe:sturdy/revert
-
-# Parry
-# If player is holding an unmodified weapon with the Parry enchantment in their mainhand, modify it
-execute as @a[predicate=lqe:parry/unmodified] run item modify entity @s weapon.mainhand lqe:parry/modify
-# If player is holding a modified weapon but it has no Parry enchantment (it's been disenchanted), revert it
-execute as @a[predicate=lqe:parry/demodify] run item modify entity @s weapon.mainhand lqe:parry/revert
-
-# Cleaving
-# If player is holding an unmodified weapon with the Cleaving enchantment in their mainhand, modify it
-execute as @a[predicate=lqe:cleaving/unmodified] run item modify entity @s weapon.mainhand lqe:cleaving/modify
-# If player is holding an modified weapon but it has no Cleaving enchantment (it's been disenchanted), revert it
-execute as @a[predicate=lqe:cleaving/demodify] run item modify entity @s weapon.mainhand lqe:cleaving/revert
-
 # Smoke
 # Handle Smoke effect timer
 execute as @e[type=!#lqe:immune_to_smoke,scores={lqe.smoke=1..}] run scoreboard players remove @s lqe.smoke 1
 execute as @e[type=!#lqe:immune_to_smoke,scores={lqe.smoke=1}] run attribute @s minecraft:follow_range modifier remove lqe:enchantment.smoke
 
-# Sniper
-# Restore arrow's gravity if it has landed or slowed down substantially
-execute as @e[type=#minecraft:arrows,tag=lqe.sniper,predicate=lqe:sniper/landed] run function lqe:sniper/unsniper
-execute as @e[type=#minecraft:arrows,tag=lqe.sniper,predicate=lqe:sniper/slowed] run function lqe:sniper/unsniper
-
 # Bleeding
+# Deal Bleeding damage
 execute as @e[type=!#lqe:immune_to_bleeding,scores={lqe.bleeding.1=1..}] run function lqe:bleeding/damage/lvl_1
 execute as @e[type=!#lqe:immune_to_bleeding,scores={lqe.bleeding.2=1..}] run function lqe:bleeding/damage/lvl_2
 execute as @e[type=!#lqe:immune_to_bleeding,scores={lqe.bleeding.3=1..}] run function lqe:bleeding/damage/lvl_3
@@ -71,18 +33,8 @@ execute as @a[advancements={lqe:technical/die=true}] run scoreboard players rese
 execute as @a[advancements={lqe:technical/die=true}] run scoreboard players reset @s lqe.bleeding.6
 execute as @a[advancements={lqe:technical/die=true}] run scoreboard players reset @s lqe.bleeding.7
 
-# Storm
-# Summon a thunderstorm if a Storm enchanted trident is above y=256
-execute as @e[type=minecraft:trident,tag=lqe.storm,predicate=lqe:storm] run weather thunder
-
-# Bash
-# If player is holding an unmodified shield with the Bash enchantment in their mainhand, modify it
-execute as @a[predicate=lqe:bash/unmodified] run item modify entity @s weapon.mainhand lqe:bash/modify
-# If player is holding a modified shield but it has no Bash enchantment (it's been disenchanted), revert it
-execute as @a[predicate=lqe:bash/demodify] run item modify entity @s weapon.mainhand lqe:bash/revert
-
 # Hook
-# If a non-hooked entity is close to a fishing bobber from a Hook enchanted fishing rod, mark them as hooked and deal damage
+# If a non-hooked entity is close to a fishing bobber from a Hook enchanted fishing rod, mark them as hooked
 execute as @e[type=!minecraft:fishing_bobber,tag=!lqe.hook.hooked.1] at @s anchored eyes positioned ^ ^ ^ if entity @e[type=minecraft:fishing_bobber,tag=lqe.hook.1,distance=...3] run function lqe:hook/hook/lvl_1
 execute as @e[type=!minecraft:fishing_bobber,tag=!lqe.hook.hooked.2] at @s anchored eyes positioned ^ ^ ^ if entity @e[type=minecraft:fishing_bobber,tag=lqe.hook.2,distance=...3] run function lqe:hook/hook/lvl_2
 execute as @e[type=!minecraft:fishing_bobber,tag=!lqe.hook.hooked.3] at @s anchored eyes positioned ^ ^ ^ if entity @e[type=minecraft:fishing_bobber,tag=lqe.hook.3,distance=...3] run function lqe:hook/hook/lvl_3
@@ -209,7 +161,7 @@ execute as @a[scores={lqe.veinminer.debris=1..},predicate=!lqe:sneak,predicate=l
 execute as @a[scores={lqe.veinminer.debris=1..},predicate=!lqe:veinminer] run scoreboard players reset @s lqe.veinminer.debris
 
 
-
+# Slow down to 1s
 # For Runic Catalyst easter egg
 # Edit unedited wandering traders
 execute as @e[type=wandering_trader,tag=!lqe.runic_trade] run function lqe:runic_trade

@@ -8,6 +8,16 @@ execute if score @s lqe.veinminer.blocks matches 64.. run return run scoreboard 
 # Break the current ore
 execute if block ~ ~ ~ minecraft:deepslate_emerald_ore run loot spawn ~ ~ ~ mine ~ ~ ~ mainhand
 execute if block ~ ~ ~ minecraft:deepslate_emerald_ore run setblock ~ ~ ~ minecraft:air
+# Spawn experience orbs
+scoreboard players set @s lqe.veinminer.xp_roll 0
+execute if predicate lqe:extraction/0 store result score @s lqe.veinminer.xp_roll run random value 3..7
+execute if predicate lqe:extraction/1 store result score @s lqe.veinminer.xp_roll run random value 4..9
+execute if predicate lqe:extraction/2 store result score @s lqe.veinminer.xp_roll run random value 5..11
+execute if predicate lqe:extraction/3 store result score @s lqe.veinminer.xp_roll run random value 5..12
+execute if predicate lqe:extraction/4 store result score @s lqe.veinminer.xp_roll run random value 6..14
+execute if predicate lqe:extraction/5 store result score @s lqe.veinminer.xp_roll run random value 7..16
+execute store result storage lqe veinminer.xp_roll int 1 run scoreboard players get @s lqe.veinminer.xp_roll
+function lqe:veinminer/summon_xp with storage lqe veinminer
 
 # Execute this function recursively for every adjacent block
 execute positioned ~ ~ ~1 if block ~ ~ ~ minecraft:deepslate_emerald_ore run function lqe:veinminer/deep_emerald

@@ -8,6 +8,16 @@ execute if score @s lqe.veinminer.blocks matches 64.. run return run scoreboard 
 # Break the current ore
 execute if block ~ ~ ~ minecraft:coal_ore run loot spawn ~ ~ ~ mine ~ ~ ~ mainhand
 execute if block ~ ~ ~ minecraft:coal_ore run setblock ~ ~ ~ minecraft:air
+# Spawn experience orbs
+scoreboard players set @s lqe.veinminer.xp_roll 0
+execute if predicate lqe:extraction/0 store result score @s lqe.veinminer.xp_roll run random value 0..2
+execute if predicate lqe:extraction/1 store result score @s lqe.veinminer.xp_roll run random value 0..3
+execute if predicate lqe:extraction/2 store result score @s lqe.veinminer.xp_roll run random value 0..3
+execute if predicate lqe:extraction/3 store result score @s lqe.veinminer.xp_roll run random value 0..4
+execute if predicate lqe:extraction/4 store result score @s lqe.veinminer.xp_roll run random value 0..4
+execute if predicate lqe:extraction/5 store result score @s lqe.veinminer.xp_roll run random value 0..5
+execute store result storage lqe veinminer.xp_roll int 1 run scoreboard players get @s lqe.veinminer.xp_roll
+function lqe:veinminer/summon_xp with storage lqe veinminer
 
 # Execute this function recursively for every adjacent block
 execute positioned ~ ~ ~1 if block ~ ~ ~ minecraft:coal_ore run function lqe:veinminer/coal

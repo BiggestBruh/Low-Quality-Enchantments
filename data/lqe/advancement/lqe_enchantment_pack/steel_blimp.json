@@ -5,8 +5,8 @@
             "id": "minecraft:happy_ghast_spawn_egg"
         },
         "title": {
-            "translate": "advancement.lqe.lead_zeppelin.title",
-            "fallback": "Lead Zeppelin"
+            "translate": "advancement.lqe.steel_blimp.title",
+            "fallback": "Steel Blimp"
         },
         "description": {
             "translate": "advancement.lqe.lead_zeppelin.description",

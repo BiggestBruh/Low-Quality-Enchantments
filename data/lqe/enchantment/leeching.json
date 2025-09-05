@@ -44,19 +44,19 @@
                     },
                     "min_amplifier": {
                         "type": "minecraft:lookup",
-                        "values": [0, 1, 1, 2, 2],
+                        "values": [0, 0, 1, 1, 1],
                         "fallback": {
                             "type": "minecraft:linear",
-                            "base": -2,
+                            "base": -3,
                             "per_level_above_first": 1
                         }
                     },
                     "max_amplifier": {
                         "type": "minecraft:lookup",
-                        "values": [0, 1, 1, 2, 2],
+                        "values": [0, 0, 1, 1, 1],
                         "fallback": {
                             "type": "minecraft:linear",
-                            "base": -2,
+                            "base": -3,
                             "per_level_above_first": 1
                         }
                     }
@@ -64,14 +64,29 @@
                 "affected": "attacker",
                 "enchanted": "attacker",
                 "requirements": {
-                    "condition": "minecraft:random_chance_with_enchanted_bonus",
-                    "unenchanted_chance": 0,
-                    "enchanted_chance": {
-                        "type": "minecraft:linear",
-                        "base": 0.1,
-                        "per_level_above_first": 0.025
-                    },
-                    "enchantment": "lqe:leeching"
+                    "condition": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "condition": "minecraft:inverted",
+                            "term": {
+                                "condition": "minecraft:entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "type": "#lqe:immune_to_bleeding"
+                                }
+                            }
+                        },
+                        {
+                            "condition": "minecraft:random_chance_with_enchanted_bonus",
+                            "unenchanted_chance": 0,
+                            "enchanted_chance": {
+                                "type": "minecraft:linear",
+                                "base": 0.1,
+                                "per_level_above_first": 0.025
+                            },
+                            "enchantment": "lqe:leeching"
+                        }
+                    ]
                 }
             }
         ]

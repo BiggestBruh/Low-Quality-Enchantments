@@ -6,7 +6,6 @@
         "predicate": {
             "equipment": {
                 "mainhand": {
-                    "items": "minecraft:fishing_rod",
                     "predicates": {
                         "minecraft:enchantments": [
                             {

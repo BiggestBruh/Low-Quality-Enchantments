@@ -1,5 +1,5 @@
 {
-    "parent": "lqe:lqe_enchantment_pack/lead_zeppelin",
+    "parent": "lqe:lqe_enchantment_pack/steel_blimp",
     "display": {
         "icon": {
             "id": "minecraft:diamond_horse_armor"

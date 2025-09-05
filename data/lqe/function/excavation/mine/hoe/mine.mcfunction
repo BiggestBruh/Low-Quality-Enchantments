@@ -1,5 +1,32 @@
 execute unless block ~ ~ ~ #lqe:excavation/hoe run return fail
 loot spawn ~ ~ ~ mine ~ ~ ~ mainhand
+# Spawn experience orbs
+execute if block ~ ~ ~ minecraft:sculk if predicate lqe:extraction/0 run scoreboard players set @s lqe.excavation.xp_roll 1
+execute if block ~ ~ ~ minecraft:sculk if predicate lqe:extraction/1 run scoreboard players set @s lqe.excavation.xp_roll 1
+execute if block ~ ~ ~ minecraft:sculk if predicate lqe:extraction/2 run scoreboard players set @s lqe.excavation.xp_roll 2
+execute if block ~ ~ ~ minecraft:sculk if predicate lqe:extraction/3 run scoreboard players set @s lqe.excavation.xp_roll 2
+execute if block ~ ~ ~ minecraft:sculk if predicate lqe:extraction/4 run scoreboard players set @s lqe.excavation.xp_roll 2
+execute if block ~ ~ ~ minecraft:sculk if predicate lqe:extraction/5 run scoreboard players set @s lqe.excavation.xp_roll 2
+execute if block ~ ~ ~ minecraft:sculk_sensor if predicate lqe:extraction/0 run scoreboard players set @s lqe.excavation.xp_roll 5
+execute if block ~ ~ ~ minecraft:sculk_sensor if predicate lqe:extraction/1 run scoreboard players set @s lqe.excavation.xp_roll 6
+execute if block ~ ~ ~ minecraft:sculk_sensor if predicate lqe:extraction/2 run scoreboard players set @s lqe.excavation.xp_roll 8
+execute if block ~ ~ ~ minecraft:sculk_sensor if predicate lqe:extraction/3 run scoreboard players set @s lqe.excavation.xp_roll 9
+execute if block ~ ~ ~ minecraft:sculk_sensor if predicate lqe:extraction/4 run scoreboard players set @s lqe.excavation.xp_roll 10
+execute if block ~ ~ ~ minecraft:sculk_sensor if predicate lqe:extraction/5 run scoreboard players set @s lqe.excavation.xp_roll 11
+execute if block ~ ~ ~ minecraft:sculk_shrieker if predicate lqe:extraction/0 run scoreboard players set @s lqe.excavation.xp_roll 5
+execute if block ~ ~ ~ minecraft:sculk_shrieker if predicate lqe:extraction/1 run scoreboard players set @s lqe.excavation.xp_roll 6
+execute if block ~ ~ ~ minecraft:sculk_shrieker if predicate lqe:extraction/2 run scoreboard players set @s lqe.excavation.xp_roll 8
+execute if block ~ ~ ~ minecraft:sculk_shrieker if predicate lqe:extraction/3 run scoreboard players set @s lqe.excavation.xp_roll 9
+execute if block ~ ~ ~ minecraft:sculk_shrieker if predicate lqe:extraction/4 run scoreboard players set @s lqe.excavation.xp_roll 10
+execute if block ~ ~ ~ minecraft:sculk_shrieker if predicate lqe:extraction/5 run scoreboard players set @s lqe.excavation.xp_roll 11
+execute if block ~ ~ ~ minecraft:sculk_catalyst if predicate lqe:extraction/0 run scoreboard players set @s lqe.excavation.xp_roll 5
+execute if block ~ ~ ~ minecraft:sculk_catalyst if predicate lqe:extraction/1 run scoreboard players set @s lqe.excavation.xp_roll 6
+execute if block ~ ~ ~ minecraft:sculk_catalyst if predicate lqe:extraction/2 run scoreboard players set @s lqe.excavation.xp_roll 8
+execute if block ~ ~ ~ minecraft:sculk_catalyst if predicate lqe:extraction/3 run scoreboard players set @s lqe.excavation.xp_roll 9
+execute if block ~ ~ ~ minecraft:sculk_catalyst if predicate lqe:extraction/4 run scoreboard players set @s lqe.excavation.xp_roll 10
+execute if block ~ ~ ~ minecraft:sculk_catalyst if predicate lqe:extraction/5 run scoreboard players set @s lqe.excavation.xp_roll 11
+execute store result storage lqe excavation.xp_roll int 1 run scoreboard players get @s lqe.excavation.xp_roll
+function lqe:excavation/general/summon_xp with storage lqe excavation
 setblock ~ ~ ~ minecraft:air
 
 # Damage the tool, with a chance of skipping damage when Unbreaking is present

@@ -1,5 +1,15 @@
 execute unless block ~ ~ ~ #lqe:excavation/axe run return fail
 loot spawn ~ ~ ~ mine ~ ~ ~ mainhand
+# Spawn experience orbs
+scoreboard players set @s lqe.excavation.xp_roll 0
+execute if block ~ ~ ~ minecraft:creaking_heart if predicate lqe:extraction/0 store result score @s lqe.excavation.xp_roll run random value 20..24
+execute if block ~ ~ ~ minecraft:creaking_heart if predicate lqe:extraction/1 store result score @s lqe.excavation.xp_roll run random value 25..30
+execute if block ~ ~ ~ minecraft:creaking_heart if predicate lqe:extraction/2 store result score @s lqe.excavation.xp_roll run random value 30..36
+execute if block ~ ~ ~ minecraft:creaking_heart if predicate lqe:extraction/3 store result score @s lqe.excavation.xp_roll run random value 35..42
+execute if block ~ ~ ~ minecraft:creaking_heart if predicate lqe:extraction/4 store result score @s lqe.excavation.xp_roll run random value 40..48
+execute if block ~ ~ ~ minecraft:creaking_heart if predicate lqe:extraction/5 store result score @s lqe.excavation.xp_roll run random value 45..54
+execute store result storage lqe excavation.xp_roll int 1 run scoreboard players get @s lqe.excavation.xp_roll
+function lqe:excavation/general/summon_xp with storage lqe excavation
 setblock ~ ~ ~ minecraft:air
 
 # Damage the tool, with a chance of skipping damage when Unbreaking is present

@@ -24,8 +24,8 @@
                 "attribute": "minecraft:max_health",
                 "amount": {
                     "type": "linear",
-                    "base": 0.08,
-                    "per_level_above_first": 0.06
+                    "base": 0.05,
+                    "per_level_above_first": 0.05
                 },
                 "operation": "add_multiplied_base"
             }

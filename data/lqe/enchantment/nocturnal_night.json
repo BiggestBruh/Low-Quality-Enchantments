@@ -25,7 +25,7 @@
                 "amount": {
                     "type": "linear",
                     "base": 0.01,
-                    "per_level_above_first": 0.015
+                    "per_level_above_first": 0.01
                 },
                 "operation": "add_multiplied_base"
             },
@@ -35,7 +35,7 @@
                 "amount": {
                     "type": "linear",
                     "base": 0.01,
-                    "per_level_above_first": 0.015
+                    "per_level_above_first": 0.01
                 },
                 "operation": "add_multiplied_base"
             },
@@ -45,24 +45,41 @@
                 "amount": {
                     "type": "linear",
                     "base": 0.01,
-                    "per_level_above_first": 0.015
+                    "per_level_above_first": 0.01
                 },
                 "operation": "add_multiplied_base"
             }
         ],
-        "minecraft:tick": [
+        "minecraft:location_changed": [
             {
                 "effect": {
                     "type": "minecraft:run_function",
                     "function": "lqe:nocturnal/day"
                 },
                 "requirements": {
-                    "condition": "minecraft:time_check",
-                    "value": {
-                        "min": 0,
-                        "max": 12999
-                    },
-                    "period": 24000
+                    "condition": "minecraft:any_of",
+                    "terms": [
+                        {
+                            "condition": "minecraft:time_check",
+                            "value": {
+                                "min": 0,
+                                "max": 12999
+                            },
+                            "period": 24000
+                        },
+                        {
+                            "condition": "minecraft:location_check",
+                            "predicate": {
+                                "dimension": "minecraft:the_end"
+                            }
+                        },
+                        {
+                            "condition": "minecraft:location_check",
+                            "predicate": {
+                                "dimension": "minecraft:the_nether"
+                            }
+                        }
+                    ]
                 }
             }
         ]

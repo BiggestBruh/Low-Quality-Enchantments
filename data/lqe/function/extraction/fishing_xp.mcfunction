@@ -18,10 +18,10 @@ execute if predicate lqe:extraction/0 run return fail
 # which technically makes this enchantment more powerful than intended when fishing.
 # This is fine because fishing kinda sucks, so extra incentive to do it is welcome.
 
-execute if predicate lqe:extraction/1 store result storage lqe extraction.xp_amount int 1.0 run random value 2..8
-execute if predicate lqe:extraction/2 store result storage lqe extraction.xp_amount int 1.0 run random value 2..9
-execute if predicate lqe:extraction/3 store result storage lqe extraction.xp_amount int 1.0 run random value 2..11
-execute if predicate lqe:extraction/4 store result storage lqe extraction.xp_amount int 1.0 run random value 2..12
-execute if predicate lqe:extraction/5 store result storage lqe extraction.xp_amount int 1.0 run random value 3..14
+execute if predicate lqe:extraction/fishing_rod if predicate lqe:extraction/1 store result storage lqe extraction.xp_amount int 1.0 run random value 2..8
+execute if predicate lqe:extraction/fishing_rod if predicate lqe:extraction/2 store result storage lqe extraction.xp_amount int 1.0 run random value 2..9
+execute if predicate lqe:extraction/fishing_rod if predicate lqe:extraction/3 store result storage lqe extraction.xp_amount int 1.0 run random value 2..11
+execute if predicate lqe:extraction/fishing_rod if predicate lqe:extraction/4 store result storage lqe extraction.xp_amount int 1.0 run random value 2..12
+execute if predicate lqe:extraction/fishing_rod if predicate lqe:extraction/5 store result storage lqe extraction.xp_amount int 1.0 run random value 3..14
 
 function lqe:extraction/summon_xp with storage lqe extraction

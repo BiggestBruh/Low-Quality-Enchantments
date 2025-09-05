@@ -4,12 +4,13 @@
     "predicate": {
         "equipment": {
             "mainhand": {
-                "items": "minecraft:fishing_rod",
                 "predicates": {
                     "minecraft:enchantments": [
                         {
                             "enchantments": "lqe:extraction",
-                            "levels": 5
+                            "levels": {
+                                "min": 5
+                            }
                         }
                     ]
                 }

@@ -25,8 +25,8 @@
                     "type": "minecraft:multiply",
                     "factor": {
                         "type": "minecraft:linear",
-                        "base": 1.1,
-                        "per_level_above_first": 0.1
+                        "base": 1.05,
+                        "per_level_above_first": 0.05
                     }
                 },
                 "requirements": {
